@@ -11,9 +11,8 @@ const client = new SapphireClient({
     'GUILD_MESSAGES',
     'GUILD_MEMBERS'
   ],
-  logger: {
-    level: process.env.NODE_ENV === 'development' ? LogLevel.Debug : LogLevel.Info
-  },
+  defaultPrefix: '?',
+  logger: { level: process.env.NODE_ENV === 'development' ? LogLevel.Debug : LogLevel.Info },
   loadMessageCommandListener: true,
   caseInsensitiveCommands: true,
   caseInsensitivePrefixes: true,
