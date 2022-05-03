@@ -1,0 +1,33 @@
+{
+  "name": "mirage-helper",
+  "private": "true",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "yarn lint && node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint ./src/**"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@sapphire/framework": "next",
+    "@sapphire/stopwatch": "^1.4.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "fuse.js": "^6.6.0",
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "nodemon": "^2.0.15"
+  },
+  "_moduleAliases": {
+    "#root": "./",
+    "#src": "./src",
+    "#lib": "./src/lib",
+    "#utils": "./src/lib/utils",
+    "#models": "./src/models"
+  }
+}
