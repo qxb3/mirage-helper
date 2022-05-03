@@ -1,9 +1,8 @@
 require('dotenv/config')
 require('module-alias/register')
 
-const mongodb = require('./mongodb')
-
 const { SapphireClient, ApplicationCommandRegistries, LogLevel } = require('@sapphire/framework')
+const mongodb = require('#src/mongodb')
 
 const client = new SapphireClient({
   intents: [
@@ -13,14 +12,13 @@ const client = new SapphireClient({
   ],
   defaultPrefix: '?',
   logger: { level: process.env.NODE_ENV === 'development' ? LogLevel.Debug : LogLevel.Info },
-  loadMessageCommandListener: true,
+  loadMessageCommandListeners: true,
   caseInsensitiveCommands: true,
   caseInsensitivePrefixes: true,
-  shards: 'auto'
 })
 
 ApplicationCommandRegistries.setDefaultBehaviorWhenNotIdentical('OVERWRITE')
 
-mongodb.connect(client.logger, async () => {
-  await client.login(process.env.BOT_TOKEN)
+mongodb.connect(client.logger, () => {
+  client.login(process.env.BOT_TOKEN)
 })
