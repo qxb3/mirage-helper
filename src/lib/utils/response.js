@@ -6,17 +6,19 @@ const Colors = {
   Error: Constants.Colors.RED
 }
 
-const createEmbed = (user, color = Colors.Primary) => {
-  const embed = new MessageEmbed().setColor(color)
+const createEmbed = (color = Colors.Primary) => {
+  return new MessageEmbed()
+    .setColor(color)
+}
 
-  if (user) {
-    embed.setAuthor({ name: user.username, iconURL: user.displayAvatarURL({ dynamic: true }) })
-  }
-
-  return embed
+const createEmbedUser = (user, color = Colors.Primary) => {
+  return new MessageEmbed()
+    .setAuthor({ name: user.username, iconURL: user.displayAvatarURL({ dynamic: true }) })
+    .setColor(color)
 }
 
 module.exports = {
   Colors,
-  createEmbed
+  createEmbed,
+  createEmbedUser
 }
