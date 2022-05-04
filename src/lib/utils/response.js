@@ -2,7 +2,7 @@ const { Constants, MessageEmbed } = require('discord.js')
 
 const Colors = {
   Primary: Constants.Colors.GREEN,
-  Secondary: Constants.Colors.GOLD,
+  Secondary: Constants.Colors.YELLOW,
   Error: Constants.Colors.RED
 }
 
