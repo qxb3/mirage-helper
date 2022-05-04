@@ -2,7 +2,7 @@ const { Command } = require('@sapphire/framework')
 const { Stopwatch } = require('@sapphire/stopwatch')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
-const { createEmbed } = require('#utils/message')
+const { createEmbed, Colors } = require('#utils/response')
 const Fuse = require('fuse.js/dist/fuse.basic.common')
 
 class SlashCommand extends Command {
@@ -39,7 +39,7 @@ class SlashCommand extends Command {
       } catch(err) {
         await interaction.reply({
           embeds: [
-            createEmbed(interaction.user)
+            createEmbed(interaction.user, Colors.Error)
               .setDescription('❌ Some error occured')
               .addField('❯ Error', err)
           ]
