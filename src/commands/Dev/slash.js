@@ -80,8 +80,8 @@ class SlashCommand extends Command {
           .setDescription('Delete a slash command')
           .addStringOption(builder =>
             builder
-              .setName('command')
-              .setDescription('The command that you wanted to delete')
+              .setName('name')
+              .setDescription('The command name that you wanted to delete')
               .setRequired(true)
               .setAutocomplete(true)
           )
