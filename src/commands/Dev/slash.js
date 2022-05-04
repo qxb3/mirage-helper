@@ -2,7 +2,7 @@ const { Command } = require('@sapphire/framework')
 const { Stopwatch } = require('@sapphire/stopwatch')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
-const { createEmbedUser, Colors } = require('#utils/response')
+const { createEmbedUser, Colors, searchItems } = require('#utils/response')
 const Fuse = require('fuse.js/dist/fuse.basic.common')
 
 class SlashCommand extends Command {
@@ -15,7 +15,7 @@ class SlashCommand extends Command {
   async chatInputRun(interaction) {
     const operation = interaction.options.getSubcommand(true)
     // TODO: Fix this mf (Its erroring when i did not select in autocomplete)
-    const selectedCommand = JSON.parse(interaction.options.getFocused('command', true))
+    const selectedCommand = JSON.parse(interaction.options.getString('command', true))
 
     const timer = new Stopwatch().reset()
 
@@ -60,35 +60,14 @@ class SlashCommand extends Command {
     }
 
     const query = interaction.options.getFocused()
+    const result = searchItems(query, this.commands, ['name', 'id', 'test'])
 
-    if (!query) {
-      const commands = []
-      for (let i = 0; i < Math.min(this.commands.length, 25); i++) {
-        const command = this.commands[i]
-
-        commands.push({
-          name: `${command.test ? '[TEST]' : '[GLOBAL]'} ${command.name}`,
-          value: JSON.stringify({ id: command.id, test: command.test })
-        })
-      }
-
-      return await interaction.respond(commands)
-    }
-
-    const fuse = new Fuse(this.commands, { keys: ['name', 'id'] })
-    const result = fuse.search(query)
-
-    let searchedCommands = []
-    for (let i = 0; i < Math.min(result.length, 25); i++) {
-      const command = result[i].item
-
-      searchedCommands.push({
+    interaction.respond(
+      result.map(command => ({
         name: `${command.test ? '[TEST]' : '[GLOBAL]'} ${command.name}`,
         value: JSON.stringify({ id: command.id, test: command.test })
-      })
-    }
-
-    await interaction.respond(searchedCommands)
+      }))
+    )
   }
 
   registerApplicationCommands(registry) {
