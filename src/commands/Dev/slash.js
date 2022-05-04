@@ -88,7 +88,7 @@ class SlashCommand extends Command {
       )
 
     registry.registerChatInputCommand(command, {
-      idHints: ['971068994784223232'],
+      idHints: ['971337334232600576'],
       guildIds: [process.env.TEST_SERVER]
     })
   }
