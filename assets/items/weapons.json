@@ -1,0 +1,1201 @@
+[
+    {
+        "name": "Midnight",
+        "skill_requirement": "90 Melee",
+        "stats": {
+            "attack": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
+        "monsters": [
+            "Nether slime"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Purity",
+        "skill_requirement": "90 Magic",
+        "stats": {
+            "attack": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
+        "monsters": [
+            "Nether slime"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Daylight",
+        "skill_requirement": "90 Magic",
+        "stats": {
+            "attack": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
+        "monsters": [
+            "Nether slime"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Ironbark",
+        "skill_requirement": "90 Distance",
+        "stats": {
+            "attack": 12,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
+        "monsters": [
+            "Nether slime"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Mythril Arrows",
+        "skill_requirement": "90 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 40,
+            "minimum_stat": 40
+        },
+        "monsters": [
+            "Priestess"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Banisher",
+        "skill_requirement": "80 Melee",
+        "stats": {
+            "attack": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Hero"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Punisher",
+        "skill_requirement": "80 Melee",
+        "stats": {
+            "attack": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Frosty fury",
+            "Flame fury"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Retribution",
+        "skill_requirement": "80 Melee",
+        "stats": {
+            "attack": 12,
+            "maximum_stat": 48,
+            "minimum_stat": 16
+        },
+        "monsters": [
+            "Mana fury"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Truth",
+        "skill_requirement": "80 Magic",
+        "stats": {
+            "attack": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Necromancer"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Ice Tome",
+        "skill_requirement": "80 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 33,
+            "minimum_stat": 11
+        },
+        "monsters": [
+            "?"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Shade",
+        "skill_requirement": "80 Magic",
+        "stats": {
+            "attack": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Necromancer"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Tempest",
+        "skill_requirement": "80 Distance",
+        "stats": {
+            "attack": 11,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Priestess"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Granite Shield",
+        "skill_requirement": "80 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Frosty fury"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Spiked Arrows",
+        "skill_requirement": "80 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 35,
+            "minimum_stat": 35
+        },
+        "monsters": [
+            "Bloodseeker"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Chaos Arrows",
+        "skill_requirement": "75 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 200,
+            "minimum_stat": 200
+        },
+        "monsters": [
+            "100 to conjure"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Vindicator",
+        "skill_requirement": "70 Melee",
+        "stats": {
+            "attack": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Orc Warrior"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Chaos Mace",
+        "skill_requirement": "70 Melee",
+        "stats": {
+            "attack": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Bandit"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Ancient Axe",
+        "skill_requirement": "70 Melee",
+        "stats": {
+            "attack": 11,
+            "maximum_stat": 42,
+            "minimum_stat": 14
+        },
+        "monsters": [
+            "Orc Berzerk"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Mana Staff",
+        "skill_requirement": "70 Magic",
+        "stats": {
+            "attack": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Orc Mage"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Poison Tome",
+        "skill_requirement": "70 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 30,
+            "minimum_stat": 10
+        },
+        "monsters": [
+            "Hero"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Holy Rod",
+        "skill_requirement": "70 Magic",
+        "stats": {
+            "attack": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Orc Mage"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Pearl Bow",
+        "skill_requirement": "70 Distance",
+        "stats": {
+            "attack": 10,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Hunter"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Emerald Shield",
+        "skill_requirement": "70 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Wild Soldier"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Pearl Arrows",
+        "skill_requirement": "70 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 30,
+            "minimum_stat": 30
+        },
+        "monsters": [
+            "Hunter"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Ban Hammer",
+        "skill_requirement": "666 Melee",
+        "stats": {
+            "attack": 1000,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Das Bug"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Talon",
+        "skill_requirement": "60 Melee",
+        "stats": {
+            "attack": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Hellhound"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Hell's Teeth",
+        "skill_requirement": "60 Melee",
+        "stats": {
+            "attack": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Demon"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Warlord Axe",
+        "skill_requirement": "60 Melee",
+        "stats": {
+            "attack": 10,
+            "maximum_stat": 36,
+            "minimum_stat": 12
+        },
+        "monsters": [
+            "Orc"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Nightmare Staff",
+        "skill_requirement": "60 Magic",
+        "stats": {
+            "attack": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Demon"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Mana Tome",
+        "skill_requirement": "60 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 27,
+            "minimum_stat": 9
+        },
+        "monsters": [
+            "Orc Warrior"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Life Rod",
+        "skill_requirement": "60 Magic",
+        "stats": {
+            "attack": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Demon"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Demon Bow",
+        "skill_requirement": "60 Distance",
+        "stats": {
+            "attack": 9,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Demon"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Platinum Shield",
+        "skill_requirement": "60 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Shadow"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Elven Arrows",
+        "skill_requirement": "60 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 25,
+            "minimum_stat": 25
+        },
+        "monsters": [
+            "Arrows store"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Paladin Sword",
+        "skill_requirement": "50 Melee",
+        "stats": {
+            "attack": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Behemoth"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Paladin Hammer",
+        "skill_requirement": "50 Melee",
+        "stats": {
+            "attack": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Minotaur"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Forest Axe",
+        "skill_requirement": "50 Melee",
+        "stats": {
+            "attack": 9,
+            "maximum_stat": 30,
+            "minimum_stat": 10
+        },
+        "monsters": [
+            "Behemoth"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Golden Staff",
+        "skill_requirement": "50 Magic",
+        "stats": {
+            "attack": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Ice Slime"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Spirit Tome",
+        "skill_requirement": "50 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Sorcerer"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Emerald Rod",
+        "skill_requirement": "50 Magic",
+        "stats": {
+            "attack": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Ice Slime"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Orcish Bow",
+        "skill_requirement": "50 Distance",
+        "stats": {
+            "attack": 8,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Fire Slime"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Silver Shield",
+        "skill_requirement": "50 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Behemoth"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Iron Arrows",
+        "skill_requirement": "50 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 20,
+            "minimum_stat": 20
+        },
+        "monsters": [
+            "Imp Ranger"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Elven Sword",
+        "skill_requirement": "40 Melee",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Harbinger"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Giant Smasher",
+        "skill_requirement": "40 Melee",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Imp Knight"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Imperial Axe",
+        "skill_requirement": "40 Melee",
+        "stats": {
+            "attack": 8,
+            "maximum_stat": 24,
+            "minimum_stat": 8
+        },
+        "monsters": [
+            "Harbinger"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Fire Staff",
+        "skill_requirement": "40 Magic",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Imp Mage"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Forest Tome",
+        "skill_requirement": "40 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 21,
+            "minimum_stat": 7
+        },
+        "monsters": [
+            "Ice Slime"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Dead Rod",
+        "skill_requirement": "40 Magic",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Imp Mage"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Skeletal Bow",
+        "skill_requirement": "40 Distance",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Imp Ranger"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Soldier Shield",
+        "skill_requirement": "40 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Imp Knight",
+            "Minotaur",
+            "Giant Slug"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Tin Arrows",
+        "skill_requirement": "40 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 15,
+            "minimum_stat": 15
+        },
+        "monsters": [
+            "Arrows store"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Knight Sword",
+        "skill_requirement": "30 Melee",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Cyclops Mystic"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Heavy Mace",
+        "skill_requirement": "30 Melee",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Defiler"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Executioner",
+        "skill_requirement": "30 Melee",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Slime"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Spirit Staff",
+        "skill_requirement": "30 Magic",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Cyclops Mystic"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Molten Tome",
+        "skill_requirement": "30 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 18,
+            "minimum_stat": 6
+        },
+        "monsters": [
+            "Harbinger"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Jungle Rod",
+        "skill_requirement": "30 Magic",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Cyclops Mystic"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Elven Bow",
+        "skill_requirement": "30 Distance",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Defiler"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Plate Shield",
+        "skill_requirement": "30 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Firewyrm"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Flint Arrows",
+        "skill_requirement": "30 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 10,
+            "minimum_stat": 10
+        },
+        "monsters": [
+            "Deerstalker"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Spiked Sword",
+        "skill_requirement": "20 Melee",
+        "stats": {
+            "attack": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Spider"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Morning Star",
+        "skill_requirement": "20 Melee",
+        "stats": {
+            "attack": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Cyclops"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Harvest Scythe",
+        "skill_requirement": "20 Melee",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Spider"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Crystal Staff",
+        "skill_requirement": "20 Magic",
+        "stats": {
+            "attack": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Widow"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Fire Tome",
+        "skill_requirement": "20 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 15,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Firewyrm"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Earth Rod",
+        "skill_requirement": "20 Magic",
+        "stats": {
+            "attack": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Widow"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Soldier Bow",
+        "skill_requirement": "20 Distance",
+        "stats": {
+            "attack": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Deerstalker"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Copper Shield",
+        "skill_requirement": "20 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Troll Warlord"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Stone Arrows",
+        "skill_requirement": "20 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 5,
+            "minimum_stat": 5
+        },
+        "monsters": [
+            "Arrows store"
+        ],
+        "type": "Arrow"
+    },
+    {
+        "name": "Primitive Sword",
+        "skill_requirement": "15 Melee",
+        "stats": {
+            "attack": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
+        "monsters": [
+            "Troll Knight"
+        ],
+        "type": "Sword"
+    },
+    {
+        "name": "Iron Sceptre",
+        "skill_requirement": "15 Melee",
+        "stats": {
+            "attack": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
+        "monsters": [
+            "Troll Warlord"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Steel Axe",
+        "skill_requirement": "15 Melee",
+        "stats": {
+            "attack": 5,
+            "maximum_stat": 6,
+            "minimum_stat": 2
+        },
+        "monsters": [
+            "Troll Warlord"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Amber Staff",
+        "skill_requirement": "15 Magic",
+        "stats": {
+            "attack": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
+        "monsters": [
+            "Troll Mage"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Old Spellbook",
+        "skill_requirement": "15 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 12,
+            "minimum_stat": 4
+        },
+        "monsters": [
+            "Troll Warlord"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Nature Rod",
+        "skill_requirement": "15 Magic",
+        "stats": {
+            "attack": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
+        "monsters": [
+            "Troll Mage"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Primitive Bow",
+        "skill_requirement": "15 Distance",
+        "stats": {
+            "attack": 4,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
+        "monsters": [
+            "Troll Ranger"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Reinforced Shield",
+        "skill_requirement": "15 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 3,
+            "minimum_stat": 1
+        },
+        "monsters": [
+            "Troll Knight"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Spiked Club",
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "attack": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - The only way you can get these is by creating a new character"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Training Club",
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "attack": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - The only way you can get these is by creating a new character"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Duck Smasher",
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "attack": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - Was given out once by liam during an event called 'Ducket list'"
+        ],
+        "type": "Mace"
+    },
+    {
+        "name": "Zero's Reaver",
+        "skill_requirement": "0 Melee",
+        "stats": {
+            "attack": 7,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - It's given by liam to a first knight to hit level 50"
+        ],
+        "type": "Axe"
+    },
+    {
+        "name": "Warped Staff",
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "attack": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - The only way you can get these is by creating a new character"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Training Staff",
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "attack": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Weapons store"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Godman's Staff",
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - It's given by liam to a first mage to hit level 50"
+        ],
+        "type": "Staff"
+    },
+    {
+        "name": "Novice's Notes",
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 9,
+            "minimum_stat": 3
+        },
+        "monsters": [
+            "Troll Mage"
+        ],
+        "type": "Spellbook"
+    },
+    {
+        "name": "Cracked Rod",
+        "skill_requirement": "0 Magic",
+        "stats": {
+            "attack": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Weapons store"
+        ],
+        "type": "Rod"
+    },
+    {
+        "name": "Wooden Bow",
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "attack": 3,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - The only way you can get these is by creating a new character"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Training Bow",
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "attack": 1,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Weapons store"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Lupin's Bow",
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "attack": 6,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - It's given by liam to a first ranger to hit level 50"
+        ],
+        "type": "Bow"
+    },
+    {
+        "name": "Wooden Shield",
+        "skill_requirement": "0 Defence",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Unobtainable - The only way you can get these is by creating a new character"
+        ],
+        "type": "Shield"
+    },
+    {
+        "name": "Wooden Arrows",
+        "skill_requirement": "0 Distance",
+        "stats": {
+            "attack": 0,
+            "maximum_stat": 0,
+            "minimum_stat": 0
+        },
+        "monsters": [
+            "Troll Ranger"
+        ],
+        "type": "Arrow"
+    }
+]

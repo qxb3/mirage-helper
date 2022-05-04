@@ -28,6 +28,7 @@
     "#src": "./src",
     "#lib": "./src/lib",
     "#utils": "./src/lib/utils",
-    "#models": "./src/models"
+    "#models": "./src/models",
+    "#assets": "./assets"
   }
 }

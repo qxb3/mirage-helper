@@ -1,0 +1,286 @@
+[
+    {
+        "name": "Blank Rune",
+        "price": "5",
+        "monsters": [
+            "Potions store"
+        ]
+    },
+    {
+        "name": "Troll Fur",
+        "price": "50",
+        "monsters": [
+            "Troll",
+            "Troll Mage",
+            "Troll Ranger",
+            "Troll Knight",
+            "Troll Warlord"
+        ]
+    },
+    {
+        "name": "Mandible",
+        "price": "100",
+        "monsters": [
+            "SpiderWidow"
+        ]
+    },
+    {
+        "name": "Spider Leg",
+        "price": "100",
+        "monsters": [
+            "Spider"
+        ]
+    },
+    {
+        "name": "Giant Toe",
+        "price": "100",
+        "monsters": [
+            "Cyclops",
+            "Deerstalker",
+            "Cyclops Mystic"
+        ]
+    },
+    {
+        "name": "Widow Leg",
+        "price": "150",
+        "monsters": [
+            "Widow"
+        ]
+    },
+    {
+        "name": "Blue Tail",
+        "price": "150",
+        "monsters": [
+            "ImpImp Ranger",
+            "Imp Knight",
+            "Imp Mage"
+        ]
+    },
+    {
+        "name": "Hoof",
+        "price": "150",
+        "monsters": [
+            "ImpImp Ranger",
+            "Imp Knight",
+            "Harbinger",
+            "Minotaur",
+            "Behemoth"
+        ]
+    },
+    {
+        "name": "Giant Eye",
+        "price": "150",
+        "monsters": [
+            "Deerstalker",
+            "Cyclops Mystic"
+        ]
+    },
+    {
+        "name": "Green Goo",
+        "price": "150",
+        "monsters": [
+            "Slime",
+            "Giant Slug",
+            "Giant Wasp"
+        ]
+    },
+    {
+        "name": "Red Scales",
+        "price": "150",
+        "monsters": [
+            "Firewyrm"
+        ]
+    },
+    {
+        "name": "Ponytail",
+        "price": "200",
+        "monsters": [
+            "Cyclops Mystic"
+        ]
+    },
+    {
+        "name": "Metal Plate",
+        "price": "200",
+        "monsters": [
+            "Troll Knight",
+            "Troll Warlord",
+            "Imp Knight",
+            "Orc WarriorHero"
+        ]
+    },
+    {
+        "name": "Ectoplasm",
+        "price": "200",
+        "monsters": [
+            "Ghost"
+        ]
+    },
+    {
+        "name": "Broken Staff",
+        "price": "200",
+        "monsters": [
+            "Troll Mage",
+            "Imp Mage",
+            "Sorcerer",
+            "Orc Mage",
+            "Necromancer"
+        ]
+    },
+    {
+        "name": "Blue Ear",
+        "price": "200",
+        "monsters": [
+            "Imp Ranger",
+            "Imp Knight",
+            "Imp Mage"
+        ]
+    },
+    {
+        "name": "Blue Goo",
+        "price": "200",
+        "monsters": [
+            "Ice Slime"
+        ]
+    },
+    {
+        "name": "Red Goo",
+        "price": "200",
+        "monsters": [
+            "Fire Slime"
+        ]
+    },
+    {
+        "name": "Branch",
+        "price": "250",
+        "monsters": [
+            "Defiler"
+        ]
+    },
+    {
+        "name": "Green Leather",
+        "price": "250",
+        "monsters": [
+            "Orc",
+            "Orc Berzerk",
+            "Orc Worker",
+            "Orc Warrior"
+        ]
+    },
+    {
+        "name": "Crab Claw",
+        "price": "250",
+        "monsters": [
+            "Crab"
+        ]
+    },
+    {
+        "name": "Red Tail",
+        "price": "500",
+        "monsters": [
+            "Harbinger"
+        ]
+    },
+    {
+        "name": "Ice Shard",
+        "price": "500",
+        "monsters": [
+            "Ice Slime"
+        ]
+    },
+    {
+        "name": "Bone",
+        "price": "500",
+        "monsters": [
+            "Revenant"
+        ]
+    },
+    {
+        "name": "Minotaur Horn",
+        "price": "600",
+        "monsters": [
+            "Minotaur"
+        ]
+    },
+    {
+        "name": "Skull",
+        "price": "750",
+        "monsters": [
+            "Revenant"
+        ]
+    },
+    {
+        "name": "Giant Horn",
+        "price": "1000",
+        "monsters": [
+            "Behemoth"
+        ]
+    },
+    {
+        "name": "Molten Core",
+        "price": "1500",
+        "monsters": [
+            "Firewyrm",
+            "Harbinger",
+            "Fire Slime",
+            "Demon"
+        ]
+    },
+    {
+        "name": "Razor Claws",
+        "price": "1500",
+        "monsters": [
+            "Hellhound"
+        ]
+    },
+    {
+        "name": "Demon Bone",
+        "price": "2000",
+        "monsters": [
+            "Demon"
+        ]
+    },
+    {
+        "name": "Wasp Stinger",
+        "price": "3000",
+        "monsters": [
+            "Giant Wasp"
+        ]
+    },
+    {
+        "name": "Wasp Wing",
+        "price": "3000",
+        "monsters": [
+            "Giant Wasp"
+        ]
+    },
+    {
+        "name": "Human Ear",
+        "price": "3000",
+        "monsters": [
+            "Thief",
+            "Sorcerer",
+            "Bandit",
+            "Hunter",
+            "Wild Soldier",
+            "Hero",
+            "Necromancer",
+            "Priestess"
+        ]
+    },
+    {
+        "name": "Cursed Eye",
+        "price": "5000",
+        "monsters": [
+            "Shadow"
+        ]
+    },
+    {
+        "name": "Cursed Teeth",
+        "price": "5000",
+        "monsters": [
+            "Bloodseeker",
+            "Slimespitter",
+            "Shambler"
+        ]
+    }
+]
