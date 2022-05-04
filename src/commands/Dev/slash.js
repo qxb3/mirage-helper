@@ -2,7 +2,7 @@ const { Command } = require('@sapphire/framework')
 const { Stopwatch } = require('@sapphire/stopwatch')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
-const { createEmbed, Colors } = require('#utils/response')
+const { createEmbedUser, Colors } = require('#utils/response')
 const Fuse = require('fuse.js/dist/fuse.basic.common')
 
 class SlashCommand extends Command {
@@ -14,7 +14,8 @@ class SlashCommand extends Command {
 
   async chatInputRun(interaction) {
     const operation = interaction.options.getSubcommand(true)
-    const selectedCommand = JSON.parse(interaction.options.getString('command', true))
+    // TODO: Fix this mf (Its erroring when i did not select in autocomplete)
+    const selectedCommand = JSON.parse(interaction.options.getFocused('command', true))
 
     const timer = new Stopwatch().reset()
 
@@ -31,7 +32,7 @@ class SlashCommand extends Command {
         await command.delete()
         await interaction.reply({
           embeds: [
-            createEmbed(interaction.user)
+            createEmbedUser(interaction.user)
               .setDescription(`✅ Successfuly deleted command: **${command.name}**`)
               .addField('❯ Time', timer.stop().toString())
           ]
@@ -39,7 +40,7 @@ class SlashCommand extends Command {
       } catch(err) {
         await interaction.reply({
           embeds: [
-            createEmbed(interaction.user, Colors.Error)
+            createEmbedUser(interaction.user, Colors.Error)
               .setDescription('❌ Some error occured')
               .addField('❯ Error', err)
           ]
