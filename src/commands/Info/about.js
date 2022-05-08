@@ -1,4 +1,4 @@
-const MirageCommand = require('#lib/MirageCommand')
+const MirageCommand = require('#structures/MirageCommand')
 const { MessageActionRow, MessageButton } = require('discord.js')
 const { createEmbed, Colors } = require('#utils/response')
 const { getTestServer } = require('#utils/constants')
@@ -10,7 +10,6 @@ class AboutCommand extends MirageCommand {
       description: 'About command',
       chatInputCommand: {
         register: true,
-        idHints: ['917358098241445902'],
         guildIds: [ getTestServer() ]
       }
     })
@@ -65,7 +64,7 @@ class AboutCommand extends MirageCommand {
           .setStyle('LINK')
       )
 
-    return [ actionRow1, actionRow2 ]
+    return [actionRow1, actionRow2]
   }
 }
 
