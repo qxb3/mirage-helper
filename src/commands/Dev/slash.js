@@ -3,7 +3,7 @@ const { Stopwatch } = require('@sapphire/stopwatch')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
 const { createEmbedUser, Colors } = require('#utils/response')
-const { searchItems } = require('#utils/items')
+const { searchItemsAutocomplete } = require('#utils/items')
 
 class SlashCommand extends Command {
   constructor(context) {
@@ -14,8 +14,7 @@ class SlashCommand extends Command {
 
   async chatInputRun(interaction) {
     const operation = interaction.options.getSubcommand(true)
-    // TODO: Fix this mf (Its erroring when i did not select in autocomplete)
-    const selectedCommand = JSON.parse(interaction.options.getString('command', true))
+    const [selectedCommand, isSelectedCommandTest] = interaction.options.getString('name', true).split(':')
 
     const timer = new Stopwatch().reset()
 
@@ -25,9 +24,13 @@ class SlashCommand extends Command {
       try {
         timer.start()
 
-        const command = selectedCommand.test ?
-          await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch(selectedCommand.id) :
-          await client.application.commands.fetch(selectedCommand.id)
+        const command = isSelectedCommandTest ?
+          await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch(selectedCommand) :
+          await client.application.commands.fetch(selectedCommand)
+
+        if (!command) {
+          throw new Error(`Command with id of: ${selectedCommand} does not exists`)
+        }
 
         await command.delete()
         await interaction.reply({
@@ -42,7 +45,7 @@ class SlashCommand extends Command {
           embeds: [
             createEmbedUser(interaction.user, Colors.Error)
               .setDescription('❌ Some error occured')
-              .addField('❯ Error', err)
+              .addField('❯ Error', err.toString())
           ]
         })
       }
@@ -60,12 +63,12 @@ class SlashCommand extends Command {
     }
 
     const query = interaction.options.getFocused()
-    const result = searchItems(query, this.commands, ['name', 'id', 'test'])
+    const result = searchItemsAutocomplete(query, this.commands, ['name', 'id', 'test'])
 
     interaction.respond(
       result.map(command => ({
         name: `${command.test ? '[TEST]' : '[GLOBAL]'} ${command.name}`,
-        value: JSON.stringify({ id: command.id, test: command.test })
+        value: `${command.id}:${command.test}`
       }))
     )
   }
@@ -88,7 +91,6 @@ class SlashCommand extends Command {
       )
 
     registry.registerChatInputCommand(command, {
-      idHints: ['971337334232600576'],
       guildIds: [process.env.TEST_SERVER]
     })
   }
