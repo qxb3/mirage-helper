@@ -4,7 +4,8 @@ const { Message, CommandInteraction, Formatters } = require('discord.js')
 class MirageCommand extends Command {
   constructor(context, options) {
     super(context, {
-      ...options
+      ...options,
+      requiredClientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'EMBED_LINKS']
     })
 
     this.itemCategories = options.itemCategories
@@ -51,25 +52,6 @@ class MirageCommand extends Command {
 
     return formatedUsages
   }
-
-  // runCategoriesSelection(msg, reply, callbackFn) {
-  //   const collector = reply.createMessageComponentCollector({
-  //     filter: (interaction) => msg.author.id === interaction.user.id,
-  //     componentType: 'SELECT_MENU',
-  //     time: 1000 * 60
-  //   })
-
-  //   collector.on('collect', async (interaction) => {
-  //     callbackFn(interaction)
-  //   })
-
-  //   collector.on('end', () => {
-  //     const categoryMenu = reply.components[0].components[0].setDisabled(true)
-  //     reply.edit({
-  //       components: [new MessageActionRow().setComponents(categoryMenu)]
-  //     })
-  //   })
-  // }
 
   noArgs() {}
   isCategory() {}
