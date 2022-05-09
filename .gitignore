@@ -3,4 +3,4 @@ node_modules
 
 src/commands/Items
 src/commands/Wiki
-src/commands.test.js
+src/commands/test.js

@@ -1,6 +1,6 @@
-const MirageCommand = require('#structures/MirageCommand')
+const MirageCommand = require('#structures/commands/MirageCommand')
 const { MessageActionRow, MessageButton } = require('discord.js')
-const { createEmbed, Colors } = require('#utils/response')
+const { createEmbed, Colors, sendMessage } = require('#utils/response')
 const { getTestServer } = require('#utils/constants')
 
 class AboutCommand extends MirageCommand {
@@ -15,16 +15,8 @@ class AboutCommand extends MirageCommand {
     })
   }
 
-  async messageRun(message) {
-    await message.channel.send({
-      embeds: [ this.getEmbed() ],
-      components: this.getComponents(),
-      files: ['assets/icons/mirage.png']
-    })
-  }
-
-  async chatInputRun(interaction) {
-    await interaction.reply({
+  run({ context }) {
+    sendMessage(context, {
       embeds: [ this.getEmbed() ],
       components: this.getComponents(),
       files: ['assets/icons/mirage.png']

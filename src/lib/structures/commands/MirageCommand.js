@@ -1,5 +1,5 @@
 const { Command } = require('@sapphire/framework')
-const { Message, CommandInteraction, Formatters } = require('discord.js')
+const { Message, Formatters } = require('discord.js')
 
 class MirageCommand extends Command {
   constructor(context, options) {
@@ -7,15 +7,9 @@ class MirageCommand extends Command {
       ...options,
       requiredClientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'EMBED_LINKS']
     })
-
-    this.itemCategories = options.itemCategories
-    this.usages = options.usages
-    this.commandType = options.commandType
   }
 
-  run(context, args) {
-    this.noArgs(context, args)
-  }
+  run() {}
 
   async messageRun(message, _args, context) {
     const args = await _args.rest('string').catch(() => {})
@@ -25,7 +19,7 @@ class MirageCommand extends Command {
       args,
       member: message.member,
       user: message.author,
-      commandInfo: context
+      ...context
     })
   }
 
@@ -37,7 +31,7 @@ class MirageCommand extends Command {
       args,
       member: interaction.member,
       user: interaction.user,
-      commandInfo: context
+      ...context
     })
   }
 
@@ -52,11 +46,6 @@ class MirageCommand extends Command {
 
     return formatedUsages
   }
-
-  noArgs() {}
-  isCategory() {}
-  isItem() {}
-  isError() {}
 }
 
 module.exports = MirageCommand
