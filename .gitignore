@@ -1,6 +1,2 @@
 node_modules
 .env
-
-src/commands/Items
-src/commands/Wiki
-src/commands/test.js
