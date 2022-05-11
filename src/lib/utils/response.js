@@ -24,6 +24,10 @@ const createEmbedUser = (user, color = Colors.Primary) => {
 
 const sendMessage = async (context, content) => {
   if (context instanceof Message) {
+    if (content.reply) {
+      return await context.reply(content)
+    }
+
     return await context.channel.send(content)
   }
 
