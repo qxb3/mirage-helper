@@ -20,7 +20,7 @@ class OwnerOnlyPrecondition extends Precondition {
   }
 
   check(user) {
-    return user.id === process.env.DEV_ID + '0'
+    return user.id === process.env.DEV_ID
   }
 
   getMessage() {
