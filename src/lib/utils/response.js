@@ -2,7 +2,8 @@ const {
   Constants,
   MessageEmbed,
   Message,
-  CommandInteraction
+  CommandInteraction,
+  MessageActionRow
 } = require('discord.js')
 
 const Colors = {
@@ -20,6 +21,25 @@ const createEmbedUser = (user, color = Colors.Primary) => {
   return new MessageEmbed()
     .setAuthor({ name: user.username, iconURL: user.displayAvatarURL({ dynamic: true }) })
     .setColor(color)
+}
+
+const createMessageComponentCollector = (message, options) => {
+  const collector = message.createMessageComponentCollector({
+    ...options
+  })
+
+  collector.on('end', () => {
+    if (options?.disableComponentsOnEnd) {
+      const disabledComponents = message.components.map(row => {
+        const components = row.components.map(component => component.setDisabled(true))
+        return new MessageActionRow({ components })
+      })
+
+      message.edit({ components: disabledComponents })
+    }
+  })
+
+  return collector
 }
 
 const sendMessage = async (context, content) => {
@@ -40,5 +60,6 @@ module.exports = {
   Colors,
   createEmbed,
   createEmbedUser,
+  createMessageComponentCollector,
   sendMessage
 }
