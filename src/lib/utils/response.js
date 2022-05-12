@@ -9,6 +9,7 @@ const { Colors } = require('./constants')
 /**
  * @typedef {import('discord.js').User} User
  * @typedef {import('discord.js').Message} Message
+ * @typedef {import('discord.js').MessageEmbed} MessageEmbed
  * @typedef {import('discord.js').MessagePayload} MessagePayload
  * @typedef {import('discord.js').ReplyMessageOptions} ReplyMessageOptions
  * @typedef {import('discord.js').MessageComponentCollectorOptions} MessageComponentCollectorOptions
@@ -20,6 +21,7 @@ const { Colors } = require('./constants')
 /**
  * Creates a new embed
  * @param color {Colors.Primary}
+ * @return {MessageEmbed}
  */
 const createEmbed = (color = Colors.Primary) => {
   return new MessageEmbed()
@@ -30,6 +32,7 @@ const createEmbed = (color = Colors.Primary) => {
  * Creates a new embed with user attach on it
  * @param user {User}
  * @param color {Colors.Primary}
+ * @return {MessageEmbed}
  */
 const createEmbedUser = (user, color = Colors.Primary) => {
   return new MessageEmbed()

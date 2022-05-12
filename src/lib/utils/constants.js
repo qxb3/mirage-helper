@@ -8,10 +8,10 @@ const Colors = {
 
 /**
  * Get test server id
- * @return {String|null}
+ * @return {String}
  */
 const getTestServer = () => {
-  return process.env.NODE_ENV === 'production' ? null : process.env.TEST_SERVER
+  return process.env.NODE_ENV === 'production' ? '' : process.env.TEST_SERVER
 }
 
 module.exports = {

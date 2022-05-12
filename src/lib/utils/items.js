@@ -3,8 +3,8 @@ const Fuse = require('fuse.js/dist/fuse.basic.common')
 /**
  * Search through an items
  * @param query {String}
- * @param items {Array}
- * @returns {Array} array
+ * @param items {Array<any>}
+ * @returns {Array<any>}
  */
 const searchItems = (query, items) => {
   const length = items.length
@@ -23,9 +23,9 @@ const searchItems = (query, items) => {
 /**
  * Search through an items for autocomplete
  * @param query {String}
- * @param items {Array}
- * @param keys {Array}
- * @returns {Array} array
+ * @param items {Array<any>}
+ * @param keys {Array<String>}
+ * @returns {Array<any>}
  */
 const searchItemsAutocomplete = (query, items, keys = ['name', 'level_requirement', 'monsters', 'type']) => {
   const max = Math.min(items.length, 25)
