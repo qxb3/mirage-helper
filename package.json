@@ -27,10 +27,10 @@
   "_moduleAliases": {
     "#root": "./",
     "#src": "./src",
+    "#assets": "./assets",
     "#lib": "./src/lib",
     "#utils": "./src/lib/utils",
     "#structures": "./src/lib/structures",
-    "#models": "./src/models",
-    "#assets": "./assets"
+    "#models": "./src/models"
   }
 }
