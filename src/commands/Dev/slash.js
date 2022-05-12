@@ -2,7 +2,8 @@ const { Command } = require('@sapphire/framework')
 const { Stopwatch } = require('@sapphire/stopwatch')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
-const { createEmbedUser, Colors } = require('#utils/response')
+const { createEmbedUser } = require('#utils/response')
+const { Colors } = require('#utils/constants')
 const { searchItemsAutocomplete } = require('#utils/items')
 
 class SlashCommand extends Command {
