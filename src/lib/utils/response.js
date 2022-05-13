@@ -21,7 +21,7 @@ const { Colors } = require('./constants')
 /**
  * Creates a new embed
  * @param color {Colors.Primary}
- * @return {MessageEmbed}
+ * @returns {MessageEmbed}
  */
 const createEmbed = (color = Colors.Primary) => {
   return new MessageEmbed()
@@ -32,7 +32,7 @@ const createEmbed = (color = Colors.Primary) => {
  * Creates a new embed with user attach on it
  * @param user {User}
  * @param color {Colors.Primary}
- * @return {MessageEmbed}
+ * @returns {MessageEmbed}
  */
 const createEmbedUser = (user, color = Colors.Primary) => {
   return new MessageEmbed()
@@ -44,7 +44,7 @@ const createEmbedUser = (user, color = Colors.Primary) => {
  * Creates a message component collector
  * @param message {Message}
  * @param options {MessageComponentCollectorOptions}
- * @return InteractionCollector
+ * @returns InteractionCollector
  */
 const createMessageComponentCollector = (message, options) => {
   const collector = message.createMessageComponentCollector({
@@ -69,7 +69,7 @@ const createMessageComponentCollector = (message, options) => {
  * Sends a message
  * @param context {Message|CommandInteraction}
  * @param content {MessagePayload|ReplyMessageOptions|InteractionReplyOptions}
- * @return {Promise<Message>}
+ * @returns {Promise<Message>}
  */
 const sendMessage = async (context, content) => {
   if (context instanceof Message) {

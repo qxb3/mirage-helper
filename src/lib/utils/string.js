@@ -1,7 +1,7 @@
 /**
  * Adds circle (•) in start of every string on a array
  * @param arr {Array<String>}
- * @return {Array<String>}
+ * @returns {Array<String>}
  */
 const addCircleOnFront = (arr) => {
   return arr.map(item => `• ${item}`).join('\n')
@@ -11,7 +11,7 @@ const addCircleOnFront = (arr) => {
  * Compare two strings without worrying about letter casing
  * @param str1 {String}
  * @param str2 {String}
- * @return {Boolean}
+ * @returns {Boolean}
  */
 const ignoreCase = (str1, str2) => {
   return str1?.toLowerCase() === str2?.toLowerCase()
@@ -20,7 +20,7 @@ const ignoreCase = (str1, str2) => {
 /**
  * Capitalizes every first letter in a word
  * @param str {String}
- * @return {String}
+ * @returns {String}
  */
 const capitalizeAll = (str) => {
   return str.split(' ')
