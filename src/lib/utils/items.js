@@ -13,7 +13,7 @@ const searchItems = (query, items) => {
       .map((_, i) => items[i])
   }
 
-  const fuse = new Fuse(items, { keys: ['name'], treshold: 0.3 })
+  const fuse = new Fuse(items, { keys: ['name'], threshold: 0.3 })
   const result = fuse.search(query, { limit: length })
     .map(({item}) => item)
 
