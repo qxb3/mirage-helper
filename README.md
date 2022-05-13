@@ -24,7 +24,7 @@
 
 Bot Invite: [Invite](https://discordbotlist.com/bots/miragebot)
 <br>
-Support Server: [Discord Server](https://discord.gg/jmcWaC829X)
+Discord Server: [Discord Server](https://discord.gg/jmcWaC829X)
 
 ## Self hosting
 
