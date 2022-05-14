@@ -18,9 +18,11 @@ class MirageCommand extends Command {
 
   run() {}
 
-  async messageRun(message, _args, context) {
-    const args = await _args.rest('string').catch(() => {})
+  messagePreParse(_, params) {
+    return params.match(/[^ ]+/g) || []
+  }
 
+  async messageRun(message, args, context) {
     this.run({
       context: message,
       args,
