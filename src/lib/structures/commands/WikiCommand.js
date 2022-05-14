@@ -1,5 +1,5 @@
 const { Command } = require('@sapphire/framework')
-const { Formatters, MessageActionRow, MessageSelectMenu } = require('discord.js')
+const { Formatters, Permissions, MessageActionRow, MessageSelectMenu } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 const { Time } = require('@sapphire/time-utilities')
 
@@ -24,9 +24,16 @@ class MirageCommand extends Command {
    * @param options {CommandOptions}
    */
   constructor(context, options) {
+    const permissions = new Permissions(options.requiredClientPermissions).add([
+      Permissions.FLAGS.VIEW_CHANNEL,
+      Permissions.FLAGS.SEND_MESSAGES,
+      Permissions.FLAGS.EMBED_LINKS,
+      Permissions.FLAGS.ATTACH_FILES
+    ])
+
     super(context, {
+      requiredClientPermissions: permissions,
       ...options,
-      requiredClientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'EMBED_LINKS']
     })
 
     this.items = require(`#assets/${options.items}`)
@@ -131,7 +138,7 @@ class MirageCommand extends Command {
 
     await sendMessage(context, {
       embeds: [embed],
-      files: [this.thumbnail.path],
+      files: [this.thumbnail.path]
     })
   }
 
