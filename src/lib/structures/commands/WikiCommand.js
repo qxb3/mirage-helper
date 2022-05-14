@@ -12,11 +12,24 @@ const { getTestServer, Colors } = require('#utils/constants')
  * @typedef {import('@sapphire/framework').PieceContext} Context
  * @typedef {import('@sapphire/framework').CommandOptions} CommandOptions
  * @typedef {import('@sapphire/framework').ApplicationCommandRegistry} ApplicationCommandRegistry
+ * @typedef {import('discord.js').MessageEmbed} MessageEmbed
+ * @typedef {import('discord.js').CommandInteraction} CommandInteraction
+ * @typedef {import('discord.js').GuildMember} GuildMember
+ * @typedef {import('discord.js').User} User
  * @typedef {import('discord.js').MessageActionRow} MessageActionRow
  * @typedef {import('discord.js').AutocompleteInteraction} AutocompleteInteraction
  */
 
 class MirageCommand extends Command {
+  /**
+   * @typedef {Object} RunOptions
+   * @property context {Message|CommandInteraction}
+   * @property args {Array<String>}
+   * @property member {GuildMember}
+   * @property user {User}
+   * @property commandName {String}
+   * @property prefix {String|null}
+   */
 
   /**
    * A class for creating wiki command
@@ -42,7 +55,27 @@ class MirageCommand extends Command {
     this.commandUsages = options.commandUsages
   }
 
+  /**
+   * This function runs when there is no arguments inputed
+   * @param options {RunOptions}
+   * @returns {null}
+   */
   async noArgs({ context, user, commandName, prefix }) {
+    if (!this.itemCategories) {
+      const items = this.items.map(item => item.name)
+      const embed = createEmbedUser(user)
+        .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+        .addField(`❯ ${this.name}`, addCircleOnFront(items))
+        .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+
+      await sendMessage(context, {
+        embeds: [embed],
+        files: [this.thumbnail.path]
+      })
+
+      return
+    }
+
     const embed = createEmbedUser(user)
       .setThumbnail(`attachment://${this.thumbnail.name}.png`)
       .addField('❯ Categories', addCircleOnFront(this.itemCategories))
@@ -93,6 +126,11 @@ class MirageCommand extends Command {
     })
   }
 
+  /**
+   * This function runs when the arguments inputed are category
+   * @param options {RunOptions}
+   * @returns {null}
+   */
   async isCategory({ context, category, user, commandName, prefix }) {
     const items = this.items.filter(item => ignoreCase(item.type, category)).map(item => item.name)
     const spriteName = `${category.toLowerCase()}.png`
@@ -109,27 +147,25 @@ class MirageCommand extends Command {
     })
   }
 
-  async isItem({ context, item, user }) {
-    const stats = Object.keys(item.stats).map(type =>
-      `${capitalizeAll(type.replace('_', ' '))}: ${item.stats[type]}`
-    )
+  /**
+   * This function runs when the arguments is an item
+   * @param options {RunOptions}
+   * @returns {null}
+   */
+  async isItem(options) {
+    const { embed, sprite } = this.getItemResponse(options)
 
-    const spriteName = `${item.name.toLowerCase().replace(' ', '-').replace('\'', '')}.png`
-    const sprite = `assets/items/sprites/${this.name}/${item.type.toLowerCase()}/${spriteName}`
-
-    const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${spriteName}`)
-      .addField('❯ Name', item.name)
-      .addField('❯ Level Requirement', item.level_requirement.toString())
-      .addField('❯ Stats', addCircleOnFront(stats))
-      .addField('❯ Monsters', addCircleOnFront(item.monsters))
-
-    await sendMessage(context, {
+    await sendMessage(options.context, {
       embeds: [embed],
       files: [sprite]
     })
   }
 
+  /**
+   * This function runs when the arguments is not an item or category
+   * @param options {RunOptions}
+   * @returns {null}
+   */
   async isNoMatch({ context, args, user, commandName, prefix }) {
     const embed = createEmbedUser(user, Colors.Error)
       .setThumbnail(`attachment://${this.thumbnail.name}.png`)
@@ -149,7 +185,7 @@ class MirageCommand extends Command {
       return this.noArgs(options)
 
     const result = searchItems(args.join(' '), this.items.map(item => item.name).concat(this.itemCategories))[0]
-    const category = this.itemCategories.find(category => ignoreCase(category, result))
+    const category = this.itemCategories?.find(category => ignoreCase(category, result))
     const item = this.items.find(item => ignoreCase(item.name, result))
 
     if (this.itemCategories && category)
@@ -224,6 +260,16 @@ class MirageCommand extends Command {
       guildIds: [ getTestServer() ]
     })
   }
+
+  /**
+   * @typedef {Object} ItemResponse
+   * @property embed {MessageEmbed}
+   * @property sprite {String}
+   *
+   * @param options {RunOptions}
+   * @returns {ItemResponse}
+   */
+  getItemResponse(options) {}
 
   /**
    * Get commnd usages
