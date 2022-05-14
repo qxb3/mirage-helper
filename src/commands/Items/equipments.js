@@ -17,7 +17,7 @@ class EquipmentsCommand extends WikiCommand {
       },
       commandUsages: [
         { arg: '[category]', description: 'To see the equipments in category', example: 'Helmet' },
-        { arg: '[equipment]', description: 'To see the full info of equipment', example: 'Elven boots' }
+        { arg: '[equipment]', description: 'To see the full info of the equipment', example: 'Elven boots' }
       ]
     })
   }

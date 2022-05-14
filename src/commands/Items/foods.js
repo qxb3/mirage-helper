@@ -15,7 +15,7 @@ class FoodsCommand extends WikiCommand {
         path: 'assets/items/sprites/foods/meat.png'
       },
       commandUsages: [
-        { arg: '[food]', description: 'To see the full info of food', example: 'meat' }
+        { arg: '[food]', description: 'To see the full info of the food', example: 'meat' }
       ]
     })
   }
