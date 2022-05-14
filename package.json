@@ -8,9 +8,9 @@
     "start": "yarn lint && node ./src/index.js",
     "dev": "nodemon ./src/index.js",
     "lint": "eslint ./src/**",
-    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && yarn version --major && git push origin && git push origin --tags",
-    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && yarn version --minor && git push origin && git push origin --tags",
-    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && yarn version --patch && git push origin && git push origin --tags"
+    "release:major": "changelog -M -u https://github.com/qxb3/mirage-helper && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && yarn version --major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m -u https://github.com/qxb3/mirage-helper && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && yarn version --minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p -u https://github.com/qxb3/mirage-helper && git add CHANGELOG.md && git commit -m 'update CHANGELOG.md' && yarn version --patch && git push origin && git push origin --tags"
   },
   "dependencies": {
     "@discordjs/builders": "^0.13.0",
