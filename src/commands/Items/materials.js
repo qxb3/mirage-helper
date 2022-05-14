@@ -2,7 +2,7 @@ const WikiCommand = require('#structures/commands/WikiCommand')
 const { createEmbedUser } = require('#utils/response')
 const { addCircleOnFront } = require('#utils/string')
 
-class FoodsCommand extends WikiCommand {
+class MaterialsCommand extends WikiCommand {
   constructor(context, options) {
     super(context, {
       ...options,
@@ -34,4 +34,4 @@ class FoodsCommand extends WikiCommand {
   }
 }
 
-module.exports = FoodsCommand
+module.exports = MaterialsCommand

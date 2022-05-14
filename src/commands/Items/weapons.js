@@ -2,7 +2,7 @@ const WikiCommand = require('#structures/commands/WikiCommand')
 const { createEmbedUser } = require('#utils/response')
 const { capitalizeAll, addCircleOnFront } = require('#utils/string')
 
-class EquipmentsCommand extends WikiCommand {
+class WeaponsCommand extends WikiCommand {
   constructor(context, options) {
     super(context, {
       ...options,
@@ -41,4 +41,4 @@ class EquipmentsCommand extends WikiCommand {
   }
 }
 
-module.exports = EquipmentsCommand
+module.exports = WeaponsCommand
