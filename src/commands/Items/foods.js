@@ -21,7 +21,7 @@ class FoodsCommand extends WikiCommand {
   }
 
   getItemResponse({ item, user }) {
-    const spriteName = `${item.name.toLowerCase()}.png`
+    const spriteName = `${item.name.toLowerCase().replace(' ', '-').replace('\'', '')}.png`
     const sprite = `assets/items/sprites/${this.name}/${spriteName}`
 
     const embed = createEmbedUser(user)
