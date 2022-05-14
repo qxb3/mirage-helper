@@ -1,5 +1,5 @@
 const { Command } = require('@sapphire/framework')
-const { Message, Formatters, Permissions } = require('discord.js')
+const { Formatters, Permissions } = require('discord.js')
 
 class MirageCommand extends Command {
   constructor(context, options) {
@@ -44,8 +44,7 @@ class MirageCommand extends Command {
     })
   }
 
-  getCommandUsages(context, commandName) {
-    const prefix = context instanceof Message ? '?' : '/'
+  getCommandUsages(commandName, prefix) {
     const formatedUsages = this.usages.map(usage =>
       Formatters.inlineCode(
         `${prefix + commandName} ${usage.arg} - ${usage.description}`,
