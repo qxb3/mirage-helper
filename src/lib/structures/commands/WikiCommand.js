@@ -252,7 +252,7 @@ class MirageCommand extends Command {
       .addStringOption(builder =>
         builder
           .setName('name')
-          .setDescription(`The ${this.name} name or a category`)
+          .setDescription(`The ${this.name.replace(/s$/, '')} name or a category`)
           .setAutocomplete(true)
       )
 
