@@ -1,11 +1,18 @@
 const { Command } = require('@sapphire/framework')
-const { Message, Formatters } = require('discord.js')
+const { Message, Formatters, Permissions } = require('discord.js')
 
 class MirageCommand extends Command {
   constructor(context, options) {
+    const permissions = new Permissions(options.requiredClientPermissions).add([
+      Permissions.FLAGS.VIEW_CHANNEL,
+      Permissions.FLAGS.SEND_MESSAGES,
+      Permissions.FLAGS.EMBED_LINKS,
+      Permissions.FLAGS.ATTACH_FILES
+    ])
+
     super(context, {
+      requiredClientPermissions: permissions,
       ...options,
-      requiredClientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'EMBED_LINKS']
     })
   }
 
