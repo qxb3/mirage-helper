@@ -169,7 +169,7 @@ class MirageCommand extends Command {
   async isNoMatch({ context, args, user, commandName, prefix }) {
     const embed = createEmbedUser(user, Colors.Error)
       .setThumbnail(`attachment://${this.thumbnail.name}.png`)
-      .setDescription(`${Formatters.bold(args.join())} did not match to any of ${this.name} or categories`)
+      .setDescription(`${Formatters.bold(args.join())} did not match to any of ${this.name} ${this.itemCategories ? 'or categories' : ''}`)
       .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 
     await sendMessage(context, {
