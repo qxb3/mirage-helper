@@ -1,6 +1,6 @@
 const WikiCommand = require('#structures/commands/WikiCommand')
 const { createEmbedUser } = require('#utils/response')
-const { capitalizeAll, addCircleOnFront } = require('#utils/string')
+const { addCircleOnFront } = require('#utils/string')
 
 class FoodsCommand extends WikiCommand {
   constructor(context, options) {
