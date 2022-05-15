@@ -25,6 +25,8 @@ class BaseCommand extends Command {
       requiredClientPermissions: permissions,
       ...options
     })
+
+    this.hidden = options.hidden || false
   }
 }
 
