@@ -1,4 +1,4 @@
-const { Command } = require('@sapphire/framework')
+const BaseCommand = require('./BaseCommand')
 const { Formatters, Permissions, MessageActionRow, MessageSelectMenu } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 const { Time } = require('@sapphire/time-utilities')
@@ -20,7 +20,7 @@ const { getTestServer, Colors } = require('#utils/constants')
  * @typedef {import('discord.js').AutocompleteInteraction} AutocompleteInteraction
  */
 
-class MirageCommand extends Command {
+class MirageCommand extends BaseCommand {
   /**
    * @typedef {Object} RunOptions
    * @property context {Message|CommandInteraction}
@@ -37,16 +37,8 @@ class MirageCommand extends Command {
    * @param options {CommandOptions}
    */
   constructor(context, options) {
-    const permissions = new Permissions(options.requiredClientPermissions).add([
-      Permissions.FLAGS.VIEW_CHANNEL,
-      Permissions.FLAGS.SEND_MESSAGES,
-      Permissions.FLAGS.EMBED_LINKS,
-      Permissions.FLAGS.ATTACH_FILES
-    ])
-
     super(context, {
-      requiredClientPermissions: permissions,
-      ...options,
+      ...options
     })
 
     this.items = require(`#assets/${options.items}`)
