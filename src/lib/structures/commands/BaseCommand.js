@@ -1,5 +1,5 @@
 const { Command } = require('@sapphire/framework')
-const { Permissions } = require('discord.js')
+const { Permissions, Formatters } = require('discord.js')
 
 /**
  * @typedef {import('@sapphire/framework').PieceContext} Context
@@ -27,6 +27,24 @@ class BaseCommand extends Command {
     })
 
     this.hidden = options.hidden || false
+    this.commandUsages = options.commandUsages
+  }
+
+  /**
+   * Get commnd usages
+   * @param commandName {String}
+   * @param prefix {String}
+   * @returns {String} string
+   */
+  getCommandUsages(commandName, prefix) {
+    const formatedUsages = this.commandUsages.map(usage =>
+      Formatters.inlineCode(
+        `${prefix + commandName} ${usage.arg} - ${usage.description}\n`+
+        `Example: ${prefix + commandName} ${usage.example}`
+      )
+    ).join('\n\n')
+
+    return formatedUsages
   }
 }
 

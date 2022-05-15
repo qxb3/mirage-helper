@@ -264,23 +264,6 @@ class MirageCommand extends BaseCommand {
   getItemResponse(options) {}
 
   /**
-   * Get commnd usages
-   * @param commandName {String}
-   * @param prefix {String}
-   * @returns {String} string
-   */
-  getCommandUsages(commandName, prefix) {
-    const formatedUsages = this.commandUsages.map(usage =>
-      Formatters.inlineCode(
-        `${prefix + commandName} ${usage.arg} - ${usage.description}\n`+
-        `Example: ${prefix + commandName} ${usage.example}`
-      )
-    ).join('\n\n')
-
-    return formatedUsages
-  }
-
-  /**
    * Get command component
    * @returns {MessageActionRow}
    */

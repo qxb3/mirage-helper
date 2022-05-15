@@ -46,17 +46,6 @@ class MirageCommand extends BaseCommand {
       ...context
     })
   }
-
-  getCommandUsages(commandName, prefix) {
-    const formatedUsages = this.usages.map(usage =>
-      Formatters.inlineCode(
-        `${prefix + commandName} ${usage.arg} - ${usage.description}`,
-        `Example: ${prefix + commandName} ${usage.example}`
-      )
-    ).join('\n\n')
-
-    return formatedUsages
-  }
 }
 
 module.exports = MirageCommand
