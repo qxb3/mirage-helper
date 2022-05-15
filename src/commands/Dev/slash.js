@@ -39,7 +39,7 @@ class SlashCommand extends Command {
           embeds: [
             createEmbedUser(interaction.user)
               .setDescription(`✅ Successfuly deleted command: **${command.name}**`)
-              .addField('❯ Time', timer.stop().toString())
+              .addField('❯ Time', `⏱ ${timer.stop().toString()}`)
           ]
         })
       } catch(err) {
