@@ -4,16 +4,17 @@ const Fuse = require('fuse.js/dist/fuse.basic.common')
  * Search through an items
  * @param query {String}
  * @param items {Array<any>}
+ * @param keys [Array<String>]
  * @returns {Array<any>}
  */
-const searchItems = (query, items) => {
+const searchItems = (query, items, keys = ['name']) => {
   const length = items.length
   if (!query) {
     return new Array(length).fill()
       .map((_, i) => items[i])
   }
 
-  const fuse = new Fuse(items, { keys: ['name'], threshold: 0.3 })
+  const fuse = new Fuse(items, { keys, threshold: 0.3 })
   const result = fuse.search(query, { limit: length })
     .map(({item}) => item)
 
