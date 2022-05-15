@@ -1,7 +1,18 @@
 const { Command } = require('@sapphire/framework')
 const { Formatters, Permissions } = require('discord.js')
 
+/**
+ * @typedef {import('@sapphire/framework').PieceContext} Context
+ * @typedef {import('@sapphire/framework').CommandOptions} CommandOptions
+ */
+
 class MirageCommand extends Command {
+
+  /**
+   * A class for creating wiki command
+   * @param context {Context}
+   * @param options {CommandOptions}
+   */
   constructor(context, options) {
     const permissions = new Permissions(options.requiredClientPermissions).add([
       Permissions.FLAGS.VIEW_CHANNEL,
