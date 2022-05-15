@@ -10,7 +10,8 @@ class SlashCommand extends Command {
   constructor(context) {
     super(context, {
       description: 'Manage slash commands',
-      preconditions: ['OwnerOnly']
+      preconditions: ['OwnerOnly'],
+      hidden: true
     })
   }
 
