@@ -1,5 +1,5 @@
 const BaseCommand = require('./BaseCommand')
-const { Formatters, Permissions, MessageActionRow, MessageSelectMenu } = require('discord.js')
+const { Formatters, MessageActionRow, MessageSelectMenu } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 const { Time } = require('@sapphire/time-utilities')
 
