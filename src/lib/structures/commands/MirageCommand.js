@@ -23,7 +23,7 @@ class MirageCommand extends Command {
 
     super(context, {
       requiredClientPermissions: permissions,
-      ...options,
+      ...options
     })
   }
 
