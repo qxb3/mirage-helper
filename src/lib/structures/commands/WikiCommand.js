@@ -65,7 +65,7 @@ class MirageCommand extends Command {
       const items = this.items.map(item => item.name)
       const embed = createEmbedUser(user)
         .setThumbnail(`attachment://${this.thumbnail.name}.png`)
-        .addField(`❯ ${this.name}`, addCircleOnFront(items))
+        .addField(`❯ ${capitalizeAll(this.name)}`, addCircleOnFront(items))
         .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 
       await sendMessage(context, {
