@@ -26,6 +26,7 @@ class BaseCommand extends Command {
       ...options
     })
 
+    this.thumbnail = options.thumbnail
     this.hidden = options.hidden || false
     this.commandUsages = options.commandUsages
   }

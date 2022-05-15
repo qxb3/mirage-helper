@@ -43,7 +43,6 @@ class MirageCommand extends BaseCommand {
 
     this.items = require(`#assets/${options.items}`)
     this.itemCategories = options.itemCategories
-    this.thumbnail = options.thumbnail
     this.commandUsages = options.commandUsages
   }
 
