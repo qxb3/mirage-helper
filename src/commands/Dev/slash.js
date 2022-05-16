@@ -27,7 +27,7 @@ class SlashCommand extends Command {
       try {
         timer.start()
 
-        const command = isSelectedCommandTest ?
+        const command = isSelectedCommandTest === 'true' ?
           await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch(selectedCommand) :
           await client.application.commands.fetch(selectedCommand)
 
