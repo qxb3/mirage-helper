@@ -38,6 +38,12 @@ class BaseCommand extends Command {
    * @returns {String} string
    */
   getCommandUsages(commandName, prefix) {
+    if (!this.commandUsages) {
+      return Formatters.inlineCode(
+        `${prefix + commandName} - ${this.description}`
+      )
+    }
+
     const formatedUsages = this.commandUsages.map(usage =>
       Formatters.inlineCode(
         `${prefix + commandName} ${usage.arg} - ${usage.description}\n`+
