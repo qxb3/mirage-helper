@@ -48,7 +48,7 @@ class HelpCommand extends MirageCommand {
       .addField('❯ Name', command.name)
       .addField('❯ Description', command.description)
       .addField('❯ Category', command.category)
-      .addField('❯ Aliases', command.aliases.join(', '))
+      .addField('❯ Aliases', command.aliases.join(', ') || 'None')
       .addField('❯ Usage', command.getCommandUsages(command.name, prefix))
 
     sendMessage(context, {
