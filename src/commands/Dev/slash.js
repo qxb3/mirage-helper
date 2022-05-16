@@ -56,17 +56,14 @@ class SlashCommand extends Command {
   }
 
   async autocompleteRun(interaction) {
-    if (!this.commands) {
-      const { client } = this.container
+    const { client } = this.container
 
-      const globalCommands = (await client.application.commands.fetch()).map(command => ({ ...command, test: false }))
-      const testCommands = (await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch()).map(command => ({ ...command, test: true }))
-
-      this.commands = globalCommands.concat(testCommands)
-    }
+    const globalCommands = (await client.application.commands.fetch()).map(command => ({ ...command, test: false }))
+    const testCommands = (await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch()).map(command => ({ ...command, test: true }))
+    const commands = globalCommands.concat(testCommands)
 
     const query = interaction.options.getFocused()
-    const result = searchItemsAutocomplete(query, this.commands, ['name', 'id', 'test'])
+    const result = searchItemsAutocomplete(query, commands, ['name', 'id', 'test'])
 
     interaction.respond(
       result.map(command => ({
