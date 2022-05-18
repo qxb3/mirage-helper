@@ -282,6 +282,24 @@ class MirageCommand extends BaseCommand {
 
     return actionRow
   }
+
+  /**
+   * @typedef {Object } GetSprite
+   * @property name {String} the sprite name
+   * @property {path} {String} the sprite path
+   *
+   * Get item's sprite
+   * @param item {Object<any>}
+   * @param command {Object<any>}
+   * @param withCategory {Boolean}
+   * @returns GetSprite
+   */
+  getSprite(command, item, withCategory = false) {
+    const name = `${item.name.toLowerCase().replaceAll(' ', '-').replaceAll('\'', '')}.png`
+    const path = `assets/${command.category.toLowerCase()}/sprites/${command.name}${withCategory ? `/${item.type.toLowerCase()}/` : '/'}${name}`
+
+    return { name, path }
+  }
 }
 
 module.exports = MirageCommand
