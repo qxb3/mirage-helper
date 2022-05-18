@@ -8,7 +8,7 @@ const BaseCommand = require('./BaseCommand')
 class MirageCommand extends BaseCommand {
 
   /**
-   * A class for creating wiki command
+   * A class for creating mirage command
    * @param context {Context}
    * @param options {CommandOptions}
    */
