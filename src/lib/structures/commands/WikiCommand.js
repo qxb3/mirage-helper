@@ -100,7 +100,7 @@ class MirageCommand extends BaseCommand {
       const category = interaction.values[0]
       const items = this.items.filter(item => item.type === category).map(item => item.name)
       const spriteName = `${category.toLowerCase()}.png`
-      const sprite = `assets/items/sprites/${this.name}/thumbnails/${spriteName}`
+      const sprite = `assets/${this.category.toLowerCase()}/sprites/${this.name}/thumbnails/${spriteName}`
 
       component.components[0].setPlaceholder(category)
 
