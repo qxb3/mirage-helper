@@ -46,6 +46,70 @@ class WikiCommand extends BaseCommand {
     this.commandUsages = options.commandUsages
   }
 
+  messagePreParse(_, params) {
+    return params.match(/[^ ]+/g) || []
+  }
+
+  async messageRun(message, args, context) {
+    this.run({
+      context: message,
+      args,
+      member: message.member,
+      user: message.author,
+      ...context
+    })
+  }
+
+  chatInputRun(interaction, context) {
+    const args = interaction.options._hoistedOptions.map(option => option.value)
+
+    this.run({
+      context: interaction,
+      args,
+      member: interaction.member,
+      user: interaction.user,
+      ...context,
+      prefix: '/'
+    })
+  }
+
+  /**
+   * @param interaction {AutocompleteInteraction}
+   * @returns {void}
+   */
+  autocompleteRun(interaction) {
+    const query = interaction.options.getFocused()
+    const result = searchItemsAutocomplete(query, this.items)
+
+    interaction.respond(
+      result.map(equipment => ({
+        name: equipment.name,
+        value: equipment.name
+      }))
+    )
+  }
+
+  /**
+   * Registers application commands
+   * @param registry {ApplicationCommandRegistry}
+   * @returns {void}
+   */
+  registerApplicationCommands(registry) {
+    const command = new SlashCommandBuilder()
+      .setName(this.name)
+      .setDescription(this.description)
+      .addStringOption(builder =>
+        builder
+          .setName('name')
+          .setDescription(`The ${this.name.replace(/s$/, '')} name or a category`)
+          .setAutocomplete(true)
+      )
+
+    registry.registerChatInputCommand(command, {
+      guildIds: [ getTestServer() ]
+    })
+  }
+
   /**
    * This function runs when there is no arguments inputed
    * @param options {RunOptions}
@@ -186,70 +250,6 @@ class WikiCommand extends BaseCommand {
       return this.isItem({ ...options, item })
 
     this.isNoMatch(options)
-  }
-
-  messagePreParse(_, params) {
-    return params.match(/[^ ]+/g) || []
-  }
-
-  async messageRun(message, args, context) {
-    this.run({
-      context: message,
-      args,
-      member: message.member,
-      user: message.author,
-      ...context
-    })
-  }
-
-  chatInputRun(interaction, context) {
-    const args = interaction.options._hoistedOptions.map(option => option.value)
-
-    this.run({
-      context: interaction,
-      args,
-      member: interaction.member,
-      user: interaction.user,
-      ...context,
-      prefix: '/'
-    })
-  }
-
-  /**
-   * @param interaction {AutocompleteInteraction}
-   * @returns {void}
-   */
-  autocompleteRun(interaction) {
-    const query = interaction.options.getFocused()
-    const result = searchItemsAutocomplete(query, this.items)
-
-    interaction.respond(
-      result.map(equipment => ({
-        name: equipment.name,
-        value: equipment.name
-      }))
-    )
-  }
-
-  /**
-   * Registers application commands
-   * @param registry {ApplicationCommandRegistry}
-   * @returns {void}
-   */
-  registerApplicationCommands(registry) {
-    const command = new SlashCommandBuilder()
-      .setName(this.name)
-      .setDescription(this.description)
-      .addStringOption(builder =>
-        builder
-          .setName('name')
-          .setDescription(`The ${this.name.replace(/s$/, '')} name or a category`)
-          .setAutocomplete(true)
-      )
-
-    registry.registerChatInputCommand(command, {
-      guildIds: [ getTestServer() ]
-    })
   }
 
   /**
