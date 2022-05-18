@@ -42,7 +42,27 @@ const searchItemsAutocomplete = (query, items, keys = ['name', 'level_requiremen
   return result
 }
 
+/**
+ * @typedef {Object } GetSprite
+ * @property name {String} the sprite name
+ * @property {path} {String} the sprite path
+ *
+ * Get item's sprite
+ * @param item {Object<any>}
+ * @param command {Object<any>}
+ * @param withCategory {Boolean}
+ * @returns GetSprite
+ */
+const getSprite = (command, item, withCategory = false) => {
+  const name = `${item.name.toLowerCase().replaceAll(' ', '-').replaceAll('\'', '')}.png`
+  const path = `assets/${command.category.toLowerCase()}/sprites/${command.name}${withCategory ? `${item.type}/` : ''}/${name}`
+  console.log(path)
+
+  return { name, path }
+}
+
 module.exports = {
   searchItems,
-  searchItemsAutocomplete
+  searchItemsAutocomplete,
+  getSprite
 }
