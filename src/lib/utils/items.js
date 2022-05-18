@@ -55,8 +55,7 @@ const searchItemsAutocomplete = (query, items, keys = ['name', 'level_requiremen
  */
 const getSprite = (command, item, withCategory = false) => {
   const name = `${item.name.toLowerCase().replaceAll(' ', '-').replaceAll('\'', '')}.png`
-  const path = `assets/${command.category.toLowerCase()}/sprites/${command.name}${withCategory ? `${item.type}/` : ''}/${name}`
-  console.log(path)
+  const path = `assets/${command.category.toLowerCase()}/sprites/${command.name}${withCategory ? `/${item.type.toLowerCase()}/` : '/'}${name}`
 
   return { name, path }
 }
