@@ -26,17 +26,16 @@ class EquipmentsCommand extends WikiCommand {
       `${capitalizeAll(type.replace('_', ' '))}: ${item.stats[type]}`
     )
 
-    const spriteName = `${item.name.toLowerCase().replace(' ', '-').replace('\'', '')}.png`
-    const sprite = `assets/items/sprites/${this.name}/${item.type.toLowerCase()}/${spriteName}`
+    const { name, path } = this.getSprite(this, item, true)
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${spriteName}`)
+      .setThumbnail(`attachment://${name}`)
       .addField('❯ Name', item.name)
       .addField('❯ Level Requirement', item.level_requirement.toString())
       .addField('❯ Stats', addCircleOnFront(stats))
       .addField('❯ Monsters', addCircleOnFront(item.monsters))
 
-    return { embed, sprite }
+    return { embed, sprite: path }
   }
 }
 

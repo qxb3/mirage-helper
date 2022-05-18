@@ -20,16 +20,15 @@ class FoodsCommand extends WikiCommand {
   }
 
   getItemResponse({ item, user }) {
-    const spriteName = `${item.name.toLowerCase().replace(' ', '-').replace('\'', '')}.png`
-    const sprite = `assets/items/sprites/${this.name}/${spriteName}`
+    const { name, path } = this.getSprite(this, item)
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${spriteName}`)
+      .setThumbnail(`attachment://${name}`)
       .addField('❯ Name', item.name)
       .addField('❯ Effect', item.effect)
       .addField('❯ Monsters', addCircleOnFront(item.monsters))
 
-    return { embed, sprite }
+    return { embed, sprite: path }
   }
 }
 

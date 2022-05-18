@@ -20,17 +20,16 @@ class ScrollsCommand extends WikiCommand {
   }
 
   getItemResponse({ item, user }) {
-    const spriteName = `${item.full_name.toLowerCase().replace(/ /g, '-').replace(/'/, '')}.png`
-    const sprite = `assets/items/sprites/${this.name}/${spriteName}`
+    const { name, path } = this.getSprite(this, item)
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${spriteName}`)
+      .setThumbnail(`attachment://${name}`)
       .addField('❯ Name', item.full_name)
       .addField('❯ Effects', addCircleOnFront(item.effects))
       .addField('❯ Real Life Prices', addCircleOnFront(item.real_prices))
       .addField('❯ In-Game Prices', item.ingame_price)
 
-    return { embed, sprite }
+    return { embed, sprite: path }
   }
 }
 

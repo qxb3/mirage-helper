@@ -1,7 +1,6 @@
 const WikiCommand = require('#structures/commands/WikiCommand')
 const { createEmbedUser } = require('#utils/response')
 const { addCircleOnFront } = require('#utils/string')
-const { getSprite } = require('#utils/items')
 
 class MobsCommand extends WikiCommand {
   constructor(context, options) {
@@ -21,7 +20,7 @@ class MobsCommand extends WikiCommand {
   }
 
   getItemResponse({ item, user }) {
-    const sprite = getSprite(this, item)
+    const { name, path } = this.getSprite(this, item)
 
     const stats = [
       `Attack: ${item.stats.attack}`,
@@ -31,7 +30,7 @@ class MobsCommand extends WikiCommand {
     ]
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${sprite.name}`)
+      .setThumbnail(`attachment://${name}`)
       .addField('❯ Name', item.name)
       .addField('❯ Level Requirement', item.level_requirement.toString())
       .addField('❯ Experience', item.experience.toString())
@@ -39,7 +38,7 @@ class MobsCommand extends WikiCommand {
       .addField('❯ Resistances', addCircleOnFront(item.resistances))
       .addField('❯ Loots', addCircleOnFront(item.loots))
 
-    return { embed, sprite: sprite.path }
+    return { embed, sprite: path }
   }
 }
 
