@@ -9,7 +9,6 @@ class ScrollsCommand extends WikiCommand {
       description: 'Find scrolls in the game',
       aliases: ['scroll'],
 
-      items: 'items/scrolls.json',
       thumbnail: {
         name: 'experience-scroll',
         path: 'assets/items/sprites/scrolls/experience-scroll.png'

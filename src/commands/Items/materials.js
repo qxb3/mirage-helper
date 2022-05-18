@@ -9,7 +9,6 @@ class MaterialsCommand extends WikiCommand {
       description: 'Find materials in the game',
       aliases: ['material', 'mats', 'mat'],
 
-      items: 'items/materials.json',
       thumbnail: {
         name: 'troll-fur',
         path: 'assets/items/sprites/materials/troll-fur.png'

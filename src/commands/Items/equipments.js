@@ -9,7 +9,6 @@ class EquipmentsCommand extends WikiCommand {
       description: 'Find equipments in the game',
       aliases: ['equips', 'equip', 'eq'],
 
-      items: 'items/equipments.json',
       itemCategories: ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace'],
       thumbnail: {
         name: 'chest',

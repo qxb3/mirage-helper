@@ -9,7 +9,6 @@ class WeaponsCommand extends WikiCommand {
       description: 'Find weapons in the game',
       aliases: ['weapon', 'weaps', 'weap'],
 
-      items: 'items/weapons.json',
       itemCategories: ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Arrow', 'Staff', 'Rod', 'Spellbook'],
       thumbnail: {
         name: 'sword',

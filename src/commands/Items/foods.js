@@ -9,7 +9,6 @@ class FoodsCommand extends WikiCommand {
       description: 'Find foods in the game',
       aliases: ['food'],
 
-      items: 'items/foods.json',
       thumbnail: {
         name: 'meat',
         path: 'assets/items/sprites/foods/meat.png'
