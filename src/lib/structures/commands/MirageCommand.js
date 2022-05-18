@@ -1,5 +1,4 @@
 const BaseCommand = require('./BaseCommand')
-const { Formatters } = require('discord.js')
 
 /**
  * @typedef {import('@sapphire/framework').PieceContext} Context
@@ -18,8 +17,6 @@ class MirageCommand extends BaseCommand {
       ...options
     })
   }
-
-  run() {}
 
   messagePreParse(_, params) {
     return params.match(/[^ ]+/g) || []
@@ -46,6 +43,8 @@ class MirageCommand extends BaseCommand {
       ...context
     })
   }
+
+  run() {}
 }
 
 module.exports = MirageCommand
