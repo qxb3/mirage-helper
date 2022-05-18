@@ -260,6 +260,7 @@ class WikiCommand extends BaseCommand {
    * @param options {RunOptions}
    * @returns {ItemResponse}
    */
+  // eslint-disable-next-line no-unused-vars
   getItemResponse(options) {}
 
   /**
