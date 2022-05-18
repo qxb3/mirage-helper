@@ -20,7 +20,7 @@ const { getTestServer, Colors } = require('#utils/constants')
  * @typedef {import('discord.js').AutocompleteInteraction} AutocompleteInteraction
  */
 
-class MirageCommand extends BaseCommand {
+class WikiCommand extends BaseCommand {
   /**
    * @typedef {Object} RunOptions
    * @property context {Message|CommandInteraction}
@@ -302,4 +302,4 @@ class MirageCommand extends BaseCommand {
   }
 }
 
-module.exports = MirageCommand
+module.exports = WikiCommand
