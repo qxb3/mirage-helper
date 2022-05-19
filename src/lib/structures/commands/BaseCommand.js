@@ -46,7 +46,7 @@ class BaseCommand extends Command {
 
     const formatedUsages = this.commandUsages.map(usage =>
       Formatters.inlineCode(
-        `${prefix + commandName} ${usage.arg} - ${usage.description}\n`+
+        `${prefix + commandName} ${usage.arg} - ${usage.description}\n` +
         `Example: ${prefix + commandName} ${usage.example}`
       )
     ).join('\n\n')
