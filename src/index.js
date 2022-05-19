@@ -6,7 +6,7 @@ const client = new MirageClient()
 client.login()
 
 const main = () => {
-  console.log('should success')
+    console.log('should fail')
 }
 
 main()
