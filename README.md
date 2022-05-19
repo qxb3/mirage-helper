@@ -26,7 +26,7 @@ Bot Invite: [Invite](https://discordbotlist.com/bots/miragebot)
 <br>
 Discord Server: [Discord Server](https://discord.gg/jmcWaC829X)
 
-## Self hosting
+## Running the bot
 
 ### Installation
 
