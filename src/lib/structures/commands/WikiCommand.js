@@ -74,46 +74,31 @@ class WikiCommand extends BaseCommand {
   }
 
   /**
-   * @param interaction {AutocompleteInteraction}
-   * @returns {void}
+   * Runs whenever this command runs
+   * @param options {RunOptions}
    */
-  autocompleteRun(interaction) {
-    const query = interaction.options.getFocused()
-    const result = searchItemsAutocomplete(query, this.items)
+  run(options) {
+    const { args } = options
 
-    interaction.respond(
-      result.map(equipment => ({
-        name: equipment.name,
-        value: equipment.name
-      }))
-    )
-  }
+    if (args.length === 0)
+      return this.noArgs(options)
 
-  /**
-   * Registers application commands
-   * @param registry {ApplicationCommandRegistry}
-   * @returns {void}
-   */
-  registerApplicationCommands(registry) {
-    const command = new SlashCommandBuilder()
-      .setName(this.name)
-      .setDescription(this.description)
-      .addStringOption(builder =>
-        builder
-          .setName('name')
-          .setDescription(`The ${this.name.replace(/s$/, '')} name or a category`)
-          .setAutocomplete(true)
-      )
+    const result = searchItems(args.join(' '), this.items.map(item => item.name).concat(this.itemCategories))[0]
+    const category = this.itemCategories?.find(category => ignoreCase(category, result))
+    const item = this.items.find(item => ignoreCase(item.name, result))
 
-    registry.registerChatInputCommand(command, {
-      guildIds: [ getTestServer() ]
-    })
+    if (this.itemCategories && category)
+      return this.isCategory({ ...options, category })
+
+    if (item)
+      return this.isItem({ ...options, item })
+
+    this.isNoMatch(options)
   }
 
   /**
    * This function runs when there is no arguments inputed
    * @param options {RunOptions}
-   * @returns {null}
    */
   async noArgs({ context, user, commandName, prefix }) {
     if (!this.itemCategories) {
@@ -123,12 +108,10 @@ class WikiCommand extends BaseCommand {
         .addField(`❯ ${capitalizeAll(this.name)}`, addCircleOnFront(items))
         .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 
-      await sendMessage(context, {
+      return sendMessage(context, {
         embeds: [embed],
         files: [this.thumbnail.path]
       })
-
-      return
     }
 
     const embed = createEmbedUser(user)
@@ -184,9 +167,8 @@ class WikiCommand extends BaseCommand {
   /**
    * This function runs when the arguments inputed are category
    * @param options {RunOptions}
-   * @returns {null}
    */
-  async isCategory({ context, category, user, commandName, prefix }) {
+  isCategory({ context, category, user, commandName, prefix }) {
     const items = this.items.filter(item => ignoreCase(item.type, category)).map(item => item.name)
     const spriteName = `${category.toLowerCase()}.png`
     const sprite = `assets/items/sprites/${this.name}/thumbnails/${spriteName}`
@@ -196,7 +178,7 @@ class WikiCommand extends BaseCommand {
       .addField(`❯ ${category}`, addCircleOnFront(items))
       .addField('❯ Usages', this.getCommandUsages(commandName, prefix))
 
-    await sendMessage(context, {
+    sendMessage(context, {
       embeds: [embed],
       files: [sprite]
     })
@@ -205,12 +187,11 @@ class WikiCommand extends BaseCommand {
   /**
    * This function runs when the arguments is an item
    * @param options {RunOptions}
-   * @returns {null}
    */
-  async isItem(options) {
+  isItem(options) {
     const { embed, sprite } = this.getItemResponse(options)
 
-    await sendMessage(options.context, {
+    sendMessage(options.context, {
       embeds: [embed],
       files: [sprite]
     })
@@ -219,37 +200,52 @@ class WikiCommand extends BaseCommand {
   /**
    * This function runs when the arguments is not an item or category
    * @param options {RunOptions}
-   * @returns {null}
    */
-  async isNoMatch({ context, args, user, commandName, prefix }) {
+  isNoMatch({ context, args, user, commandName, prefix }) {
     const embed = createEmbedUser(user, Colors.Error)
       .setThumbnail(`attachment://${this.thumbnail.name}.png`)
       .setDescription(`${Formatters.bold(args.join())} did not match to any of ${this.name} ${this.itemCategories ? 'or categories' : ''}`)
       .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 
-    await sendMessage(context, {
+    sendMessage(context, {
       embeds: [embed],
       files: [this.thumbnail.path]
     })
   }
 
-  run(options) {
-    const { args } = options
+  /**
+   * @param interaction {AutocompleteInteraction}
+   */
+  autocompleteRun(interaction) {
+    const query = interaction.options.getFocused()
+    const result = searchItemsAutocomplete(query, this.items)
 
-    if (args.length === 0)
-      return this.noArgs(options)
+    interaction.respond(
+      result.map(equipment => ({
+        name: equipment.name,
+        value: equipment.name
+      }))
+    )
+  }
 
-    const result = searchItems(args.join(' '), this.items.map(item => item.name).concat(this.itemCategories))[0]
-    const category = this.itemCategories?.find(category => ignoreCase(category, result))
-    const item = this.items.find(item => ignoreCase(item.name, result))
+  /**
+   * Registers application commands
+   * @param registry {ApplicationCommandRegistry}
+   */
+  registerApplicationCommands(registry) {
+    const command = new SlashCommandBuilder()
+      .setName(this.name)
+      .setDescription(this.description)
+      .addStringOption(builder =>
+        builder
+          .setName('name')
+          .setDescription(`The ${this.name.replace(/s$/, '')} name or a category`)
+          .setAutocomplete(true)
+      )
 
-    if (this.itemCategories && category)
-      return this.isCategory({ ...options, category })
-
-    if (item)
-      return this.isItem({ ...options, item })
-
-    this.isNoMatch(options)
+    registry.registerChatInputCommand(command, {
+      guildIds: [ getTestServer() ]
+    })
   }
 
   /**
@@ -260,8 +256,7 @@ class WikiCommand extends BaseCommand {
    * @param options {RunOptions}
    * @returns {ItemResponse}
    */
-  // eslint-disable-next-line no-unused-vars
-  getItemResponse(options) {}
+  getItemResponse(options) {} // eslint-disable-line no-unused-vars
 
   /**
    * Get command component
