@@ -50,7 +50,7 @@ class WikiCommand extends BaseCommand {
     return params.match(/[^ ]+/g) || []
   }
 
-  async messageRun(message, args, context) {
+  messageRun(message, args, context) {
     this.run({
       context: message,
       args,
