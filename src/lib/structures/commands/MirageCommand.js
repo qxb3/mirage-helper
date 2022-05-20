@@ -28,6 +28,7 @@ class MirageCommand extends BaseCommand {
       args,
       member: message.member,
       user: message.author,
+      guild: message.guild,
       ...context
     })
   }
@@ -40,6 +41,7 @@ class MirageCommand extends BaseCommand {
       args,
       member: interaction.member,
       user: interaction.user,
+      guild: interaction.guild,
       ...context
     })
   }
