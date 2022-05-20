@@ -2,9 +2,12 @@ const {
   SapphireClient,
   ApplicationCommandRegistries,
   RegisterBehavior,
-  LogLevel
+  LogLevel,
+  container
 } = require('@sapphire/framework')
+
 const mongoose = require('mongoose')
+const prefixModel = require('#models/prefix')
 
 class MirageClient extends SapphireClient {
   constructor() {
@@ -33,10 +36,26 @@ class MirageClient extends SapphireClient {
     })
   }
 
-  async login() {
+  login() {
     this.connectToDatabase(() => {
       super.login(process.env.BOT_TOKEN)
+      this.cachePrefixes()
     })
+  }
+
+  async cachePrefixes() {
+    const prefixes = await prefixModel.find({})
+    container.prefixes = new Map(
+      prefixes.map(v => [
+        v.guildId,
+        v
+      ])
+    )
+
+    this.fetchPrefix = async (message) => {
+      const result = container.prefixes.get(message.guild.id)
+      return result?.prefix || '?'
+    }
   }
 }
 
