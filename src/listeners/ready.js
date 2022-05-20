@@ -3,7 +3,7 @@ const { Listener } = require('@sapphire/framework')
 class ReadyListener extends Listener {
   constructor(context) {
     super(context, {
-      once: true,
+      once: true
     })
   }
 
