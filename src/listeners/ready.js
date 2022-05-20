@@ -8,8 +8,8 @@ class ReadyListener extends Listener {
   }
 
   run() {
-    const clientTag = this.container.client.user.tag
-    this.container.logger.info(`Logged in as ${clientTag}`)
+    const tag = this.container.client.user.tag
+    this.container.logger.info(`Logged in as ${tag}`)
   }
 }
 
