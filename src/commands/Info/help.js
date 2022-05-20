@@ -66,7 +66,7 @@ class HelpCommand extends MirageCommand {
     })
   }
 
-  async run(options) {
+  run(options) {
     const { args } = options
 
     const commands = this.container.stores.get('commands').filter(command => !command.options.hidden)
