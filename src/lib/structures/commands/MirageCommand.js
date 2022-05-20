@@ -42,6 +42,7 @@ class MirageCommand extends BaseCommand {
       member: interaction.member,
       user: interaction.user,
       guild: interaction.guild,
+      prefix: '/',
       ...context
     })
   }
