@@ -171,7 +171,7 @@ class WikiCommand extends BaseCommand {
   isCategory({ context, category, user, commandName, prefix }) {
     const items = this.items.filter(item => ignoreCase(item.type, category)).map(item => item.name)
     const spriteName = `${category.toLowerCase()}.png`
-    const sprite = `assets/items/sprites/${this.name}/thumbnails/${spriteName}`
+    const sprite = `assets/${this.category.toLowerCase()}/sprites/${this.name}/thumbnails/${spriteName}`
 
     const embed = createEmbedUser(user)
       .setThumbnail(`attachment://${spriteName}`)
