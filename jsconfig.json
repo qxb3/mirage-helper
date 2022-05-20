@@ -8,7 +8,7 @@
             "#lib/*": ["./src/lib/*"],
             "#utils/*": ["./src/lib/utils/*"],
             "#structures/*": ["./src/lib/structures/*"],
-            "#models/*": ["./src/models/*"]
+            "#models/*": ["./src/lib/models/*"]
         }
     }
 }
