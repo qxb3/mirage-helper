@@ -7,7 +7,7 @@
         "effects": [
             "-20 Mana"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Devastate",
@@ -18,7 +18,7 @@
             "-10 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Devastate Rank 1",
@@ -29,7 +29,7 @@
             "-15 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Devastate Rank 2",
@@ -40,7 +40,7 @@
             "-20 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Execute",
@@ -51,7 +51,7 @@
             "-50 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Execute Rank 1",
@@ -62,7 +62,7 @@
             "-75 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Whirlwind",
@@ -73,7 +73,7 @@
             "-50 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Whirlwind Rank 1",
@@ -84,7 +84,7 @@
             "-75 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Whirlwind Rank 2",
@@ -95,7 +95,7 @@
             "-100 Mana",
             "+1 Melee exp"
         ],
-        "vocation": "Knight"
+        "type": "Knight"
     },
     {
         "name": "Challenging Throw",
@@ -105,8 +105,8 @@
         "effects": [
             "-30 Mana"
         ],
-        "vocation": "Knight"
-    }, 
+        "type": "Knight"
+    },
     {
         "name": "Volley",
         "description":  "Fire 3 arrows in rapid succession, each arrow deals 206 attack power and can crit.",
@@ -116,7 +116,7 @@
             "-20 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Volley Rank 1",
@@ -127,7 +127,7 @@
             "-30 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Volley Rank 2",
@@ -138,7 +138,7 @@
             "-40 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Concussive Shot",
@@ -148,7 +148,7 @@
         "effects": [
             "-50 Mana"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Headshot",
@@ -159,7 +159,7 @@
             "-50 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Headshot Rank 1",
@@ -170,7 +170,7 @@
             "-75 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Scatter Shot",
@@ -181,7 +181,7 @@
             "-75 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Scatter Shot Rank 1",
@@ -192,7 +192,7 @@
             "-90 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Scatter Shot Rank 2",
@@ -203,7 +203,7 @@
             "-100 Mana",
             "+1 Distance exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Wooden Arrows",
@@ -213,7 +213,7 @@
         "effects": [
             "-15 Mana"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Stone Arrows",
@@ -224,7 +224,7 @@
             "-20 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Flint Arrows",
@@ -235,7 +235,7 @@
             "-25 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Tin Arrows",
@@ -246,8 +246,8 @@
             "-30 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Ranger"
-    }, 
+        "type": "Ranger"
+    },
     {
         "name": "Conjure Iron Arrows",
         "description": "Conjure 35 iron arrows.",
@@ -257,8 +257,8 @@
             "-35 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Ranger"
-    }, 
+        "type": "Ranger"
+    },
     {
         "name": "Conjure Elven Arrows",
         "description": "Conjure 35 elven arrows.",
@@ -268,8 +268,8 @@
             "-40 Mana",
             "+2 Magic exp"
         ],
-        "vocation": "Ranger"
-    }, 
+        "type": "Ranger"
+    },
     {
         "name": "Conjure Pearl Arrows",
         "description": "Conjure 35 pearl arrows.",
@@ -279,8 +279,8 @@
             "-45 Mana",
             "+2 Magic exp"
         ],
-        "vocation": "Ranger"
-    }, 
+        "type": "Ranger"
+    },
     {
         "name": "Conjure Spiked Arrows",
         "description": "Conjure 35 spiked arrows.",
@@ -290,7 +290,7 @@
             "-50 Mana",
             "+2 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Mythril Arrows",
@@ -301,7 +301,7 @@
             "-55 Mana",
             "+2 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Diamond Arrows",
@@ -312,7 +312,7 @@
             "-60 Mana",
             "+3 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Royal Arrows",
@@ -323,7 +323,7 @@
             "-65 Mana",
             "+3 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
         "name": "Conjure Chaos Arrows",
@@ -334,7 +334,7 @@
             "-1000 Mana",
             "+50 Magic exp"
         ],
-        "vocation": "Ranger"
+        "type": "Ranger"
     },
     {
 		"name": "Elemental Strike",
@@ -345,7 +345,7 @@
 			"-10 Mana",
 			"+1 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Elemental Strike Rank 1",
@@ -356,7 +356,7 @@
 			"-15 Mana",
 			"+1 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Elemental Strike Rank 2",
@@ -367,7 +367,7 @@
 			"-20 Mana",
 			"+1 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Elemental Strike Rank 3",
@@ -378,7 +378,7 @@
 			"-25 Mana",
 			"+1 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Explosion",
@@ -389,7 +389,7 @@
 			"-75 Mana",
 			"+1 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Explosion Rank 1",
@@ -400,7 +400,7 @@
 			"-100 Mana",
 			"+1 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Explosion Rank 2",
@@ -411,7 +411,7 @@
 			"-200 Mana",
 			"+10 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Mind Games",
@@ -421,7 +421,7 @@
 		"effects": [
 			"-50 Mana"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Light Mana Missile",
@@ -432,7 +432,7 @@
 			"-100 Mana",
 			"+5 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Mana Missile",
@@ -443,7 +443,7 @@
 			"-200 Mana",
 			"+10 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Heavy Mana Missile",
@@ -454,7 +454,7 @@
 			"-400 Mana",
 			"+20 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Light Ice Missile",
@@ -465,7 +465,7 @@
 			"-100 Mana",
 			"+5 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Ice Missile",
@@ -476,7 +476,7 @@
 			"-200 Mana",
 			"+10 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Heavy Ice Missile",
@@ -487,7 +487,7 @@
 			"-400 Mana",
 			"+20 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Light Fire Missile",
@@ -498,7 +498,7 @@
 			"-100 Mana",
 			"+5 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Fire Missile",
@@ -509,7 +509,7 @@
 			"-200 Mana",
 			"+10 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Heavy Fire Missile",
@@ -520,7 +520,7 @@
 			"-400 Mana",
 			"+20 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Light Energy Missile",
@@ -531,7 +531,7 @@
 			"-100 Mana",
 			"+5 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Energy Missile",
@@ -542,7 +542,7 @@
 			"-200 Mana",
 			"+10 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Heavy Energy Missile",
@@ -553,7 +553,7 @@
 			"-400 Mana",
 			"+20 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Light Death Missile",
@@ -564,7 +564,7 @@
 			"-400 Mana",
 			"+20 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Death Missile",
@@ -575,7 +575,7 @@
 			"-800 Mana",
 			"+40 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
 	{
 		"name": "Conjure Heavy Death Missile",
@@ -586,7 +586,7 @@
 			"-1500 Mana",
 			"+75 Magic exp"
 		],
-		"vocation": "Mage"
+		"type": "Mage"
 	},
     {
         "name": "Healing Hands",
@@ -597,7 +597,7 @@
             "-30 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Healing Hands Rank 1",
@@ -608,7 +608,7 @@
             "-60 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Healing Hands Rank 2",
@@ -619,7 +619,7 @@
             "-90 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Healing Hands Rank 3",
@@ -630,7 +630,7 @@
             "-120 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Divine Intervention",
@@ -641,7 +641,7 @@
             "-120 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Divine Intervention Rank 1",
@@ -652,7 +652,7 @@
             "-180 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Divine Intervention Rank 2",
@@ -663,7 +663,7 @@
             "-240 Mana",
             "+10 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Divine Intervention Rank 3",
@@ -674,7 +674,7 @@
             "-300 Mana",
             "+1 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Mind Games",
@@ -684,7 +684,7 @@
         "effects": [
             "-50 Mana"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Light Mana Missile",
@@ -695,7 +695,7 @@
             "-100 Mana",
             "+50 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
 		"name": "Conjure Mana Missile",
@@ -706,7 +706,7 @@
 			"-200 Mana",
 			"+10 Magic exp"
 		],
-		"vocation": "Shaman"
+		"type": "Shaman"
 	},
 	{
 		"name": "Conjure Heavy Mana Missile",
@@ -717,7 +717,7 @@
 			"-400 Mana",
 			"+20 Magic exp"
 		],
-		"vocation": "Shaman"
+		"type": "Shaman"
 	},
     {
         "name": "Conjure Light Physical Missile",
@@ -728,7 +728,7 @@
             "-100 Mana",
             "+50 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Physical Missile",
@@ -739,7 +739,7 @@
             "-200 Mana",
             "+10 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Heavy Physical Missile",
@@ -750,7 +750,7 @@
             "-400 Mana",
             "+20 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Light Nature Missile",
@@ -761,7 +761,7 @@
             "-100 Mana",
             "+50 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Nature Missile",
@@ -772,7 +772,7 @@
             "-200 Mana",
             "+10 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Heavy Nature Missile",
@@ -783,7 +783,7 @@
             "-400 Mana",
             "+20 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Light Holy Missile",
@@ -794,7 +794,7 @@
             "-100 Mana",
             "+50 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Holy Missile",
@@ -805,7 +805,7 @@
             "-200 Mana",
             "+10 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Heavy Holy Missile",
@@ -816,7 +816,7 @@
             "-400 Mana",
             "+20 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     },
     {
         "name": "Conjure Light Heal",
@@ -827,8 +827,8 @@
             "-400 Mana",
             "+20 Magic exp"
         ],
-        "vocation": "Shaman"
-    }, 
+        "type": "Shaman"
+    },
     {
         "name": "Conjure Heal",
         "description": "Conjure a healing rune with 2 charges. Consumes 1 blank rune.",
@@ -838,8 +838,8 @@
             "-800 Mana",
             "+40 Magic exp"
         ],
-        "vocation": "Shaman"
-    },  
+        "type": "Shaman"
+    },
     {
         "name": "Conjure Heavy Heal",
         "description": "Conjure a heavy healing rune with 1 charge. Consumes 1 blank rune.",
@@ -849,6 +849,6 @@
             "-1500 Mana",
             "+75 Magic exp"
         ],
-        "vocation": "Shaman"
+        "type": "Shaman"
     }
 ]
