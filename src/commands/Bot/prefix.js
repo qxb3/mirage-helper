@@ -9,8 +9,7 @@ class PrefixCommand extends MirageCommand {
   constructor(context, options) {
     super(context, {
       ...options,
-      description: 'See or update server\'s prefix',
-      thumbnail: 'assets/icons/mirage.png'
+      description: 'See or update server\'s prefix'
     })
   }
 
