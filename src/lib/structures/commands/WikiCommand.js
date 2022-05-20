@@ -280,9 +280,9 @@ class WikiCommand extends BaseCommand {
   }
 
   /**
-   * @typedef {Object } GetSprite
+   * @typedef {Object} GetSprite
    * @property name {String} the sprite name
-   * @property {path} {String} the sprite path
+   * @property path {String} the sprite path
    *
    * Get item's sprite
    * @param item {Object<any>}

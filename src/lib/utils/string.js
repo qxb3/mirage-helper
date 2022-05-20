@@ -1,7 +1,7 @@
 /**
  * Adds circle (•) in start of every string on a array
  * @param arr {Array<String>}
- * @returns {Array<String>}
+ * @returns {String}
  */
 const addCircleOnFront = (arr) => {
   return arr.map(item => `• ${item}`).join('\n')
