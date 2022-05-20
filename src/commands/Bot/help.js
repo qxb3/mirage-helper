@@ -41,16 +41,19 @@ class HelpCommand extends MirageCommand {
 
   isCommand({ context, command, prefix }) {
     const embed = createEmbed()
-      .setThumbnail(`attachment://${command.thumbnail.name}`)
       .addField('❯ Name', command.name)
       .addField('❯ Description', command.description)
       .addField('❯ Category', command.category)
       .addField('❯ Aliases', command.aliases.join(', ') || 'None')
       .addField('❯ Usage', command.getCommandUsages(command.name, prefix))
 
+    if (command.thumbnail) {
+      embed.setThumbnail(`attachment://${command.thumbnail.name}`)
+    }
+
     sendMessage(context, {
       embeds: [embed],
-      files: [command.thumbnail.path]
+      files: command.thumbnail ? [command.thumbnail.path] : []
     })
   }
 

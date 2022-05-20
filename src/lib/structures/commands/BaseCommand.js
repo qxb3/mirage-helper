@@ -26,9 +26,11 @@ class BaseCommand extends Command {
       ...options
     })
 
-    this.thumbnail = {
-      name: options.thumbnail.split('/').pop(),
-      path: options.thumbnail
+    if (options.thumbnail) {
+      this.thumbnail = {
+        name: options.thumbnail.split('/').pop(),
+        path: options.thumbnail
+      }
     }
     this.hidden = options.hidden || false
     this.commandUsages = options.commandUsages
