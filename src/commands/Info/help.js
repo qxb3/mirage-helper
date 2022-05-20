@@ -10,10 +10,7 @@ class HelpCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Help command',
-      thumbnail: {
-        name: 'help',
-        path: 'assets/icons/help.png'
-      },
+      thumbnail: 'assets/icons/help.png',
       commandUsages: [
         { arg: '[command]', description: 'To see the full info of the command', example: 'weapons' }
       ]
@@ -33,7 +30,7 @@ class HelpCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbed()
-          .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setTitle('Commands')
           .addFields(formatedCommands)
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
@@ -44,7 +41,7 @@ class HelpCommand extends MirageCommand {
 
   isCommand({ context, command, prefix }) {
     const embed = createEmbed()
-      .setThumbnail(`attachment://${command.thumbnail.name}.png`)
+      .setThumbnail(`attachment://${command.thumbnail.name}`)
       .addField('❯ Name', command.name)
       .addField('❯ Description', command.description)
       .addField('❯ Category', command.category)
@@ -59,7 +56,7 @@ class HelpCommand extends MirageCommand {
 
   isNoMatch({ context, args, user, commandName, prefix }) {
     const embed = createEmbedUser(user, Colors.Error)
-      .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+      .setThumbnail(`attachment://${this.thumbnail.name}`)
       .setDescription(`**${args.join()}** did not match to any of the commands`)
       .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 

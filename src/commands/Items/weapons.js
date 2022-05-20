@@ -10,10 +10,7 @@ class WeaponsCommand extends WikiCommand {
       aliases: ['weapon', 'weaps', 'weap'],
 
       itemCategories: ['Sword', 'Axe', 'Mace', 'Shield', 'Bow', 'Arrow', 'Staff', 'Rod', 'Spellbook'],
-      thumbnail: {
-        name: 'sword',
-        path: 'assets/items/sprites/weapons/thumbnails/sword.png'
-      },
+      thumbnail: 'assets/items/sprites/weapons/thumbnails/sword.png',
       commandUsages: [
         { arg: '[category]', description: 'To see the weapons in category', example: 'Sword' },
         { arg: '[weapon]', description: 'To see the full info of the weapon', example: 'Banisher' }

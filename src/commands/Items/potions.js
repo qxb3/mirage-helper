@@ -9,10 +9,7 @@ class PotionsCommand extends WikiCommand {
       description: 'Find potions in the game',
       aliases: ['potion', 'pots', 'pot'],
 
-      thumbnail: {
-        name: 'health-vial',
-        path: 'assets/items/sprites/potions/health-vial.png'
-      },
+      thumbnail: 'assets/items/sprites/potions/health-vial.png',
       commandUsages: [
         { arg: '[potion]', description: 'To see the full info of the potion', example: 'health vial' }
       ]

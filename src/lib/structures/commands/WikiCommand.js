@@ -104,7 +104,7 @@ class WikiCommand extends BaseCommand {
     if (!this.itemCategories) {
       const items = this.items.map(item => item.name)
       const embed = createEmbedUser(user)
-        .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+        .setThumbnail(`attachment://${this.thumbnail.name}`)
         .addField(`❯ ${capitalizeAll(this.name)}`, addCircleOnFront(items))
         .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 
@@ -115,7 +115,7 @@ class WikiCommand extends BaseCommand {
     }
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+      .setThumbnail(`attachment://${this.thumbnail.name}`)
       .addField('❯ Categories', addCircleOnFront(this.itemCategories))
       .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 
@@ -203,7 +203,7 @@ class WikiCommand extends BaseCommand {
    */
   isNoMatch({ context, args, user, commandName, prefix }) {
     const embed = createEmbedUser(user, Colors.Error)
-      .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+      .setThumbnail(`attachment://${this.thumbnail.name}`)
       .setDescription(`${Formatters.bold(args.join())} did not match to any of ${this.name} ${this.itemCategories ? 'or categories' : ''}`)
       .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
 

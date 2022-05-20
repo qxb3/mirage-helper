@@ -10,10 +10,7 @@ class EquipmentsCommand extends WikiCommand {
       aliases: ['equips', 'equip', 'eq'],
 
       itemCategories: ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace'],
-      thumbnail: {
-        name: 'chest',
-        path: 'assets/items/sprites/equipments/thumbnails/chest.png'
-      },
+      thumbnail: 'assets/items/sprites/equipments/thumbnails/chest.png',
       commandUsages: [
         { arg: '[category]', description: 'To see the equipments in category', example: 'Helmet' },
         { arg: '[equipment]', description: 'To see the full info of the equipment', example: 'Elven boots' }

@@ -9,10 +9,7 @@ class MobsCommand extends WikiCommand {
       description: 'Find mobs in the game',
       aliases: ['mob'],
 
-      thumbnail: {
-        name: 'troll',
-        path: 'assets/wiki/sprites/mobs/troll.png'
-      },
+      thumbnail: 'assets/wiki/sprites/mobs/troll.png',
       commandUsages: [
         { arg: '[mob]', description: 'To see the full info of the mob', example: 'Troll' },
       ]

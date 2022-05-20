@@ -8,10 +8,7 @@ class AboutCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'About command',
-      thumbnail: {
-        name: 'mirage',
-        path: 'assets/icons/mirage.png'
-      },
+      thumbnail: 'assets/icons/mirage.png',
       chatInputCommand: {
         register: true,
         guildIds: [ getTestServer() ]
@@ -31,7 +28,7 @@ class AboutCommand extends MirageCommand {
     const embed = createEmbed(Colors.Secondary)
       .setTitle('MirageHelper')
       .setDescription('MirageHelper is a open source discord bot for mirage realms.')
-      .setThumbnail(`attachment://${this.thumbnail.name}.png`)
+      .setThumbnail(`attachment://${this.thumbnail.name}`)
       .addField('❯ Version', process.env.BOT_VERSION)
       .addField('❯ Discord Server', `[MirageHelper](${process.env.SUPPORT_SERVER})`)
       .addField('❯ Source code', `[Github](${process.env.PROJECT_REPO})`)
