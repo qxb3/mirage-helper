@@ -1,3 +1,5 @@
+const { ignoreCase } = require('./string')
+
 /**
  * Formats time string
  * @param time {Number}
@@ -96,7 +98,7 @@ const calculateSkill = (vocation, from, to, percent = 0) => {
     return formatTime(time)
   }
 
-  const vocationInfo = vocsInfo.find(info => info.voc === vocation)
+  const vocationInfo = vocsInfo.find(info => ignoreCase(info.voc, vocation))
 
   let hits = 0
   for (let i = from; i < to; i++) {
