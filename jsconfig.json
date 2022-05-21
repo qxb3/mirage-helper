@@ -5,6 +5,7 @@
             "#root/*": ["./*"],
             "#src/*": ["./src/*"],
             "#assets/*": ["./assets/*"],
+            "#vars": ["./src/vars.js"],
             "#lib/*": ["./src/lib/*"],
             "#utils/*": ["./src/lib/utils/*"],
             "#structures/*": ["./src/lib/structures/*"],

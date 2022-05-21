@@ -1,7 +1,8 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 const { MessageActionRow, MessageButton } = require('discord.js')
+
+const { bot, mirageServer, guildIds } = require('#vars')
 const { createEmbed, Colors, sendMessage } = require('#utils/response')
-const { getTestServer } = require('#utils/constants')
 
 class AboutCommand extends MirageCommand {
   constructor(context, options) {
@@ -11,7 +12,7 @@ class AboutCommand extends MirageCommand {
       thumbnail: 'assets/icons/mirage.png',
       chatInputCommand: {
         register: true,
-        guildIds: [ getTestServer() ]
+        guildIds
       }
     })
   }
@@ -29,9 +30,9 @@ class AboutCommand extends MirageCommand {
       .setTitle('MirageHelper')
       .setDescription('MirageHelper is a open source discord bot for mirage realms.')
       .setThumbnail(`attachment://${this.thumbnail.name}`)
-      .addField('❯ Version', process.env.BOT_VERSION)
-      .addField('❯ Discord Server', `[MirageHelper](${process.env.SUPPORT_SERVER})`)
-      .addField('❯ Source code', `[Github](${process.env.PROJECT_REPO})`)
+      .addField('❯ Version', bot.version)
+      .addField('❯ Discord Server', `[MirageHelper](${mirageServer.invite})`)
+      .addField('❯ Source code', `[Github](${bot.repository})`)
       .addField(
         '❯ Special thanks',
         'Anonym - I used his wiki for the items, weapons and other stuff\nHis wiki: [PirateWiki](http://mr.golitsyn.com/)'
@@ -45,7 +46,7 @@ class AboutCommand extends MirageCommand {
       .setComponents(
         new MessageButton()
           .setLabel('Invite Bot')
-          .setURL(process.env.INVITE_URL)
+          .setURL(bot.invite)
           .setStyle('LINK')
       )
 
@@ -53,7 +54,7 @@ class AboutCommand extends MirageCommand {
       .setComponents(
         new MessageButton()
           .setLabel('Discord Server')
-          .setURL(process.env.SUPPORT_SERVER)
+          .setURL(mirageServer.invite)
           .setStyle('LINK')
       )
 

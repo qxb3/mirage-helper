@@ -1,6 +1,6 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 
-const { getTestServer } = require('#utils/constants')
+const { guildIds, bot } = require('#vars')
 const { sendMessage } = require('#utils/response')
 
 class InviteCommand extends MirageCommand {
@@ -11,14 +11,14 @@ class InviteCommand extends MirageCommand {
       aliases: ['inv'],
       chatInputCommand: {
         register: true,
-        guildIds: [ getTestServer() ]
+        guildIds
       }
     })
   }
 
   run({ context }) {
     sendMessage(context, {
-      content: 'https://dsc.gg/miragehelper',
+      content: bot.invite,
       reply: true
     })
   }

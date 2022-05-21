@@ -9,6 +9,8 @@ const {
 const mongoose = require('mongoose')
 const prefixModel = require('#models/prefix')
 
+const vars = require('#vars')
+
 class MirageClient extends SapphireClient {
   constructor() {
     super({
@@ -17,8 +19,9 @@ class MirageClient extends SapphireClient {
         'GUILD_MESSAGES',
         'GUILD_MEMBERS'
       ],
-      defaultPrefix: '?',
-      logger: { level: process.env.NODE_ENV === 'development' ? LogLevel.Debug : LogLevel.Info },
+      defaultPrefix: vars.defaultPrefix,
+      // logger: { level: process.env.NODE_ENV === 'development' ? LogLevel.Debug : LogLevel.Info },
+      preventFailedToFetchLogForGuildIds: [vars.mirageServer.id],
       loadMessageCommandListeners: true,
       caseInsensitiveCommands: true,
       caseInsensitivePrefixes: true,
@@ -56,7 +59,7 @@ class MirageClient extends SapphireClient {
 
     this.fetchPrefix = async (message) => {
       const result = container.prefixes.get(message.guild.id)
-      return result?.prefix || '?'
+      return result?.prefix || vars.defaultPrefix
     }
   }
 }

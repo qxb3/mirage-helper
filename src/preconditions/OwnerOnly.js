@@ -1,4 +1,5 @@
 const { Precondition } = require('@sapphire/framework')
+const { dev } = require('#vars')
 
 class OwnerOnlyPrecondition extends Precondition {
   messageRun(message) {
@@ -20,7 +21,7 @@ class OwnerOnlyPrecondition extends Precondition {
   }
 
   check(user) {
-    return user.id === process.env.DEV_ID
+    return user.id === dev.id
   }
 
   getMessage() {

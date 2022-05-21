@@ -6,7 +6,8 @@ const { Time } = require('@sapphire/time-utilities')
 const { searchItems, searchItemsAutocomplete } = require('#utils/items')
 const { sendMessage, createEmbedUser, createMessageComponentCollector } = require('#utils/response')
 const { addCircleOnFront, capitalizeAll, ignoreCase } = require('#utils/string')
-const { getTestServer, Colors } = require('#utils/constants')
+const { Colors } = require('#utils/constants')
+const { guildIds } = require('#vars')
 
 /**
  * @typedef {import('@sapphire/framework').PieceContext} Context
@@ -244,7 +245,7 @@ class WikiCommand extends BaseCommand {
       )
 
     registry.registerChatInputCommand(command, {
-      guildIds: [ getTestServer() ]
+      guildIds
     })
   }
 

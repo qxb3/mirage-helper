@@ -2,6 +2,7 @@ const { Command } = require('@sapphire/framework')
 const { Stopwatch } = require('@sapphire/stopwatch')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
+const { testServer } = require('#vars')
 const { createEmbedUser } = require('#utils/response')
 const { Colors } = require('#utils/constants')
 const { searchItemsAutocomplete } = require('#utils/items')
@@ -28,12 +29,8 @@ class SlashCommand extends Command {
         timer.start()
 
         const command = isSelectedCommandTest === 'true' ?
-          await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch(selectedCommand) :
+          await client.guilds.cache.get(testServer).commands.fetch(selectedCommand) :
           await client.application.commands.fetch(selectedCommand)
-
-        if (!command) {
-          throw new Error(`Command with id of: ${selectedCommand} does not exists`)
-        }
 
         await command.delete()
         await interaction.reply({
@@ -59,7 +56,7 @@ class SlashCommand extends Command {
     const { client } = this.container
 
     const globalCommands = (await client.application.commands.fetch()).map(command => ({ ...command, test: false }))
-    const testCommands = (await client.guilds.cache.get(process.env.TEST_SERVER).commands.fetch()).map(command => ({ ...command, test: true }))
+    const testCommands = (await client.guilds.cache.get(testServer).commands.fetch()).map(command => ({ ...command, test: true }))
     const commands = globalCommands.concat(testCommands)
 
     const query = interaction.options.getFocused()
@@ -91,7 +88,7 @@ class SlashCommand extends Command {
       )
 
     registry.registerChatInputCommand(command, {
-      guildIds: [process.env.TEST_SERVER]
+      guildIds: [testServer]
     })
   }
 }

@@ -1,7 +1,8 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
-const { getTestServer, Colors } = require('#utils/constants')
+const { guildIds } = require('#vars')
+const { Colors } = require('#utils/constants')
 const { sendMessage, createEmbedUser } = require('#utils/response')
 const { addCircleOnFront } = require('#utils/string')
 const { searchItemsAutocomplete, searchItems } = require('#utils/items')
@@ -141,7 +142,7 @@ class SkillCommand extends MirageCommand {
       )
 
     registry.registerChatInputCommand(command, {
-      guildIds: [ getTestServer() ]
+      guildIds
     })
   }
 }

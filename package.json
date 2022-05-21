@@ -28,6 +28,7 @@
   "_moduleAliases": {
     "#root": "./",
     "#src": "./src",
+    "#vars": "./src/vars.js",
     "#assets": "./assets",
     "#lib": "./src/lib",
     "#utils": "./src/lib/utils",

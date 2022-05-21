@@ -1,7 +1,7 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 
+const { guildIds } = require('#vars')
 const { createEmbed, sendMessage } = require('#utils/response')
-const { getTestServer } = require('#utils/constants')
 
 class PingCommand extends MirageCommand {
   constructor(context, options) {
@@ -10,7 +10,7 @@ class PingCommand extends MirageCommand {
       description: 'Check bot\'s latency',
       chatInputCommand: {
         register: true,
-        guildIds: [ getTestServer() ]
+        guildIds
       }
     })
   }

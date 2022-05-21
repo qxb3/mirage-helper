@@ -2,7 +2,8 @@ const MirageCommand = require('#structures/commands/MirageCommand')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
 const prefixModel = require('#models/prefix')
-const { getTestServer } = require('#utils/constants')
+
+const { guildIds } = require('#vars')
 const { sendMessage } = require('#utils/response')
 
 class PrefixCommand extends MirageCommand {
@@ -60,7 +61,7 @@ class PrefixCommand extends MirageCommand {
       )
 
     registry.registerChatInputCommand(command, {
-      guildIds: [ getTestServer() ]
+      guildIds
     })
   }
 }
