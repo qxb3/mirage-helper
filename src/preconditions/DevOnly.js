@@ -1,7 +1,7 @@
 const { Precondition } = require('@sapphire/framework')
 const { dev } = require('#vars')
 
-class OwnerOnlyPrecondition extends Precondition {
+class DevOnlyPrecondition extends Precondition {
   messageRun(message) {
     return this.check(message.author) ?
       this.ok() :
@@ -29,4 +29,4 @@ class OwnerOnlyPrecondition extends Precondition {
   }
 }
 
-module.exports = OwnerOnlyPrecondition
+module.exports = DevOnlyPrecondition
