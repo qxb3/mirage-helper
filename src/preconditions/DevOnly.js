@@ -1,9 +1,9 @@
 const { Precondition } = require('@sapphire/framework')
-const { Permissions } = require('discord.js')
+const { dev } = require('#vars')
 
-class OwnerOnlyPrecondition extends Precondition {
+class DevOnlyPrecondition extends Precondition {
   messageRun(message) {
-    return this.check(message.member) ?
+    return this.check(message.author) ?
       this.ok() :
       this.error({
         message: this.getMessage(),
@@ -12,7 +12,7 @@ class OwnerOnlyPrecondition extends Precondition {
   }
 
   chatInputRun(interaction) {
-    return this.check(interaction.member) ?
+    return this.check(interaction.user) ?
       this.ok() :
       this.error({
         message: this.getMessage(),
@@ -20,13 +20,13 @@ class OwnerOnlyPrecondition extends Precondition {
       })
   }
 
-  check(member) {
-    return member.permissions.has([Permissions.FLAGS.ADMINISTRATOR])
+  check(user) {
+    return user.id === dev.id
   }
 
   getMessage() {
-    return 'Only the server owner can use this command'
+    return 'Only the developer can use this command'
   }
 }
 
-module.exports = OwnerOnlyPrecondition
+module.exports = DevOnlyPrecondition
