@@ -2,7 +2,6 @@ const {
   SapphireClient,
   ApplicationCommandRegistries,
   RegisterBehavior,
-  LogLevel,
   container
 } = require('@sapphire/framework')
 
@@ -20,7 +19,6 @@ class MirageClient extends SapphireClient {
         'GUILD_MEMBERS'
       ],
       defaultPrefix: vars.defaultPrefix,
-      // logger: { level: process.env.NODE_ENV === 'development' ? LogLevel.Debug : LogLevel.Info },
       preventFailedToFetchLogForGuildIds: [vars.mirageServer.id],
       loadMessageCommandListeners: true,
       caseInsensitiveCommands: true,
