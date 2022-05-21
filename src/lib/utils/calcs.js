@@ -31,7 +31,7 @@ const formatTime = (time) => {
  * @param from {Number}
  * @param to {Number}
  * @param mobExp {Number}
- * @param percent {Number}
+ * @param percent {Number=}
  */
 const calculateLevel = (from, to, mobExp, percent = 0) => {
   const expToLvl = (level) => {
@@ -56,7 +56,14 @@ const calculateLevel = (from, to, mobExp, percent = 0) => {
   }
 }
 
-const calculateSkill = (vocation, from, to, percent) => {
+/**
+ * Calculates skill
+ * @param vocation {String}
+ * @param from {Number}
+ * @param to {Number}
+ * @param percent {Number=}
+ */
+const calculateSkill = (vocation, from, to, percent = 0) => {
   const vocsInfo = [
     {
       voc: 'Knight',
