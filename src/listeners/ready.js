@@ -12,7 +12,7 @@ class ReadyListener extends Listener {
 
   run() {
     const { client } = this.container
-    this.container.logger.info(`Logged in as ${client.user.tag}`)
+    this.container.logger.info(`Logged in as ${client.user.tag}.`)
 
     this.setChangingStatus(client)
   }
