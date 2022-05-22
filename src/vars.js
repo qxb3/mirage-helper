@@ -3,7 +3,7 @@ process.env.NODE_ENV ??= 'development'
 module.exports = {
   bot: {
     description: 'A simple discord bot for mirage realms',
-    version: '2.0.0',
+    version: '2.1.0',
     repository: 'https://github.com/qxb3/mirage-helper',
     invite: 'https://dsc.gg/miragehelper'
   },
