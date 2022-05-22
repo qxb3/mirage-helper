@@ -23,7 +23,8 @@
   },
   "devDependencies": {
     "eslint": "^8.13.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "standard-version": "^9.5.0"
   },
   "_moduleAliases": {
     "#root": "./",
