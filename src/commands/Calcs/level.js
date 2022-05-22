@@ -11,7 +11,7 @@ class LevelCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Calculate level',
-      thunbnail: 'assets/icons/rules.png',
+      thumbnail: 'assets/icons/rules.png',
       commandUsages: [
         { arg: '<from> <to> <mob-exp> [level-percent]', description: 'Calculate how much would it take to get to one level to another', example: '50 60 1350 30' }
       ]
@@ -38,9 +38,11 @@ class LevelCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user, Colors.Error)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('You need to fill up the missing fields')
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -48,9 +50,11 @@ class LevelCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user, Colors.Error)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('I only accept numbers.')
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -61,12 +65,14 @@ class LevelCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .addField(
             '❯ Result',
             `Exp required: ${result.exp.toLocaleString()}\n` +
             `Time: ${result.time}`
           )
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
