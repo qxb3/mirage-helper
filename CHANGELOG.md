@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/qxb3/mirage-helper/compare/v2.1.0...v2.2.0) (2022-05-22)
+
+
+### Features
+
+* added release command to notify users for the release ([442683d](https://github.com/qxb3/mirage-helper/commit/442683d0de50814537cf3929660dc4ca1b843be0))
+* **Calcs:** added thumbnails ([a44dabe](https://github.com/qxb3/mirage-helper/commit/a44dabe764c8b7eaa908f800f97bc9b08ad536fc))
+* **MirageCommand:** added maxArgs property ([08342ef](https://github.com/qxb3/mirage-helper/commit/08342ef9841132f508519b72702da18705d3014f))
+
 ## [2.1.0](https://github.com/qxb3/mirage-helper/compare/v2.0.0...v2.1.0) (2022-05-22)
 
 
