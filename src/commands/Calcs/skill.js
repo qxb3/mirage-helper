@@ -14,6 +14,7 @@ class SkillCommand extends MirageCommand {
       ...options,
       description: 'Calculate skill',
       thumbnail: 'assets/icons/rules.png',
+      maxArgs: 4,
       commandUsages: [
         { arg: '<vocation> <from> <to> [skill-percent]', description: 'Calculate how much would it take to get to one skill level to another', example: 'knight 50 60 30' }
       ]
@@ -23,20 +24,18 @@ class SkillCommand extends MirageCommand {
   }
 
   run(options) {
-    // Sets max args to 4 (Might make it a feature in BaseCommand.js later)
-    options.args = new Array(Math.min(options.args.length, 4))
-      .fill(null).map((_, i) => options.args[i])
+    const { args } = options
 
-    if (options.args.length < 3) {
+    if (args.length < 3) {
       return this.noArgs(options)
     }
 
-    const vocation = searchItems(options.args[0], this.vocations)[0]
+    const vocation = searchItems(args[0], this.vocations)[0]
     if (!vocation) {
       return this.unknownVocation(options)
     }
 
-    if (!options.args.slice(1).every(arg => /^\d+$/.test(arg))) {
+    if (!args.slice(1).every(arg => /^\d+$/.test(arg))) {
       return this.notANumber(options)
     }
 
