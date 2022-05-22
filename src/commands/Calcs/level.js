@@ -11,7 +11,8 @@ class LevelCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Calculate level',
-      thunbnail: 'assets/icons/rules.png',
+      thumbnail: 'assets/icons/rules.png',
+      maxArgs: 4,
       commandUsages: [
         { arg: '<from> <to> <mob-exp> [level-percent]', description: 'Calculate how much would it take to get to one level to another', example: '50 60 1350 30' }
       ]
@@ -19,15 +20,13 @@ class LevelCommand extends MirageCommand {
   }
 
   run(options) {
-    // Sets max args to 4 (Might make it a feature in BaseCommand.js later)
-    options.args = new Array(Math.min(options.args.length, 4))
-      .fill(null).map((_, i) => options.args[i])
+    const { args } = options
 
-    if (options.args.length < 3) {
+    if (args.length < 3) {
       return this.missingField(options)
     }
 
-    if (!options.args.every(arg => /^\d+$/.test(arg))) {
+    if (!args.every(arg => /^\d+$/.test(arg))) {
       return this.notANumber(options)
     }
 
@@ -38,9 +37,11 @@ class LevelCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user, Colors.Error)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('You need to fill up the missing fields')
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -48,9 +49,11 @@ class LevelCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user, Colors.Error)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('I only accept numbers.')
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -61,12 +64,14 @@ class LevelCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .addField(
             '❯ Result',
             `Exp required: ${result.exp.toLocaleString()}\n` +
             `Time: ${result.time}`
           )
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 

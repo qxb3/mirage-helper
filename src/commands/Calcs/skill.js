@@ -13,7 +13,8 @@ class SkillCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Calculate skill',
-      thunbnail: 'assets/icons/rules.png',
+      thumbnail: 'assets/icons/rules.png',
+      maxArgs: 4,
       commandUsages: [
         { arg: '<vocation> <from> <to> [skill-percent]', description: 'Calculate how much would it take to get to one skill level to another', example: 'knight 50 60 30' }
       ]
@@ -23,20 +24,18 @@ class SkillCommand extends MirageCommand {
   }
 
   run(options) {
-    // Sets max args to 4 (Might make it a feature in BaseCommand.js later)
-    options.args = new Array(Math.min(options.args.length, 4))
-      .fill(null).map((_, i) => options.args[i])
+    const { args } = options
 
-    if (options.args.length < 3) {
+    if (args.length < 3) {
       return this.noArgs(options)
     }
 
-    const vocation = searchItems(options.args[0], this.vocations)[0]
+    const vocation = searchItems(args[0], this.vocations)[0]
     if (!vocation) {
       return this.unknownVocation(options)
     }
 
-    if (!options.args.slice(1).every(arg => /^\d+$/.test(arg))) {
+    if (!args.slice(1).every(arg => /^\d+$/.test(arg))) {
       return this.notANumber(options)
     }
 
@@ -47,9 +46,11 @@ class SkillCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .addField('❯ Vocations', addCircleOnFront(this.vocations))
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -57,9 +58,11 @@ class SkillCommand extends MirageCommand {
     return sendMessage(context, {
       embeds: [
         createEmbedUser(user, Colors.Error)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('Unknown vocation')
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -67,9 +70,11 @@ class SkillCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user, Colors.Error)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('I only accept numbers.')
           .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
@@ -81,12 +86,14 @@ class SkillCommand extends MirageCommand {
     sendMessage(context, {
       embeds: [
         createEmbedUser(user)
+          .setThumbnail(`attachment://${this.thumbnail.name}`)
           .addField(
             '❯ Result',
             `${result.skillType}: ${result.timeHits}\n` +
             `Defence: ${result.timeDefence}`
           )
-      ]
+      ],
+      files: [this.thumbnail.path]
     })
   }
 
