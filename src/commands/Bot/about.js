@@ -30,7 +30,7 @@ class AboutCommand extends MirageCommand {
       .setTitle('MirageHelper')
       .setDescription('MirageHelper is a open source discord bot for mirage realms.')
       .setThumbnail(`attachment://${this.thumbnail.name}`)
-      .addField('❯ Version', bot.version)
+      .addField('❯ Version', `v${bot.version}`)
       .addField('❯ Discord Server', `[MirageHelper](${mirageServer.invite})`)
       .addField('❯ Source code', `[Github](${bot.repository})`)
       .addField(
