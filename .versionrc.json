@@ -1,0 +1,8 @@
+{
+    "bumpFiles": [
+        {
+            "filename": "src/vars.js",
+            "updater": "updater.js"
+        }
+    ]
+}
