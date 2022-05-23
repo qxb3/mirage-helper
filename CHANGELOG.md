@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/qxb3/mirage-helper/compare/v2.2.0...v2.3.0) (2022-05-23)
+
+
+### Features
+
+* added autogz system ([498d059](https://github.com/qxb3/mirage-helper/commit/498d0592ade17f76dcd9717308d22a423845a0c3))
+* **ping:** Removing embed and making response normal msg ([40051dd](https://github.com/qxb3/mirage-helper/commit/40051dd15f05790ac5a57308124b45d945083b8f))
+* **release:** added setup subcommand ([b646693](https://github.com/qxb3/mirage-helper/commit/b646693d96642981ad4aebc6d3f68c9c1d9b1ad7))
+
 ## [2.2.0](https://github.com/qxb3/mirage-helper/compare/v2.1.0...v2.2.0) (2022-05-22)
 
 
