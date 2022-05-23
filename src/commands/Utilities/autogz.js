@@ -18,6 +18,8 @@ class AutoGzCommand extends MirageCommand {
         { arg: '<channel>', description: 'Setup autogz on a channel', example: '#level-ups' },
         { arg: '<channel> [messages]', description: 'Setup autogz on a channel with one message', example: '#level-ups Congrats!' },
         { arg: '<channel> [messages]', description: 'Setup autogz on a channel with multiple messages seperated by |', example: '#level-ups Congrats!|Horray!|Nice noob!' },
+        { arg: '<channel> [messages]', description: 'If you want some user mentions add: {USER}', example: '#level-ups Congrats! {USER}' },
+        { arg: '<channel> [messages]', description: 'If you want to get the server name add: {SERVER}', example: '#level-ups We in {SERVER} congratulate you!' },
       ]
     })
   }
@@ -34,7 +36,7 @@ class AutoGzCommand extends MirageCommand {
     }
 
     const selectedChannel = args.shift()?.replace(/\D/g, '')
-    const messages = args.shift()?.split('|') || []
+    const messages = (args.join(' ')?.split('|') || []).map(msg => msg.trim())
 
     const channel = await guild.channels.fetch(selectedChannel)
     if (!channel || channel.type !== 'GUILD_TEXT') {
@@ -50,7 +52,7 @@ class AutoGzCommand extends MirageCommand {
       },
       {
         channelId: channel.id,
-        messages: messages.map(msg => msg.trim())
+        messages
       },
       {
         upsert: true
