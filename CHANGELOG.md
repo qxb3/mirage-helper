@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.3](https://github.com/qxb3/mirage-helper/compare/v2.3.2...v2.3.3) (2022-05-23)
+
+
+### Bug Fixes
+
+* **autogz:** wait half a second before reacting and replying ([1dba6de](https://github.com/qxb3/mirage-helper/commit/1dba6de2e51876d7597ae8d8858c0a4674654c6d))
+* **commands/autogz:** Fix not detecting other messages and added more examples ([b145aa7](https://github.com/qxb3/mirage-helper/commit/b145aa707c193c12d4c4cbae483e096a49638eb1))
+
 ### [2.3.2](https://github.com/qxb3/mirage-helper/compare/v2.3.1...v2.3.2) (2022-05-23)
 
 
