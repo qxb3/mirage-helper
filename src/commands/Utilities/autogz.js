@@ -12,6 +12,8 @@ class AutoGzCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Setup autogz',
+      requiredUserPermissions: ['MANAGE_CHANNELS'],
+
       commandUsages: [
         { arg: '<channel>', description: 'Setup autogz on a channel', example: '#level-ups' },
         { arg: '<channel> [messages]', description: 'Setup autogz on a channel with one message', example: '#level-ups Congrats!' },
