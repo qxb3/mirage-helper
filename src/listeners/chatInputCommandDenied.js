@@ -1,10 +1,9 @@
 const { Listener } = require('@sapphire/framework')
-const { sendMessage } = require('#utils/response')
 
 class CommandDeniedListener extends Listener {
-  async run({ message, context }) {
-    await sendMessage(context, {
-      content: message,
+  run(error, { interaction }) {
+    interaction.reply({
+      content: error.message,
       ephemeral: true
     })
   }
