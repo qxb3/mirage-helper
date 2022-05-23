@@ -22,7 +22,7 @@
 
 ---
 
-Bot Invite: [Invite](https://discordbotlist.com/bots/miragebot)
+Bot Invite: [Invite](https://discord.com/api/oauth2/authorize?client_id=903372467370864740&permissions=414464855105&scope=bot%20applications.commands)
 <br>
 Discord Server: [Discord Server](https://discord.gg/jmcWaC829X)
 
