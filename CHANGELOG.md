@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/qxb3/mirage-helper/compare/v2.3.0...v2.3.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* **autogz:** add user permission ([f7fbe49](https://github.com/qxb3/mirage-helper/commit/f7fbe497c7750e3e4a147a70e8bca573eee83ae6))
+* **listeners:** fix command denied handling ([3e0e76d](https://github.com/qxb3/mirage-helper/commit/3e0e76d7d35a3859a9962b83377c09d86c825253))
+* **prefix:** degrade user permission to MANAGE_CHANNELS ([81c5d40](https://github.com/qxb3/mirage-helper/commit/81c5d40d287a4008579a0ce0361df3b1bbb85bc2))
+
 ## [2.3.0](https://github.com/qxb3/mirage-helper/compare/v2.2.0...v2.3.0) (2022-05-23)
 
 
