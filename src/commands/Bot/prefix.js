@@ -11,7 +11,8 @@ class PrefixCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'See or update server\'s prefix',
-      preconditions: ['GuildOnly', 'OwnerOnly']
+      preconditions: ['GuildOnly'],
+      requiredUserPermissions: ['MANAGE_CHANNELS']
     })
   }
 
