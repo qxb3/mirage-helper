@@ -1,4 +1,5 @@
 const { Listener } = require('@sapphire/framework')
+const { Time } = require('@sapphire/time-utilities')
 
 const autoGzModel = require('#models/autogz')
 
@@ -16,17 +17,19 @@ class MessageCreateListener extends Listener {
     const { channelId, messages } = await autoGzModel.findOne({ guildId: message.guild.id })
     if (message.channel.id !== channelId) return
 
-    await message?.react('🇬')
-    await message?.react('🇿')
+    setTimeout(async () => {
+      await message?.react('🇬')
+      await message?.react('🇿')
 
-    const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
-    const randomMessage = messages[randomNumber(0, messages.length-1)]
-      .replace(/{USER}/g, `<@${message.member.id}>`)
-      .replace(/{SERVER}/g, message.guild.name)
+      const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+      const randomMessage = messages[randomNumber(0, messages.length-1)]
+        .replace(/{USER}/g, `<@${message.member.id}>`)
+        .replace(/{SERVER}/g, message.guild.name)
 
-    if (randomMessage) {
-      message.reply(randomMessage)
-    }
+      if (randomMessage) {
+        message.reply(randomMessage)
+      }
+    }, Time.Second / 2)
   }
 }
 
