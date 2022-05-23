@@ -11,7 +11,7 @@ class MessageCreateListener extends Listener {
 
   async autoGz(message) {
     const attachment = message.attachments.first()
-    if (!['image/png', 'video/mp4'].includes(attachment?.contentType)) return
+    if (!['image/png', 'image/jpeg', 'video/mp4'].includes(attachment?.contentType)) return
 
     const { channelId, messages } = await autoGzModel.findOne({ guildId: message.guild.id })
     if (message.channel.id !== channelId) return
