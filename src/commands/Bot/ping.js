@@ -1,7 +1,7 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 
 const { guildIds } = require('#vars')
-const { createEmbed, sendMessage } = require('#utils/response')
+const { sendMessage } = require('#utils/response')
 
 class PingCommand extends MirageCommand {
   constructor(context, options) {
@@ -23,20 +23,7 @@ class PingCommand extends MirageCommand {
     })
 
     const { diff, ping } = this.getPing(context, sent)
-
-    const embed = createEmbed()
-      .setTitle('Pong! 🏓')
-      .setDescription(
-        `⚡ | Roundtrip: ${diff}ms\n` +
-        `🏓 | Ping: ${ping}ms\n\n` +
-        '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
-      )
-      .setFooter({ text: 'Let\'s go!', iconURL: this.container.client.user.displayAvatarURL() })
-
-    await sent.edit({
-      content: ' ',
-      embeds: [embed]
-    })
+    await sent.edit(`🏓 Pong! Roundtrip: ${diff}ms, Ping: ${ping}ms`)
   }
 
   getPing(context, sent) {
