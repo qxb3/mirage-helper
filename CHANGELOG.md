@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.2](https://github.com/qxb3/mirage-helper/compare/v2.3.1...v2.3.2) (2022-05-23)
+
+
+### Bug Fixes
+
+* **autogz:** make it work for jpegs ([12ff073](https://github.com/qxb3/mirage-helper/commit/12ff073f4aca976cf440f00f19de87d73fb38556))
+
 ### [2.3.1](https://github.com/qxb3/mirage-helper/compare/v2.3.0...v2.3.1) (2022-05-23)
 
 
