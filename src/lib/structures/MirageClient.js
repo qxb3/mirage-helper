@@ -53,7 +53,7 @@ class MirageClient extends SapphireClient {
       ])
     )
 
-    this.logger.info('Cached prefixes.')
+    this.logger.info('Successfully cached prefixes.')
 
     this.fetchPrefix = async (message) => {
       const result = container.prefixes.get(message.guild.id)
