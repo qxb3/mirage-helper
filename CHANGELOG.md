@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/qxb3/mirage-helper/compare/v2.3.4...v2.4.0) (2022-05-25)
+
+
+### Features
+
+* **commands:** added github command ([c18f5cb](https://github.com/qxb3/mirage-helper/commit/c18f5cb19ed0eeefb1f854c607e229f2ebb10b1c))
+
 ### [2.3.4](https://github.com/qxb3/mirage-helper/compare/v2.3.3...v2.3.4) (2022-05-25)
 
 
