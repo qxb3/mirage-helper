@@ -22,7 +22,6 @@ class MessageCreateListener extends Listener {
       await message?.react('🇬')
       await message?.react('🇿')
 
-      const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
       const randomMessage = messages[randomNumber(0, messages.length-1)]
         .replace(/{USER}/g, `<@${message.member.id}>`)
         .replace(/{SERVER}/g, message.guild.name)
