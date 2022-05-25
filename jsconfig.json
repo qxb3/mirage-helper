@@ -8,6 +8,7 @@
             "#vars": ["./src/vars.js"],
             "#lib/*": ["./src/lib/*"],
             "#utils/*": ["./src/lib/utils/*"],
+            "#utils": ["./src/lib/utils"],
             "#structures/*": ["./src/lib/structures/*"],
             "#models/*": ["./src/lib/models/*"]
         }

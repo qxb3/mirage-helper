@@ -1,6 +1,7 @@
 const { Listener } = require('@sapphire/framework')
 
 const presences = require('#assets/presences.json')
+const { randomNumber } = require('#utils')
 const { Time } = require('@sapphire/time-utilities')
 
 class ReadyListener extends Listener {
@@ -18,8 +19,6 @@ class ReadyListener extends Listener {
   }
 
   setChangingStatus(client) {
-    const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
-
     setInterval(() => {
       const serverSize = client.guilds.cache.size
       const userSize = client.guilds.cache.map((guild) => guild.memberCount).reduce((prev, current) => prev + current)

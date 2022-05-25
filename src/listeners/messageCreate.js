@@ -1,6 +1,7 @@
 const { Listener } = require('@sapphire/framework')
 const { Time } = require('@sapphire/time-utilities')
 
+const { randomNumber } = require('#utils')
 const autoGzModel = require('#models/autogz')
 
 class MessageCreateListener extends Listener {

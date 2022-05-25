@@ -30,7 +30,7 @@ class SkillCommand extends MirageCommand {
       return this.noArgs(options)
     }
 
-    const vocation = searchItems(args[0], this.vocations)[0]
+    const vocation = searchItems(args.shift(), this.vocations)[0]
     if (!vocation) {
       return this.unknownVocation(options)
     }
@@ -39,7 +39,7 @@ class SkillCommand extends MirageCommand {
       return this.notANumber(options)
     }
 
-    this.calculate(options)
+    this.calculate({ ...options, vocation })
   }
 
   noArgs({ context, user, commandName, prefix }) {
@@ -78,8 +78,7 @@ class SkillCommand extends MirageCommand {
     })
   }
 
-  calculate({ context, args, user }) {
-    const vocation = args.shift()
+  calculate({ context, args, user, vocation }) {
     const [from, to, skillPercent] = args.map(v => parseInt(v))
     const result = calculateSkill(vocation, from, to, skillPercent)
 
