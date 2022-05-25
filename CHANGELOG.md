@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.4](https://github.com/qxb3/mirage-helper/compare/v2.3.3...v2.3.4) (2022-05-25)
+
+
+### Bug Fixes
+
+* fix autogz crashing ([865a048](https://github.com/qxb3/mirage-helper/commit/865a048bcbc7abff31a5a83d190b2fa6466e3d75))
+
 ### [2.3.3](https://github.com/qxb3/mirage-helper/compare/v2.3.2...v2.3.3) (2022-05-23)
 
 
