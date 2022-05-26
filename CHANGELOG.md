@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/qxb3/mirage-helper/compare/v2.4.0...v2.5.0) (2022-05-26)
+
+
+### Features
+
+* added stats command ([8b10ba3](https://github.com/qxb3/mirage-helper/commit/8b10ba3e63ec8c70852daf4cd069091114d71e59))
+* finished up servertime command ([76f33b0](https://github.com/qxb3/mirage-helper/commit/76f33b0eebfb7ff2ad974831a67a4e5f8ea41554))
+* **utils:** added countLines func ([4ea9b06](https://github.com/qxb3/mirage-helper/commit/4ea9b06b879b03ee33bf893ae0ead39965fda3b8))
+
 ## [2.4.0](https://github.com/qxb3/mirage-helper/compare/v2.3.4...v2.4.0) (2022-05-25)
 
 
