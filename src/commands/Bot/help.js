@@ -11,11 +11,29 @@ class HelpCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Help command',
+      aliases: ['commands'],
       thumbnail: 'assets/icons/help.png',
       commandUsages: [
         { arg: '[command]', description: 'To see the full info of the command', example: 'weapons' }
       ]
     })
+  }
+
+  run(options) {
+    const { args } = options
+
+    const commands = this.container.stores.get('commands').filter(command => !command.options.hidden)
+    const result = searchItems(args.join(' '), [...commands.values()])[0]
+
+    if (args.length === 0) {
+      return this.noArgs({ ...options, commands })
+    }
+
+    if (result) {
+      return this.isCommand({ ...options, command: result })
+    }
+
+    this.isNoMatch(options)
   }
 
   noArgs({ context, commands, commandName, prefix }) {
@@ -68,23 +86,6 @@ class HelpCommand extends MirageCommand {
       embeds: [embed],
       files: [this.thumbnail.path]
     })
-  }
-
-  run(options) {
-    const { args } = options
-
-    const commands = this.container.stores.get('commands').filter(command => !command.options.hidden)
-    const result = searchItems(args.join(' '), [...commands.values()])[0]
-
-    if (args.length === 0) {
-      return this.noArgs({ ...options, commands })
-    }
-
-    if (result) {
-      return this.isCommand({ ...options, command: result })
-    }
-
-    this.isNoMatch(options)
   }
 
   autocompleteRun(interaction) {
