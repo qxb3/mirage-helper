@@ -1,4 +1,5 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
+const moment = require('moment-timezone')
 
 const { guildIds } = require('#vars')
 const { sendMessage } = require('#utils/response')
@@ -17,13 +18,14 @@ class SeverTimeCommand extends MirageCommand {
   }
 
   run({ context }) {
+    const time = this.getServerTime()
     sendMessage(context, {
-      content: 'This command are under development...',
+      content: `**Servertime**: ${time.military}`,
       reply: true
     })
   }
 
-  /*getServerTime() {
+  getServerTime() {
     const getMilitaryTime = (standard) => {
       const [time, modifier] = standard.split(' ')
       let [hours, minutes] = time.split(':')
@@ -43,7 +45,7 @@ class SeverTimeCommand extends MirageCommand {
       standard,
       military
     }
-  }*/
+  }
 }
 
 module.exports = SeverTimeCommand
