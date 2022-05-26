@@ -23,6 +23,7 @@ class MirageClient extends SapphireClient {
       loadMessageCommandListeners: true,
       caseInsensitiveCommands: true,
       caseInsensitivePrefixes: true,
+      disableMentionPrefix: true
     })
 
     ApplicationCommandRegistries.setDefaultBehaviorWhenNotIdentical(RegisterBehavior.Overwrite)
