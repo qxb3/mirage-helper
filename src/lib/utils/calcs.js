@@ -1,5 +1,5 @@
 const { ignoreCase } = require('./string')
-const { formatTime } = require('./index')
+const { DurationFormatter } = require('@sapphire/time-utilities')
 
 /**
  * @typedef CalculateLevel {Object}
@@ -31,7 +31,7 @@ const calculateLevel = (from, to, mobExp, percent = 0) => {
 
   return {
     exp,
-    time: formatTime(time)
+    time: new DurationFormatter().format(time * 1000)
   }
 }
 
@@ -69,12 +69,6 @@ const calculateSkill = (vocation, from, to, percent = 0) => {
     return Math.ceil((level * Math.pow(1.0825, level) + (1.0825 * level) + 30.0) * multiplier)
   }
 
-  const format = (hits) => {
-    const cooldown = 2.3185
-    const time = Math.ceil(hits * cooldown)
-    return formatTime(time)
-  }
-
   const vocationInfo = vocsInfo.find(info => ignoreCase(info.voc, vocation))
 
   let hits = 0
@@ -90,6 +84,12 @@ const calculateSkill = (vocation, from, to, percent = 0) => {
     defences += hit(i + 1, vocationInfo.defenceMultiplier)
     if (i ==  from)
       defences *= (100 - percent) / 100
+  }
+
+  const format = (hits) => {
+    const cooldown = 2.3185
+    const time = Math.ceil(hits * cooldown)
+    return new DurationFormatter().format(time * 1000)
   }
 
   const timeHits = format(hits)
