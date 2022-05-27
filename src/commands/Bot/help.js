@@ -89,8 +89,8 @@ class HelpCommand extends MirageCommand {
   }
 
   autocompleteRun(interaction) {
-    const commands = this.container.stores.get('commands').filter(command => !command.options.hidden)
     const query = interaction.options.getFocused()
+    const commands = [...this.container.stores.get('commands').filter(command => !command.options.hidden).values()]
 
     if (!query) {
       return interaction.respond(
@@ -101,7 +101,7 @@ class HelpCommand extends MirageCommand {
       )
     }
 
-    const result = searchItemsAutocomplete(query, commands)
+    const result = searchItemsAutocomplete(query, commands, ['name', 'fullCategory'])
     interaction.respond(
       result.map(command => ({
         name: command.name,
