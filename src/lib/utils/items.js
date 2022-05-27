@@ -4,8 +4,8 @@ const Fuse = require('fuse.js/dist/fuse.basic.common')
  * Search through an items
  * @param query {String}
  * @param items {Array<any>}
- * @param keys [Array<String>]
- * @returns {Array<any>}
+ * @param keys {Array<any>}
+ * @returns {Array<Object>}
  */
 const searchItems = (query, items, keys = ['name']) => {
   const length = items.length
