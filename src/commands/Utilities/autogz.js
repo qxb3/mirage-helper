@@ -5,7 +5,7 @@ const { ChannelType } = require('discord-api-types/v9')
 const { guildIds } = require('#vars')
 const { sendMessage, createEmbedUser } = require('#utils/response')
 
-const autoGzModel = require('#models/autogz')
+const guildsSettings = require('#models/guilds')
 
 class AutoGzCommand extends MirageCommand {
   constructor(context, options) {
@@ -14,6 +14,7 @@ class AutoGzCommand extends MirageCommand {
       description: 'Setup autogz',
       requiredUserPermissions: ['MANAGE_CHANNELS'],
 
+      toggleable: true,
       commandUsages: [
         { arg: '<channel>', description: 'Setup autogz on a channel', example: '#level-ups' },
         { arg: '<channel> [messages]', description: 'Setup autogz on a channel with one message', example: '#level-ups Congrats!' },
@@ -46,18 +47,22 @@ class AutoGzCommand extends MirageCommand {
       })
     }
 
-    await autoGzModel.findOneAndUpdate(
+    const updatedAutogz = await guildsSettings.findOneAndUpdate(
       {
         guildId: guild.id
       },
       {
-        channelId: channel.id,
-        messages
+        autogz: {
+          channelId: channel.id,
+          messages
+        }
       },
       {
-        upsert: true
+        upsert: true,
+        new: true
       }
     )
+    this.container.guildsSettings.set(context.guild.id, updatedAutogz)
 
     const embed = createEmbedUser(user)
       .setDescription(

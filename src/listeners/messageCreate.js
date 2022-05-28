@@ -2,7 +2,6 @@ const { Listener } = require('@sapphire/framework')
 const { Time } = require('@sapphire/time-utilities')
 
 const { randomNumber } = require('#utils')
-const autoGzModel = require('#models/autogz')
 
 class MessageCreateListener extends Listener {
   run(message) {
@@ -15,7 +14,7 @@ class MessageCreateListener extends Listener {
     const attachment = message.attachments.first()
     if (!['image/png', 'image/jpeg', 'video/mp4'].includes(attachment?.contentType)) return
 
-    const data = await autoGzModel.findOne({ guildId: message.guild.id })
+    const data = this.container.guildsSettings.get(message.guild.id)?.autogz
     if (!data) return
 
     const { channelId, messages } = data
