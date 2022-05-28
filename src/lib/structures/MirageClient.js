@@ -6,7 +6,7 @@ const {
 } = require('@sapphire/framework')
 
 const mongoose = require('mongoose')
-const prefixModel = require('#models/prefix')
+const guildsSettings = require('#models/guilds')
 
 const vars = require('#vars')
 
@@ -19,6 +19,10 @@ class MirageClient extends SapphireClient {
         'GUILD_MEMBERS'
       ],
       defaultPrefix: vars.defaultPrefix,
+      fetchPrefix: (message) => {
+        const guildSettings = container.guildsSettings.get(message.guild.id)
+        return guildSettings?.prefix || vars.defaultPrefix
+      },
       preventFailedToFetchLogForGuildIds: [vars.mirageServer.id],
       loadMessageCommandListeners: true,
       caseInsensitiveCommands: true,
@@ -39,27 +43,22 @@ class MirageClient extends SapphireClient {
   }
 
   login() {
-    this.connectToDatabase(() => {
+    this.connectToDatabase(async () => {
+      await this.cacheGuildsSettings()
+
       super.login(process.env.BOT_TOKEN)
-      this.cachePrefixes()
     })
   }
 
-  async cachePrefixes() {
-    const prefixes = await prefixModel.find({})
-    container.prefixes = new Map(
-      prefixes.map(v => [
-        v.guildId,
-        v
-      ])
+  async cacheGuildsSettings() {
+    const settings = await guildsSettings.find({})
+    container.guildsSettings = new Map(
+      settings.map(v =>
+        [v.guildId, v]
+      )
     )
 
-    this.logger.info('Successfully cached prefixes.')
-
-    this.fetchPrefix = async (message) => {
-      const result = container.prefixes.get(message.guild.id)
-      return result?.prefix || vars.defaultPrefix
-    }
+    this.logger.info('Successfully cached guilds settings.')
   }
 }
 

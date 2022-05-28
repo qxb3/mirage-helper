@@ -1,7 +1,7 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 
-const prefixModel = require('#models/prefix')
+const guildsSettings = require('#models/guilds')
 
 const { guildIds } = require('#vars')
 const { sendMessage } = require('#utils/response')
@@ -20,7 +20,7 @@ class PrefixCommand extends MirageCommand {
     const prefixToUpdate = args.shift()
 
     if (!prefixToUpdate) {
-      const currentPrefix = await prefixModel.findOne({ guildId: guild.id })
+      const currentPrefix = await guildsSettings.findOne({ guildId: guild.id })
       return sendMessage(context, {
         content: `Current prefix: **${currentPrefix?.prefix || prefix}**`,
         reply: true
@@ -42,8 +42,8 @@ class PrefixCommand extends MirageCommand {
       new: true
     }
 
-    const updatedPrefix = await prefixModel.findOneAndUpdate(filter, update, options)
-    this.container.prefixes.set(updatedPrefix.guildId, updatedPrefix)
+    const updatedPrefix = await guildsSettings.findOneAndUpdate(filter, update, options)
+    this.container.guildsSettings.set(updatedPrefix.guildId, updatedPrefix)
 
     sendMessage(context, {
       content: `The current prefix are now: **${updatedPrefix.prefix}**`,
