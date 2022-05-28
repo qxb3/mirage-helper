@@ -1,12 +1,12 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 const { version: djsVersion } = require('discord.js')
 const { version: sapphireVersion } = require('@sapphire/framework')
-const { DurationFormatter } = require('@sapphire/time-utilities')
 
 const { guildIds } = require('#vars')
 const { addCircleOnFront } = require('#utils/string')
-const { countlines } = require('#utils')
+const { countlines, timestamp } = require('#utils')
 const { sendMessage, createEmbed } = require('#utils/response')
+const { uptime } = require('os')
 
 class StatsCommand extends MirageCommand {
   constructor(context, options) {
@@ -52,10 +52,10 @@ class StatsCommand extends MirageCommand {
   }
 
   getUptimeStats(client) {
-    const formatter = new DurationFormatter()
+    const now = Date.now()
     return addCircleOnFront([
-      `**Host**: ${formatter.format(require('os').uptime() * 1000)}`,
-      `**Client**: ${formatter.format(client.uptime)}`
+      `**Client**: ${timestamp.getRelativeTime(now - client.uptime)}`,
+      `**Host**: ${timestamp.getRelativeTime(now - uptime() * 1000)}`
     ])
   }
 
@@ -73,9 +73,9 @@ class StatsCommand extends MirageCommand {
     return addCircleOnFront([
       `**Lines of code**: ${linesOfCode}`,
       `**Number of files**: ${numOfFiles}`,
-      `**node.js**: ${process.version}`,
-      `**discord.js**: v${djsVersion}`,
-      `**sapphire**: v${sapphireVersion}`
+      `**Node.js**: ${process.version}`,
+      `**Discord.js**: v${djsVersion}`,
+      `**Sapphire**: v${sapphireVersion}`
     ])
   }
 }
