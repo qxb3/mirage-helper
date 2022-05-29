@@ -7,7 +7,10 @@ class MessageCreateListener extends Listener {
   run(message) {
     if (message.author.bot) return
 
-    this.autoGz(message)
+    const commandsSettings = this.container.guildsSettings.get(message.guild.id)?.commandsSettings
+    const setting = commandsSettings?.find(cmd => cmd.name === 'autogz')
+    if (!setting || !setting?.disabled)
+      this.autoGz(message)
   }
 
   async autoGz(message) {
