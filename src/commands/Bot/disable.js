@@ -14,6 +14,8 @@ class EnableCommand extends MirageCommand {
     super(context, {
       ...options,
       description: 'Disable a command in this server',
+      requiredUserPermissions: 'MANAGE_CHANNELS',
+
       thumbnail: 'assets/icons/mirage.png',
       commandUsages: [
         { arg: '[command]', description: 'Disable a command in this server', example: 'autogz' }
