@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/qxb3/mirage-helper/compare/v2.5.0...v2.6.0) (2022-05-29)
+
+
+### Features
+
+* **constants:** addef success color ([1776cea](https://github.com/qxb3/mirage-helper/commit/1776cea0b2af1f94354172e8897e0959fe15c803))
+* disable mention as a prefix ([e704c81](https://github.com/qxb3/mirage-helper/commit/e704c81d69884ee74d423ffe8dcf2fcf5e50cc96))
+* disabling autogz if disable ([1d806e5](https://github.com/qxb3/mirage-helper/commit/1d806e583ca0db755068078cf1880b5335fcd29f))
+* **GuildSettings:** added toggleable system with cache in place ([554808c](https://github.com/qxb3/mirage-helper/commit/554808cb68a911da5336c424ba056ecc36a64602))
+* **help:** added commands alias and reorganize functions ([e5337f6](https://github.com/qxb3/mirage-helper/commit/e5337f60497f88f2eb7f43aac31cf50bed20d32b))
+* **stats:** using discord timestamp for uptime ([e30691c](https://github.com/qxb3/mirage-helper/commit/e30691c4d45f8bc459b03484ff105ad94da088d8))
+* **ToggleableSystem:** added enable and disable command ([b7973c2](https://github.com/qxb3/mirage-helper/commit/b7973c292f9e9b44cb5b11084113ff09eb3c8742))
+* **utils:** added discord timestamp ([421736f](https://github.com/qxb3/mirage-helper/commit/421736f67d129a0d82803091b7bfcb0843a2c7d1))
+
+
+### Bug Fixes
+
+* **commands:** added required user permissions to enable and disable command ([24513b8](https://github.com/qxb3/mirage-helper/commit/24513b80b43f499ae52675c518bb648f5ecf3c4d))
+* **help:** fix autocomplete ([67dcc44](https://github.com/qxb3/mirage-helper/commit/67dcc4450499b7ef875156f241e1a1808f8beee5))
+* **preconditions:** removed OwnerOnly ([4fe0973](https://github.com/qxb3/mirage-helper/commit/4fe09731f940cb464ba46fe2b901b4d34c01d224))
+* **WikiCommand:** fix noMatch() join function ([30dfb58](https://github.com/qxb3/mirage-helper/commit/30dfb58991d4cb65471fa28c2d805982829bb7ce))
+
 ## [2.5.0](https://github.com/qxb3/mirage-helper/compare/v2.4.0...v2.5.0) (2022-05-26)
 
 
