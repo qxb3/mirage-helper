@@ -21,9 +21,15 @@ class BaseCommand extends Command {
       Permissions.FLAGS.ATTACH_FILES
     ])
 
+    const preconditions = [
+      options.preconditions ? options.preconditions : [],
+      options.toggleable ? 'IsDisabled': []
+    ]
+
     super(context, {
+      ...options,
       requiredClientPermissions: permissions,
-      ...options
+      preconditions: preconditions.flat()
     })
 
     if (options.thumbnail) {
@@ -33,6 +39,7 @@ class BaseCommand extends Command {
       }
     }
     this.hidden = options.hidden || false
+    this.toggleable = options.toggleable || false
     this.commandUsages = options.commandUsages
   }
 
