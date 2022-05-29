@@ -37,6 +37,7 @@
     "#vars": "./src/vars.js",
     "#assets": "./assets",
     "#lib": "./src/lib",
+    "#systems": "./src/systems",
     "#utils": "./src/lib/utils",
     "#structures": "./src/lib/structures",
     "#models": "./src/lib/models"
