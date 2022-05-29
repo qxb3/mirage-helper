@@ -36,7 +36,7 @@ const createEmbed = (color = Colors.Primary) => {
  */
 const createEmbedUser = (user, color = Colors.Primary) => {
   return new MessageEmbed()
-    .setAuthor({ name: user.username, iconURL: user.displayAvatarURL({ dynamic: true }) })
+    .setAuthor({ name: user.tag, iconURL: user.displayAvatarURL({ dynamic: true }) })
     .setColor(color)
 }
 
