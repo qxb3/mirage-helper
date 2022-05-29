@@ -3,6 +3,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders')
 const { ChannelType } = require('discord-api-types/v9')
 
 const { guildIds } = require('#vars')
+const { Colors } = require('#utils/constants')
 const { sendMessage, createEmbedUser } = require('#utils/response')
 
 const guildsSettings = require('#models/guilds')
@@ -64,7 +65,7 @@ class AutoGzCommand extends MirageCommand {
     )
     this.container.guildsSettings.set(context.guild.id, updatedAutogz)
 
-    const embed = createEmbedUser(user)
+    const embed = createEmbedUser(user, Colors.Success)
       .setDescription(
         'Successfully updated!\n\n' +
         `Channel: ${channel}\n` +
