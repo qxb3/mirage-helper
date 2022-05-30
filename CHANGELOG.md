@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/qxb3/mirage-helper/compare/v2.6.0...v2.7.0) (2022-05-30)
+
+
+### Features
+
+* added empo stats on equipments and weapons ([f772ec0](https://github.com/qxb3/mirage-helper/commit/f772ec00b282954d8d2fafbc626640b361ae859c))
+* added math utils ([d9d3bc0](https://github.com/qxb3/mirage-helper/commit/d9d3bc080ddce0e28acc9ce16955e0f6920ed2cd))
+* added user tag on embed ([6d41b7d](https://github.com/qxb3/mirage-helper/commit/6d41b7da42b51d426c4acc0f13314e11e8167521))
+* change icons of equipments and enchantments command ([cffe456](https://github.com/qxb3/mirage-helper/commit/cffe45676bbc9fb84e0794bdd6df248df4e6f782))
+
+
+### Bug Fixes
+
+* **enable/disable commands:** update guildId and guildName when saving to db ([0a4e3a3](https://github.com/qxb3/mirage-helper/commit/0a4e3a3ed2ed1c0ee397c461c71aa5a29070c605))
+
 ## [2.6.0](https://github.com/qxb3/mirage-helper/compare/v2.5.0...v2.6.0) (2022-05-29)
 
 
