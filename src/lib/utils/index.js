@@ -1,6 +1,8 @@
 const { lstatSync, readdirSync, readFileSync } = require('fs')
 const { join } = require('path')
+
 const timestamp = require('./timestamp')
+const math = require('./math')
 
 /**
  * Generate random number
@@ -51,5 +53,6 @@ const countlines = (path) => {
 module.exports = {
   randomNumber,
   countlines,
-  timestamp
+  timestamp,
+  math
 }
