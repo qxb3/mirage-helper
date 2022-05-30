@@ -1,6 +1,7 @@
 const WikiCommand = require('#structures/commands/WikiCommand')
 const { createEmbedUser } = require('#utils/response')
-const { capitalizeAll, addCircleOnFront } = require('#utils/string')
+const { addCircleOnFront } = require('#utils/string')
+const { math } = require('#utils')
 
 class EquipmentsCommand extends WikiCommand {
   constructor(context, options) {
@@ -19,17 +20,18 @@ class EquipmentsCommand extends WikiCommand {
   }
 
   getItemResponse({ item, user }) {
-    const stats = Object.keys(item.stats).map(type =>
-      `${capitalizeAll(type.replace('_', ' '))}: ${item.stats[type]}`
-    )
-
     const { name, path } = this.getSprite(this, item, true)
+    const stats = addCircleOnFront([
+      `Armour: ${item.stats.armour}`,
+      `Maximum Stats: ${item.stats.maximum_stat} - ${item.stats.maximum_stat + math.getValueByPercent(item.stats.maximum_stat, 20)}`,
+      `Minimum Stats: ${item.stats.minimum_stat} - ${item.stats.minimum_stat + math.getValueByPercent(item.stats.minimum_stat, 20)}`
+    ])
 
     const embed = createEmbedUser(user)
       .setThumbnail(`attachment://${name}`)
       .addField('❯ Name', item.name)
       .addField('❯ Level Requirement', item.level_requirement.toString())
-      .addField('❯ Stats', addCircleOnFront(stats))
+      .addField('❯ Stats', stats)
       .addField('❯ Monsters', addCircleOnFront(item.monsters))
 
     return { embed, sprite: path }
