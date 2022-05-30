@@ -76,6 +76,8 @@ class EnableCommand extends MirageCommand {
     const updateSettings = await guildsSettings.findOneAndUpdate(
       { guildId: guild.id },
       {
+        guildId: guild.id,
+        guildName: guild.name,
         $addToSet: {
           commandsSettings: {
             name: command.name,
