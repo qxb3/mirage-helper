@@ -9,7 +9,7 @@ class EnchantmentsCommand extends WikiCommand {
       description: 'Find enchantments in the game',
       aliases: ['enchantment', 'enchants', 'enchant'],
 
-      thumbnail: 'assets/wiki/sprites/enchantments/physical.png',
+      thumbnail: 'assets/icons/enchantments.png',
       commandUsages: [
         { arg: '[enchantment]', description: 'To see the full info of the enchantment', example: 'Mana' },
       ]
