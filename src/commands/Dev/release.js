@@ -32,7 +32,15 @@ class ReleaseCommand extends MirageCommand {
   }
 
   async send(interaction) {
-    const { roleId, channelId } = (await devModel.findOne({ name: 'release' })).data
+    const data = await devModel.findOne({ name: 'release' })
+    if (!data) {
+      return interaction.reply({
+        content: 'Please setup this command first',
+        ephemeral: true
+      })
+    }
+
+    const { roleId, channelId } = data.settings
     const role = await interaction.guild.roles.fetch(roleId)
     const channel = await interaction.guild.channels.fetch(channelId)
     const message = interaction.options.getString('message')
@@ -73,7 +81,8 @@ class ReleaseCommand extends MirageCommand {
         name: 'release'
       },
       {
-        data: {
+        name: 'release',
+        settings: {
           roleId: role.id,
           channelId: channel.id
         }
