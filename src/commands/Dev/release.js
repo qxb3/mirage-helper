@@ -51,9 +51,8 @@ class ReleaseCommand extends MirageCommand {
       .setDescription(
         `New announcement for ${role}\n` +
         `**v${bot.version}** has been released!\n\n` +
-        `${message?.startsWith('mid') ? message.replace('mid ', '') : ''}\n\n` +
-        `See the changelog on: [v${bot.version} Release](https://github.com/qxb3/mirage-helper/releases/tag/v${bot.version})\n\n` +
-        `${message && !message.startsWith('mid') ? message : ''}`
+        `${message ? message : ''}\n\n` +
+        `See the changelog on: [v${bot.version} Release](https://github.com/qxb3/mirage-helper/releases/tag/v${bot.version})`
       )
       .setTimestamp()
 
