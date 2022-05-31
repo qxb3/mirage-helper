@@ -3,7 +3,7 @@ const { requiredType } = require('./utils')
 
 const schema = new Schema({
   name: requiredType(String),
-  releaseSettings: requiredType(Object)
+  settings: requiredType(Object)
 })
 
 module.exports = model('dev_settings', schema)
