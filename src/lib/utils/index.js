@@ -5,15 +5,6 @@ const timestamp = require('./timestamp')
 const math = require('./math')
 
 /**
- * Generate random number
- * @param min {Number=0}
- * @param max {Number}
- * @returns {Number}
- */
-const randomNumber = (min = 0, max) =>
-  Math.floor(Math.random() * (max - min + 1)) + min
-
-/**
  * @typedef CountLines {Object}
  * @property linesOfCode {Number}
  * @property numOfFiles {Number}
@@ -51,7 +42,6 @@ const countlines = (path) => {
 }
 
 module.exports = {
-  randomNumber,
   countlines,
   timestamp,
   math

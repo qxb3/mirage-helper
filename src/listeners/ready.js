@@ -1,7 +1,7 @@
 const { Listener } = require('@sapphire/framework')
 
 const presences = require('#assets/presences.json')
-const { randomNumber } = require('#utils')
+const { math } = require('#utils')
 const { Time } = require('@sapphire/time-utilities')
 
 class ReadyListener extends Listener {
@@ -23,7 +23,7 @@ class ReadyListener extends Listener {
       const serverSize = client.guilds.cache.size
       const userSize = client.guilds.cache.map((guild) => guild.memberCount).reduce((prev, current) => prev + current)
 
-      const presence = presences[randomNumber(0, presences.length-1)]
+      const presence = presences[math.randomNumber(0, presences.length-1)]
       presence.name = presence.name
         .replace(/{server_size}/g, `${serverSize}`)
         .replace(/{user_size}/g, `${userSize}`)

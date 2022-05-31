@@ -1,7 +1,7 @@
 const { container } = require('@sapphire/framework')
 const { Time } = require('@sapphire/time-utilities')
 
-const { randomNumber } = require('#utils')
+const { math } = require('#utils')
 const { isDisabled } = require('./utils')
 
 module.exports = (message) => {
@@ -20,7 +20,7 @@ module.exports = (message) => {
     await message?.react('🇬')
     await message?.react('🇿')
 
-    const randomMessage = messages[randomNumber(0, messages.length-1)]
+    const randomMessage = messages[math.randomNumber(0, messages.length-1)]
       .replace(/{USER}/g, `<@${message.member.id}>`)
       .replace(/{SERVER}/g, message.guild.name)
 
