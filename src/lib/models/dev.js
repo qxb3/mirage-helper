@@ -6,5 +6,4 @@ const schema = new Schema({
   data: requiredType(Object)
 })
 
-const name = 'dev'
-module.exports = model(name, schema, name)
+module.exports = model('dev_settings', schema)
