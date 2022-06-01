@@ -15,6 +15,7 @@ class EnableCommand extends MirageCommand {
       ...options,
       description: 'Enable a command in this server',
       requiredUserPermissions: 'MANAGE_CHANNELS',
+      preconditions: ['GuildOnly'],
 
       thumbnail: 'assets/icons/mirage.png',
       commandUsages: [
