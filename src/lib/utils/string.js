@@ -29,8 +29,20 @@ const capitalizeAll = (str) => {
     ).join(' ')
 }
 
+/**
+ * Multiline using template literals without spaces
+ * @param str {string}
+ * @returns {string}
+ */
+const multiLine = (str) => {
+  return str.trim().split('\n')
+    .map(v => v.trim())
+    .join('\n')
+}
+
 module.exports = {
   addCircleOnFront,
   ignoreCase,
-  capitalizeAll
+  capitalizeAll,
+  multiLine
 }
