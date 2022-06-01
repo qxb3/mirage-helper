@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.1](https://github.com/qxb3/mirage-helper/compare/v2.7.0...v2.7.1) (2022-06-01)
+
+
+### Features
+
+* **release command:** remove the optional custom message position and just go for middle at default ([b6bee1c](https://github.com/qxb3/mirage-helper/commit/b6bee1cc80d685189ddc84c85fbb8693291a89f7))
+* **utils:** added multiLine ([8a1d580](https://github.com/qxb3/mirage-helper/commit/8a1d5805af093c728f9c31917bff63a6e03c74a5))
+
+
+### Bug Fixes
+
+* added GuildOnly preconditions to disable and enable commands ([e855b77](https://github.com/qxb3/mirage-helper/commit/e855b77a7a72cfaf019944a2d9d114a435028334))
+* fix release command erroring when i send a update without setting it up ([74a2326](https://github.com/qxb3/mirage-helper/commit/74a2326413bb70a342b92ce51e54d9cae7a03986))
+
 ## [2.7.0](https://github.com/qxb3/mirage-helper/compare/v2.6.0...v2.7.0) (2022-05-30)
 
 
