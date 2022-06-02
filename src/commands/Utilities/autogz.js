@@ -4,6 +4,7 @@ const { ChannelType } = require('discord-api-types/v9')
 
 const { guildIds } = require('#vars')
 const { Colors } = require('#utils/constants')
+const { multiLine } = require('#utils/string')
 const { sendMessage, createEmbedUser } = require('#utils/response')
 
 const guildsSettings = require('#models/guilds')
@@ -68,16 +69,18 @@ class AutoGzCommand extends MirageCommand {
     this.container.guildsSettings.set(context.guild.id, updatedAutogz)
 
     const embed = createEmbedUser(user, Colors.Success)
-      .setDescription(
-        'Successfully updated!\n\n' +
-        `Channel: ${channel}\n` +
-        `Messages: ${messages.join(', ') || 'None'}`
-      )
+      .setDescription(multiLine(`
+        Successfully updated!
+
+        Channel: ${channel}
+        Messages: ${messages.join(', ') || 'None'}
+      `))
       .setTimestamp()
 
     sendMessage(context, {
       embeds: [embed],
-      reply: true
+      reply: true,
+      ephemeral: true
     })
   }
 
