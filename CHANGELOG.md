@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.3](https://github.com/qxb3/mirage-helper/compare/v2.7.2...v2.7.3) (2022-06-02)
+
+
+### Bug Fixes
+
+* **skill command:** fixed the command not calculating ([441695f](https://github.com/qxb3/mirage-helper/commit/441695f77d0194f69450b9b54d53a57dd2cecf6f))
+
 ### [2.7.2](https://github.com/qxb3/mirage-helper/compare/v2.7.1...v2.7.2) (2022-06-02)
 
 
