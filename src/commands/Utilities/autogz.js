@@ -53,6 +53,8 @@ class AutoGzCommand extends MirageCommand {
         guildId: guild.id
       },
       {
+        guildId: guild.id,
+        guildName: guild.name,
         autogz: {
           channelId: channel.id,
           messages
