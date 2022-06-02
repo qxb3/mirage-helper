@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.2](https://github.com/qxb3/mirage-helper/compare/v2.7.1...v2.7.2) (2022-06-02)
+
+
+### Bug Fixes
+
+* **autogz command:** update guild id and name when setting up ([bce413a](https://github.com/qxb3/mirage-helper/commit/bce413a178f11adc44467203cba4b35bd92228e1))
+* **release command:** supports other server ([25764ce](https://github.com/qxb3/mirage-helper/commit/25764ce39e851a8afc1bee6f17a62cec2d5adb8c))
+* **skill command:** fix not erroring when user args is not valid ([f437498](https://github.com/qxb3/mirage-helper/commit/f437498632f9cdfbc9e68f83e8797f74607dc4cd))
+
 ### [2.7.1](https://github.com/qxb3/mirage-helper/compare/v2.7.0...v2.7.1) (2022-06-01)
 
 
