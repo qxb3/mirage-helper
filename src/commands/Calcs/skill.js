@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders')
 const { guildIds } = require('#vars')
 const { Colors } = require('#utils/constants')
 const { sendMessage, createEmbedUser } = require('#utils/response')
-const { addCircleOnFront } = require('#utils/string')
+const { addCircleOnFront, multiLine } = require('#utils/string')
 const { searchItemsAutocomplete, searchItems } = require('#utils/items')
 const { calculateSkill } = require('#utils/calcs')
 
@@ -79,18 +79,17 @@ class SkillCommand extends MirageCommand {
   }
 
   calculate({ context, args, user, vocation }) {
-    const [from, to, skillPercent] = args.map(v => parseInt(v))
+    const [from, to, skillPercent] = args.slice(1).map(v => parseInt(v))
     const result = calculateSkill(vocation, from, to, skillPercent)
 
     sendMessage(context, {
       embeds: [
         createEmbedUser(user)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
-          .addField(
-            '❯ Result',
-            `${result.skillType}: ${result.timeHits}\n` +
-            `Defence: ${result.timeDefence}`
-          )
+          .addField('❯ Result', multiLine(`
+            ${result.skillType}: ${result.timeHits}
+            Defence: ${result.timeDefence}
+          `))
       ],
       files: [this.thumbnail.path]
     })
