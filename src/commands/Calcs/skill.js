@@ -30,7 +30,7 @@ class SkillCommand extends MirageCommand {
       return this.noArgs(options)
     }
 
-    const vocation = searchItems(args.shift(), this.vocations)[0]
+    const vocation = searchItems(args[0], this.vocations)[0]
     if (!vocation) {
       return this.unknownVocation(options)
     }
