@@ -3,6 +3,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders')
 
 const { guildIds } = require('#vars')
 const { Colors } = require('#utils/constants')
+const { multiLine } = require('#utils/string')
 const { sendMessage, createEmbedUser } = require('#utils/response')
 const { calculateLevel } = require('#utils/calcs')
 
@@ -65,11 +66,10 @@ class LevelCommand extends MirageCommand {
       embeds: [
         createEmbedUser(user)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
-          .addField(
-            '❯ Result',
-            `Exp required: ${result.exp.toLocaleString()}\n` +
-            `Time: ${result.time}`
-          )
+          .addField('❯ Result', multiLine(`
+            Exp Required: ${result.exp.toLocaleString()}
+            Time: ${result.time}
+          `))
       ],
       files: [this.thumbnail.path]
     })
