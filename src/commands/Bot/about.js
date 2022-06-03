@@ -1,7 +1,7 @@
 const MirageCommand = require('#structures/commands/MirageCommand')
 const { MessageActionRow, MessageButton } = require('discord.js')
 
-const { bot, mirageServer, guildIds } = require('#vars')
+const { bot, dev, mirageServer, guildIds } = require('#vars')
 const { createEmbed, Colors, sendMessage } = require('#utils/response')
 
 class AboutCommand extends MirageCommand {
@@ -30,6 +30,7 @@ class AboutCommand extends MirageCommand {
       .setTitle('MirageHelper')
       .setDescription('MirageHelper is a open source discord bot for mirage realms.')
       .setThumbnail(`attachment://${this.thumbnail.name}`)
+      .addField('❯ Author', `[${dev.name}](${dev.link})`)
       .addField('❯ Version', `v${bot.version}`)
       .addField('❯ Discord Server', `[MirageHelper](${mirageServer.invite})`)
       .addField('❯ Source code', `[Github](${bot.repository})`)
