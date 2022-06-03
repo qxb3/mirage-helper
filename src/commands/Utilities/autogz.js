@@ -27,16 +27,11 @@ class AutoGzCommand extends MirageCommand {
     })
   }
 
-  async run({ context, args, guild, user, commandName, prefix }) {
-    if (args.length === 0) {
-      return sendMessage(context, {
-        embeds: [
-          createEmbedUser(user)
-            .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
-        ],
-        reply: true
-      })
-    }
+  async run(options) {
+    const { context, args, guild } = options
+
+    if (args.length === 0)
+      return this.noArgs(options)
 
     const selectedChannel = args.shift()?.replace(/\D/g, '')
     const messages = (args.join(' ')?.split('|') || []).map(msg => msg.trim())
@@ -49,6 +44,26 @@ class AutoGzCommand extends MirageCommand {
       })
     }
 
+    this.save({ ...options, channel, messages })
+  }
+
+  async noArgs({ context, user, guild, commandName, prefix }) {
+    const config = this.container.guildsSettings.get(guild.id)?.autogz
+
+    return sendMessage(context, {
+      embeds: [
+        createEmbedUser(user)
+          .addField('❯ Configuration', `${!config ? 'Not Configured Yet' : multiLine(`
+            Channel: <#${config.channelId}>
+            Messages: ${config.messages.join(', ') || 'None'}
+          `)}`)
+          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+      ],
+      reply: true
+    })
+  }
+
+  async save({ context, guild, user, channel, messages }) {
     const updatedAutogz = await guildsSettings.findOneAndUpdate(
       {
         guildId: guild.id
