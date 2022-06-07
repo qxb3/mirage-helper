@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/qxb3/mirage-helper/compare/v2.7.3...v2.8.0) (2022-06-07)
+
+
+### Features
+
+* **about command:** added author ([c7a0826](https://github.com/qxb3/mirage-helper/commit/c7a08268527cdba3bf2a35dcc43d6a9187b23f2a))
+* **autogz command:** see the config you set when you run ?autogz ([816d3a8](https://github.com/qxb3/mirage-helper/commit/816d3a8c71c0c9f882a90ff87fec45fc7bc5382c))
+* moved commands: prefix, enable, disable to configuration category ([02b1b25](https://github.com/qxb3/mirage-helper/commit/02b1b2529ef99a2da6d837cb05d0039d7eda812a))
+
 ### [2.7.3](https://github.com/qxb3/mirage-helper/compare/v2.7.2...v2.7.3) (2022-06-02)
 
 
