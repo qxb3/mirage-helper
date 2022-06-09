@@ -1,10 +1,10 @@
 /**
- * Adds circle (•) in start of every string on a array
+ * Adds circle (⦿) in start of every string on a array
  * @param arr {Array<String>}
  * @returns {String}
  */
 const addCircleOnFront = (arr) => {
-  return arr.map(item => `• ${item}`).join('\n')
+  return arr.map(item => `⦿ ${item}`).join('\n')
 }
 
 /**
