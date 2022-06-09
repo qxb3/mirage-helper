@@ -4,6 +4,7 @@ const { ChannelType } = require('discord-api-types/v9')
 const { Time } = require('@sapphire/time-utilities')
 
 const { testServer, bot } = require('#vars')
+const { multiLine } = require('#utils/string')
 const { createEmbed } = require('#utils/response')
 
 const devModel = require('#models/dev')
@@ -48,12 +49,12 @@ class ReleaseCommand extends MirageCommand {
     const embed = createEmbed()
       .setTitle('Update')
       .setThumbnail(`attachment://${this.thumbnail.name}`)
-      .setDescription(
-        `New announcement for ${role}\n` +
-        `**v${bot.version}** has been released!\n\n` +
-        `${message ? message : ''}\n\n` +
-        `See the changelog on: [v${bot.version} Release](https://github.com/qxb3/mirage-helper/releases/tag/v${bot.version})`
-      )
+      .setDescription(multiLine(`
+        New announcement for ${role}
+        **v${bot.version}** has been released!
+        ${message ? message : ''}\n
+        See the full changelog on [v${bot.version} Release](https://github.com/qxb3/mirage-helper/releases/tag/v${bot.version})
+      `))
       .setTimestamp()
 
     const sent = await channel.send(`${role}`)
