@@ -51,7 +51,7 @@ class ReleaseCommand extends MirageCommand {
       .setThumbnail(`attachment://${this.thumbnail.name}`)
       .setDescription(multiLine(`
         New announcement for ${role}
-        **v${bot.version}** has been released!
+        **v${bot.version}** has been released!\n
         ${message ? message : ''}\n
         See the full changelog on [v${bot.version} Release](https://github.com/qxb3/mirage-helper/releases/tag/v${bot.version})
       `))
