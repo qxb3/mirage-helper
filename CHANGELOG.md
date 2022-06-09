@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/qxb3/mirage-helper/compare/v2.8.0...v2.9.0) (2022-06-09)
+
+
+### Features
+
+* change the circle char to ⦿ ([5b7f8ec](https://github.com/qxb3/mirage-helper/commit/5b7f8eca00b534f04fe01128d1b06b3883c99481))
+
 ## [2.8.0](https://github.com/qxb3/mirage-helper/compare/v2.7.3...v2.8.0) (2022-06-07)
 
 
