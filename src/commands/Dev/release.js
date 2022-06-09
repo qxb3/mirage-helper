@@ -33,11 +33,12 @@ class ReleaseCommand extends MirageCommand {
   }
 
   async send(interaction) {
+    await interaction.deferReply({ ephemeral: true })
+
     const data = await devModel.findOne({ name: 'release', guildId: interaction.guild.id })
     if (!data) {
-      return interaction.reply({
-        content: 'Please setup this command first',
-        ephemeral: true
+      return interaction.editReply({
+        content: 'Please setup this command first'
       })
     }
 
@@ -65,14 +66,15 @@ class ReleaseCommand extends MirageCommand {
         files: [this.thumbnail.path]
       })
 
-      interaction.reply({
-        content: 'Successfully sent update!',
-        ephemeral: true
+      interaction.editReply({
+        content: 'Successfully sent update!'
       })
     }, Time.Second / 2)
   }
 
   async setup(interaction) {
+    await interaction.deferReply({ ephemeral: true })
+
     const role = interaction.options.getRole('role')
     const channel = interaction.options.getChannel('channel')
 
@@ -94,9 +96,8 @@ class ReleaseCommand extends MirageCommand {
       }
     )
 
-    interaction.reply({
-      content: `Successfully updated! Role: ${role}, Channel: ${channel}`,
-      ephemeral: true
+    interaction.editReply({
+      content: `Successfully updated! Role: ${role}, Channel: ${channel}`
     })
   }
 
