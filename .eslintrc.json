@@ -12,6 +12,7 @@
     "rules": {
         "indent": ["error", 2],
         "linebreak-style": ["error", "unix"],
+        "comma-dangle": ["error", "never"],
         "quotes": ["error", "single"],
         "semi": ["error", "never"],
         "camelcase": "error"
