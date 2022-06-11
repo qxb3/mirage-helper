@@ -11,7 +11,7 @@ class MobsCommand extends WikiCommand {
 
       thumbnail: 'assets/wiki/sprites/mobs/troll.png',
       commandUsages: [
-        { arg: '[mob]', description: 'To see the full info of the mob', example: 'Troll' },
+        { arg: '[mob]', description: 'To see the full info of the mob', example: 'Troll' }
       ]
     })
   }

@@ -22,7 +22,7 @@ class AutoGzCommand extends MirageCommand {
         { arg: '<channel> [messages]', description: 'Setup autogz on a channel with one message', example: '#level-ups Congrats!' },
         { arg: '<channel> [messages]', description: 'Setup autogz on a channel with multiple messages seperated by |', example: '#level-ups Congrats!|Horray!|Nice noob!' },
         { arg: '<channel> [messages]', description: 'If you want some user mentions add: {USER}', example: '#level-ups Congrats! {USER}' },
-        { arg: '<channel> [messages]', description: 'If you want to get the server name add: {SERVER}', example: '#level-ups We in {SERVER} congratulate you!' },
+        { arg: '<channel> [messages]', description: 'If you want to get the server name add: {SERVER}', example: '#level-ups We in {SERVER} congratulate you!' }
       ]
     })
   }

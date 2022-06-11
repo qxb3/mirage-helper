@@ -11,7 +11,7 @@ class EnchantmentsCommand extends WikiCommand {
 
       thumbnail: 'assets/icons/enchantments.png',
       commandUsages: [
-        { arg: '[enchantment]', description: 'To see the full info of the enchantment', example: 'Mana' },
+        { arg: '[enchantment]', description: 'To see the full info of the enchantment', example: 'Mana' }
       ]
     })
   }

@@ -11,7 +11,7 @@ class VocationsCommand extends WikiCommand {
 
       thumbnail: 'assets/wiki/sprites/vocations/knight.png',
       commandUsages: [
-        { arg: '[vocation]', description: 'To see the full info of the vocation', example: 'Knight' },
+        { arg: '[vocation]', description: 'To see the full info of the vocation', example: 'Knight' }
       ]
     })
   }
