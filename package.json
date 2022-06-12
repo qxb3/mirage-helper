@@ -41,5 +41,10 @@
     "#utils": "./src/lib/utils",
     "#structures": "./src/lib/structures",
     "#models": "./src/lib/models"
+  },
+  "standard-version": {
+    "scripts": {
+      "posttag": "git push --follow-tags -q && git fetch . main:prod -q && git push origin prod -q"
+    }
   }
 }
