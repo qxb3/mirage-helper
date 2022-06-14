@@ -48,7 +48,7 @@ npm run start #or yarn start
 Simple as that :D
 
 ## Contributing
-Feel free to contribute and make a pull request :D
+Feel free to contribute and make a pull request and make sure to make a proper commit message ([commitzen](https://www.conventionalcommits.org/en/v1.0.0/)) :D
 
 ---
 
