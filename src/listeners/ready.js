@@ -12,14 +12,15 @@ class ReadyListener extends Listener {
   }
 
   run() {
-    const { client } = this.container
-    this.container.logger.info(`Logged in as ${client.user.tag}.`)
+    this.container.logger.info(`Logged in as ${this.container.client.user.tag}.`)
 
-    this.setChangingStatus(client)
+    this.setChangingStatus()
   }
 
-  setChangingStatus(client) {
+  setChangingStatus() {
     setInterval(() => {
+      const { client } = this.container
+
       const serverSize = client.guilds.cache.size
       const userSize = client.guilds.cache.map((guild) => guild.memberCount).reduce((prev, current) => prev + current)
 
@@ -29,7 +30,7 @@ class ReadyListener extends Listener {
         .replace(/{user_size}/g, `${userSize}`)
 
       client.user.setActivity(presence)
-    }, Time.Minute)
+    }, Time.Minute / 3)
   }
 }
 
