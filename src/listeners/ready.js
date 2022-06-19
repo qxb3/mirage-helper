@@ -30,7 +30,7 @@ class ReadyListener extends Listener {
         .replace(/{user_size}/g, `${userSize}`)
 
       client.user.setActivity(presence)
-    }, Time.Minute / 3)
+    }, Time.Minute)
   }
 }
 
