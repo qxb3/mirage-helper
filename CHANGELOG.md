@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.0](https://github.com/qxb3/mirage-helper/compare/v2.9.0...v2.10.0) (2022-06-23)
+
+
+### Features
+
+* automating release process even more ([4a8da4e](https://github.com/qxb3/mirage-helper/commit/4a8da4e8f5b3009748e614805b7f0f52b6557212))
+
+
+### Bug Fixes
+
+* **changing status:** fix not displaying the right server & user count properly ([df0fb70](https://github.com/qxb3/mirage-helper/commit/df0fb70939e0d238c57d8134f3f6c446f2be344a))
+* **changing status:** fucking shit ([dc49282](https://github.com/qxb3/mirage-helper/commit/dc49282f79b14c83bd374aaf9d6085e374432e41))
+* **release command:** forgot to add new line above the custom msg ([90f7f4b](https://github.com/qxb3/mirage-helper/commit/90f7f4bf294524628ba69a78db4bb5e60790ca93))
+
 ## [2.9.0](https://github.com/qxb3/mirage-helper/compare/v2.8.0...v2.9.0) (2022-06-09)
 
 
