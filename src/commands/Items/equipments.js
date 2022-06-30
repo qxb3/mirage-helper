@@ -8,7 +8,7 @@ class EquipmentsCommand extends WikiCommand {
     super(context, {
       ...options,
       description: 'Find equipments in the game',
-      aliases: ['equips', 'equip', 'eq'],
+      aliases: ['equipment', 'equips', 'equip', 'eq'],
 
       itemCategories: ['Helmet', 'Chest', 'Gloves', 'Boots', 'Ring', 'Necklace'],
       thumbnail: 'assets/icons/bag.png',
