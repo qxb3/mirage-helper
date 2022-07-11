@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.10.1](https://github.com/qxb3/mirage-helper/compare/v2.10.0...v2.10.1) (2022-07-11)
+
+
+### Features
+
+* **equipments command:** added nee alias 'equipment' ([bb59483](https://github.com/qxb3/mirage-helper/commit/bb594836a38723081be47c44de6a12f116ed72d8))
+
+
+### Bug Fixes
+
+* **updater.js:** using arrow function and fixing versionRegex to work with high digits ([ba87a62](https://github.com/qxb3/mirage-helper/commit/ba87a62831c7efb73f6ef0bce463f765ff492f9a))
+
 ## [2.10.0](https://github.com/qxb3/mirage-helper/compare/v2.9.0...v2.10.0) (2022-06-23)
 
 
