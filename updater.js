@@ -1,8 +1,9 @@
-module.exports.readVersion = function() {
+module.exports.readVersion = () => {
   const file = require('./src/vars')
   return file.bot.version
 }
 
-module.exports.writeVersion = function(contents, version) {
-  return contents.replace(/\d\.\d\.\d/, version)
+module.exports.writeVersion = (contents, version) => {
+  const versionRegex = /\d+\.\d+\.\d+/
+  return contents.replace(versionRegex, version)
 }
