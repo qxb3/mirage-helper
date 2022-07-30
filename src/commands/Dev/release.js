@@ -53,7 +53,7 @@ class ReleaseCommand extends MirageCommand {
       .setDescription(multiLine(`
         New announcement for ${role}
         **v${bot.version}** has been released!\n
-        ${message ? message : ''}\n
+        ${message ? `${message}\n` : '\n'}
         See the full changelog on [v${bot.version} Release](https://github.com/qxb3/mirage-helper/releases/tag/v${bot.version})
       `))
       .setTimestamp()
