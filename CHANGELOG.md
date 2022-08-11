@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.10.2](https://github.com/qxb3/mirage-helper/compare/v2.10.1...v2.10.2) (2022-08-11)
+
+
+### Features
+
+* added Procfile ([2028046](https://github.com/qxb3/mirage-helper/commit/2028046fc498ebe27c107e70ad13ef27274cff06))
+
+
+### Bug Fixes
+
+* **release:** remove line when no message is added ([4698089](https://github.com/qxb3/mirage-helper/commit/4698089e92750bcf680b880654b6fa8075f6c97c))
+
 ### [2.10.1](https://github.com/qxb3/mirage-helper/compare/v2.10.0...v2.10.1) (2022-07-11)
 
 
