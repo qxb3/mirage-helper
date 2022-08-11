@@ -46,5 +46,9 @@
     "scripts": {
       "posttag": "git push --follow-tags -q && git fetch . main:prod -q && git push origin prod -q"
     }
+  },
+  "engines": {
+    "node": ">=18.7.0",
+    "yarn": ">=1.22.19"
   }
 }
