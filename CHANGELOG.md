@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.10.4](https://github.com/qxb3/mirage-helper/compare/v2.10.3...v2.10.4) (2022-08-11)
+
+
+### Bug Fixes
+
+* **lint workflow:** upgrade node to 18 ([af2a4da](https://github.com/qxb3/mirage-helper/commit/af2a4da6aec9b87658170b9aabf1bf7abfaee0af))
+* **package.json:** fucking shit just work ([8a8c7f3](https://github.com/qxb3/mirage-helper/commit/8a8c7f383f546d2ffaea4e98763d3a9121a5f7c9))
+
 ### [2.10.3](https://github.com/qxb3/mirage-helper/compare/v2.10.2...v2.10.3) (2022-08-11)
 
 
