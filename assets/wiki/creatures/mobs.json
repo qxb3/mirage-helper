@@ -1,0 +1,686 @@
+[
+  {
+    "name": "Butterfly",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/10/Butterfly.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Butterfly",
+    "info": {
+      "health": 5,
+      "experience": 5,
+      "melee": 1,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Rat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8b/Rat.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Rat",
+    "info": {
+      "health": 25,
+      "experience": 10,
+      "melee": 2,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Troll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f3/Troll.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Troll",
+    "info": {
+      "health": 65,
+      "experience": 50,
+      "melee": 3,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Troll Mage",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/25/Troll-mage.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Troll_Mage",
+    "info": {
+      "health": 75,
+      "experience": 70,
+      "melee": 0,
+      "distance": 0,
+      "magic": 6
+    }
+  },
+  {
+    "name": "Troll Ranger",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/3c/Troll-ranger.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Troll_Ranger",
+    "info": {
+      "health": 85,
+      "experience": 80,
+      "melee": 0,
+      "distance": 4,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Troll Knight",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e4/Troll-knight.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Troll_Knight",
+    "info": {
+      "health": 95,
+      "experience": 80,
+      "melee": 5,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Troll Warlord",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ce/Troll-warlord.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Troll_Warlord",
+    "info": {
+      "health": 130,
+      "experience": 200,
+      "melee": 12,
+      "distance": 12,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Cyclops",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a9/Cyclops.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Cyclops",
+    "info": {
+      "health": 225,
+      "experience": 320,
+      "melee": 11,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Spider",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/84/Spider.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spider",
+    "info": {
+      "health": 240,
+      "experience": 400,
+      "melee": 9,
+      "distance": 0,
+      "magic": 9
+    }
+  },
+  {
+    "name": "Crab",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Crab.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Crab",
+    "info": {
+      "health": 265,
+      "experience": 540,
+      "melee": 12,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Cyclops Hunter",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/32/Cyclops-hunter.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Cyclops_Hunter",
+    "info": {
+      "health": 290,
+      "experience": 600,
+      "melee": 0,
+      "distance": 12,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Widow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1e/Widow.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Widow",
+    "info": {
+      "health": 390,
+      "experience": 800,
+      "melee": 14,
+      "distance": 0,
+      "magic": 14
+    }
+  },
+  {
+    "name": "Firewyrm",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1a/Firewyrm.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Firewyrm",
+    "info": {
+      "health": 480,
+      "experience": 1000,
+      "melee": 16,
+      "distance": 0,
+      "magic": 20
+    }
+  },
+  {
+    "name": "Slime",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/38/Slime.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Slime",
+    "info": {
+      "health": 575,
+      "experience": 1206,
+      "melee": 20,
+      "distance": 0,
+      "magic": 20
+    }
+  },
+  {
+    "name": "Defiler",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/41/Defiler.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Defiler",
+    "info": {
+      "health": 750,
+      "experience": 1577,
+      "melee": 22,
+      "distance": 0,
+      "magic": 22
+    }
+  },
+  {
+    "name": "Cyclops Mystic",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8b/Cyclops-mystic.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Cyclops_Mystic",
+    "info": {
+      "health": 750,
+      "experience": 1590,
+      "melee": 0,
+      "distance": 0,
+      "magic": 21
+    }
+  },
+  {
+    "name": "Imp",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b3/Imp.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Imp",
+    "info": {
+      "health": 875,
+      "experience": 1876,
+      "melee": 23,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Imp Ranger",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/74/Imp-ranger.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Imp_Ranger",
+    "info": {
+      "health": 925,
+      "experience": 1990,
+      "melee": 0,
+      "distance": 24,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Imp Knight",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a2/Imp-knight.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Imp_Knight",
+    "info": {
+      "health": 975,
+      "experience": 2114,
+      "melee": 25,
+      "distance": 0,
+      "magic": 15
+    }
+  },
+  {
+    "name": "Imp Mage",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/54/Imp-mage.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Imp_Mage",
+    "info": {
+      "health": 1000,
+      "experience": 2177,
+      "melee": 0,
+      "distance": 0,
+      "magic": 27
+    }
+  },
+  {
+    "name": "Harbinger",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/38/Harbinger.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Harbinger",
+    "info": {
+      "health": 1250,
+      "experience": 3436,
+      "melee": 30,
+      "distance": 0,
+      "magic": 35
+    }
+  },
+  {
+    "name": "Fire Slime",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ab/Fire-slime.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Fire_Slime",
+    "info": {
+      "health": 1500,
+      "experience": 4424,
+      "melee": 38,
+      "distance": 0,
+      "magic": 42
+    }
+  },
+  {
+    "name": "Minotaur",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7e/Minotaur.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Minotaur",
+    "info": {
+      "health": 1625,
+      "experience": 5200,
+      "melee": 45,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Gastropod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/73/Gastropod.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Gastropod",
+    "info": {
+      "health": 1625,
+      "experience": 5443,
+      "melee": 45,
+      "distance": 0,
+      "magic": 45
+    }
+  },
+  {
+    "name": "Ghost",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ab/Ghost.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ghost",
+    "info": {
+      "health": 1750,
+      "experience": 5862,
+      "melee": 0,
+      "distance": 0,
+      "magic": 50
+    }
+  },
+  {
+    "name": "Ice Slime",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d6/Ice-slime.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ice_Slime",
+    "info": {
+      "health": 2000,
+      "experience": 6900,
+      "melee": 60,
+      "distance": 0,
+      "magic": 60
+    }
+  },
+  {
+    "name": "Behemoth",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/3c/Behemoth.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Behemoth",
+    "info": {
+      "health": 2500,
+      "experience": 10375,
+      "melee": 100,
+      "distance": 0,
+      "magic": 100
+    }
+  },
+  {
+    "name": "Revenant",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/07/Revenant.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Revenant",
+    "info": {
+      "health": 3000,
+      "experience": 12162,
+      "melee": 0,
+      "distance": 0,
+      "magic": 110
+    }
+  },
+  {
+    "name": "Shadow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8e/Shadow.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Shadow",
+    "info": {
+      "health": 3250,
+      "experience": 13259,
+      "melee": 0,
+      "distance": 0,
+      "magic": 115
+    }
+  },
+  {
+    "name": "Sorcerer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/27/Sorcerer.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sorcerer",
+    "info": {
+      "health": 3250,
+      "experience": 13259,
+      "melee": 0,
+      "distance": 0,
+      "magic": 110
+    }
+  },
+  {
+    "name": "Demon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c4/Demon.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Demon",
+    "info": {
+      "health": 3500,
+      "experience": 14874,
+      "melee": 120,
+      "distance": 0,
+      "magic": 120
+    }
+  },
+  {
+    "name": "Hellhound",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/3e/Hellhound.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hellhound",
+    "info": {
+      "health": 3500,
+      "experience": 14874,
+      "melee": 125,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Orc",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bf/Orc.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Orc",
+    "info": {
+      "health": 4500,
+      "experience": 18000,
+      "melee": 120,
+      "distance": 0,
+      "magic": 120
+    }
+  },
+  {
+    "name": "Orc Worker",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8a/Orc-worker.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Orc_Worker",
+    "info": {
+      "health": 5000,
+      "experience": 20250,
+      "melee": 0,
+      "distance": 120,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Orc Mage",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/77/Orc-mage.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Orc_Mage",
+    "info": {
+      "health": 5500,
+      "experience": 23332,
+      "melee": 0,
+      "distance": 0,
+      "magic": 125
+    }
+  },
+  {
+    "name": "Thief",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fc/Thief.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Thief",
+    "info": {
+      "health": 6000,
+      "experience": 27000,
+      "melee": 135,
+      "distance": 135,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Hunter",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4b/Hunter.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hunter",
+    "info": {
+      "health": 6125,
+      "experience": 27562,
+      "melee": 0,
+      "distance": 135,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Bandit",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1f/Bandit.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Bandit",
+    "info": {
+      "health": 6250,
+      "experience": 28124,
+      "melee": 135,
+      "distance": 135,
+      "magic": 135
+    }
+  },
+  {
+    "name": "Wasp",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f8/Wasp.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Wasp",
+    "info": {
+      "health": 6500,
+      "experience": 29250,
+      "melee": 140,
+      "distance": 0,
+      "magic": 140
+    }
+  },
+  {
+    "name": "Orc Warrior",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/43/Orc-warrior.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Orc_Warrior",
+    "info": {
+      "health": 7000,
+      "experience": 30733,
+      "melee": 145,
+      "distance": 0,
+      "magic": 145
+    }
+  },
+  {
+    "name": "Berzerker",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0c/Berzerker.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Berzerker",
+    "info": {
+      "health": 7000,
+      "experience": 32199,
+      "melee": 165,
+      "distance": 0,
+      "magic": 0
+    }
+  },
+  {
+    "name": "Wild Soldier",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ae/Wild-soldier.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Wild_Soldier",
+    "info": {
+      "health": 7000,
+      "experience": 32199,
+      "melee": 145,
+      "distance": 0,
+      "magic": 145
+    }
+  },
+  {
+    "name": "Shambler",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/69/Shambler.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Shambler",
+    "info": {
+      "health": 9000,
+      "experience": 42299,
+      "melee": 180,
+      "distance": 180,
+      "magic": 180
+    }
+  },
+  {
+    "name": "Slimespitter",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9c/Slimespitter.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Slimespitter",
+    "info": {
+      "health": 9000,
+      "experience": 42749,
+      "melee": 0,
+      "distance": 0,
+      "magic": 180
+    }
+  },
+  {
+    "name": "Bloodseeker",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1e/Bloodseeker.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Bloodseeker",
+    "info": {
+      "health": 9000,
+      "experience": 43200,
+      "melee": 0,
+      "distance": 180,
+      "magic": 180
+    }
+  },
+  {
+    "name": "Hero",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d9/Hero.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hero",
+    "info": {
+      "health": 10500,
+      "experience": 50400,
+      "melee": 210,
+      "distance": 0,
+      "magic": 210
+    }
+  },
+  {
+    "name": "Necromancer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5d/Necromancer.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Necromancer",
+    "info": {
+      "health": 10500,
+      "experience": 50400,
+      "melee": 0,
+      "distance": 0,
+      "magic": 210
+    }
+  },
+  {
+    "name": "Priestess",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bc/Priestess.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Priestess",
+    "info": {
+      "health": 10500,
+      "experience": 50400,
+      "melee": 0,
+      "distance": 210,
+      "magic": 210
+    }
+  },
+  {
+    "name": "Flame Fury",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/08/Flame-fury.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Flame_Fury",
+    "info": {
+      "health": 12000,
+      "experience": 57600,
+      "melee": 230,
+      "distance": 0,
+      "magic": 230
+    }
+  },
+  {
+    "name": "Frost Fury",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/37/Frost-fury.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Frost_Fury",
+    "info": {
+      "health": 12000,
+      "experience": 57600,
+      "melee": 230,
+      "distance": 0,
+      "magic": 230
+    }
+  },
+  {
+    "name": "Mana Fury",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fb/Mana-fury.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Fury",
+    "info": {
+      "health": 12000,
+      "experience": 57600,
+      "melee": 230,
+      "distance": 0,
+      "magic": 230
+    }
+  },
+  {
+    "name": "Astral Trueshot",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0b/Astral-trueshot.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Astral_Trueshot",
+    "info": {
+      "health": 13500,
+      "experience": 67500,
+      "melee": 0,
+      "distance": 250,
+      "magic": 250
+    }
+  },
+  {
+    "name": "Nether Slime",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c6/Nether-slime.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nether_Slime",
+    "info": {
+      "health": 13500,
+      "experience": 67500,
+      "melee": 250,
+      "distance": 0,
+      "magic": 250
+    }
+  },
+  {
+    "name": "Void Goliath",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b2/Void-goliath.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Void_Goliath",
+    "info": {
+      "health": 13500,
+      "experience": 67500,
+      "melee": 250,
+      "distance": 0,
+      "magic": 250
+    }
+  },
+  {
+    "name": "Castigator",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/92/Castigator.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Castigator",
+    "info": {
+      "health": 15000,
+      "experience": 78750,
+      "melee": 300,
+      "distance": 300,
+      "magic": 300
+    }
+  },
+  {
+    "name": "Devastator",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/da/Devastator.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Devastator",
+    "info": {
+      "health": 15000,
+      "experience": 78750,
+      "melee": 300,
+      "distance": 300,
+      "magic": 300
+    }
+  },
+  {
+    "name": "Violator",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/99/Violator.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Violator",
+    "info": {
+      "health": 15000,
+      "experience": 78750,
+      "melee": 300,
+      "distance": 300,
+      "magic": 300
+    }
+  }
+]

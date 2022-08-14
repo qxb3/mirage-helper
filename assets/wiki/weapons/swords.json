@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Primitive Sword",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e9/Sword-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Primitive_Sword",
+    "info": {
+      "attack": 4,
+      "requirement": "15 Melee",
+      "minStat": 1,
+      "maxStat": 2
+    }
+  },
+  {
+    "name": "Spiked Sword",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/61/Sword-18.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spiked_Sword",
+    "info": {
+      "attack": 5,
+      "requirement": "20 Melee",
+      "minStat": 2,
+      "maxStat": 4
+    }
+  },
+  {
+    "name": "Knight Sword",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/49/Sword-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Knight_Sword",
+    "info": {
+      "attack": 6,
+      "requirement": "30 Melee",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Elven Sword",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bb/Sword-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Sword",
+    "info": {
+      "attack": 7,
+      "requirement": "40 Melee",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Paladin Sword",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2f/Sword-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Paladin_Sword",
+    "info": {
+      "attack": 8,
+      "requirement": "50 Melee",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Talon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/52/Sword-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Talon",
+    "info": {
+      "attack": 9,
+      "requirement": "60 Melee",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Vindicator",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c5/Sword-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Vindicator",
+    "info": {
+      "attack": 10,
+      "requirement": "70 Melee",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Banisher",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/36/Sword-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Banisher",
+    "info": {
+      "attack": 11,
+      "requirement": "80 Melee",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Midnight",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/26/Sword-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Midnight",
+    "info": {
+      "attack": 12,
+      "requirement": "90 Melee",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Armageddon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b0/Sword-23.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Armageddon",
+    "info": {
+      "attack": 13,
+      "requirement": "100 Melee",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  }
+]

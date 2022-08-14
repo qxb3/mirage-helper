@@ -1,0 +1,410 @@
+[
+  {
+    "name": "Bandana",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/82/Helmet-none-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Bandana",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 0",
+      "minStat": 0,
+      "maxStat": 0
+    },
+    "type": "Miscellaneous"
+  },
+  {
+    "name": "Novice Cap",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/89/Helmet-light-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Novice_Cap",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Traveller's Hat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/67/Helmet-light-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Traveller%27s_Hat",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Flaming Hood",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/18/Helmet-light-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Flaming_Hood",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Sulphur Mask",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/30/Helmet-light-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sulphur_Mask",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Nernai Hat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/00/Helmet-light-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nernai_Hat",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Wizard Hood",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Helmet-light-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Wizard_Hood",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Indigo Hat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/59/Helmet-light-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Indigo_Hat",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Arnisium Hat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/84/Helmet-light-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Arnisium_Hat",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Crystal Mask",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0c/Helmet-light-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Crystal_Mask",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Royal Hood",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/81/Helmet-light-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Royal_Hood",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Majestic Hood",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b5/Helmet-light-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Majestic_Hood",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "type": "Light"
+  },
+  {
+    "name": "Ranger Cap",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7f/Helmet-medium-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ranger_Cap",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Linothorax Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/6f/Helmet-medium-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Linothorax_Helmet",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Heroic Hat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b5/Helmet-medium-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heroic_Hat",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Tin Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/ee/Helmet-medium-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Tin_Helmet",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Soldier Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fd/Helmet-medium-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soldier_Helmet",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Elven Hat",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2d/Helmet-medium-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Hat",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Pearl Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/3b/Helmet-medium-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Pearl_Helmet",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Spiked Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ab/Helmet-medium-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spiked_Helmet",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Sentinel Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ce/Helmet-medium-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sentinel_Helmet",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Mythril Mask",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/90/Helmet-medium-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mythril_Mask",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Mirabell Visage",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/23/Helmet-medium-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mirabell_Visage",
+    "info": {
+      "armour": 6,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "type": "Medium"
+  },
+  {
+    "name": "Sturdy Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/59/Helmet-heavy-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sturdy_Helmet",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Iron Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/48/Helmet-heavy-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Iron_Helmet",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Copper Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/10/Helmet-heavy-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Copper_Helmet",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Plate Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/91/Helmet-heavy-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Plate_Helmet",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Chain Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/13/Helmet-heavy-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chain_Helmet",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Silver Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5d/Helmet-heavy-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Silver_Helmet",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Platinum Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/58/Helmet-heavy-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Platinum_Helmet",
+    "info": {
+      "armour": 6,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Emerald Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bc/Helmet-heavy-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Emerald_Helmet",
+    "info": {
+      "armour": 7,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Granite Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f4/Helmet-heavy-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Granite_Helmet",
+    "info": {
+      "armour": 8,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Golden Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d8/Helmet-heavy-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Golden_Helmet",
+    "info": {
+      "armour": 9,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "type": "Heavy"
+  },
+  {
+    "name": "Chaos Helmet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bb/Helmet-heavy-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chaos_Helmet",
+    "info": {
+      "armour": 10,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "type": "Heavy"
+  }
+]

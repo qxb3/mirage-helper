@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Steel Axe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/95/Axe-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Steel_Axe",
+    "info": {
+      "attack": 5,
+      "requirement": "15 Melee",
+      "minStat": 2,
+      "maxStat": 6,
+      "defencePenalty": "-2"
+    }
+  },
+  {
+    "name": "Harvest Scythe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/78/Axe-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Harvest_Scythe",
+    "info": {
+      "attack": 6,
+      "requirement": "20 Melee",
+      "minStat": 4,
+      "maxStat": 12,
+      "defencePenalty": "-4"
+    }
+  },
+  {
+    "name": "Executioner",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b8/Axe-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Executioner",
+    "info": {
+      "attack": 7,
+      "requirement": "30 Melee",
+      "minStat": 6,
+      "maxStat": 18,
+      "defencePenalty": "-6"
+    }
+  },
+  {
+    "name": "Imperial Axe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/21/Axe-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Imperial_Axe",
+    "info": {
+      "attack": 8,
+      "requirement": "40 Melee",
+      "minStat": 8,
+      "maxStat": 24,
+      "defencePenalty": "-8"
+    }
+  },
+  {
+    "name": "Forest Axe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a6/Axe-16.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Forest_Axe",
+    "info": {
+      "attack": 9,
+      "requirement": "50 Melee",
+      "minStat": 10,
+      "maxStat": 30,
+      "defencePenalty": "-10"
+    }
+  },
+  {
+    "name": "Warlord Axe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f6/Axe-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Warlord_Axe",
+    "info": {
+      "attack": 10,
+      "requirement": "60 Melee",
+      "minStat": 12,
+      "maxStat": 36,
+      "defencePenalty": "-12"
+    }
+  },
+  {
+    "name": "Ancient Axe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0b/Axe-19.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ancient_Axe",
+    "info": {
+      "attack": 11,
+      "requirement": "70 Melee",
+      "minStat": 14,
+      "maxStat": 42,
+      "defencePenalty": "-14"
+    }
+  },
+  {
+    "name": "Retribution",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/37/Axe-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Retribution",
+    "info": {
+      "attack": 12,
+      "requirement": "80 Melee",
+      "minStat": 16,
+      "maxStat": 48,
+      "defencePenalty": "-16"
+    }
+  },
+  {
+    "name": "Pacifier",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/eb/Axe-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Pacifier",
+    "info": {
+      "attack": 13,
+      "requirement": "90 Melee",
+      "minStat": 18,
+      "maxStat": 54,
+      "defencePenalty": "-18"
+    }
+  },
+  {
+    "name": "Nullifier",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/20/Axe-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nullifier",
+    "info": {
+      "attack": 14,
+      "requirement": "100 Melee",
+      "minStat": 20,
+      "maxStat": 60,
+      "defencePenalty": "-20"
+    }
+  },
+  {
+    "name": "Zero's Reaver",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7b/Axe-17.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Zero%27s_Reaver",
+    "info": {
+      "attack": 6,
+      "requirement": "0 Melee",
+      "minStat": 0,
+      "maxStat": 0,
+      "defencePenalty": "-0"
+    }
+  }
+]

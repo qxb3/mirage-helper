@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Training Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c2/Bow-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Training_Bow",
+    "info": {
+      "attack": 1,
+      "requirement": "0 Distance",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  },
+  {
+    "name": "Wooden Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/12/Bow-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Wooden_Bow",
+    "info": {
+      "attack": 3,
+      "requirement": "0 Distance",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  },
+  {
+    "name": "Primitive Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4d/Bow-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Primitive_Bow",
+    "info": {
+      "attack": 4,
+      "requirement": "15 Distance",
+      "minStat": 1,
+      "maxStat": 2
+    }
+  },
+  {
+    "name": "Soldier Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/db/Bow-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soldier_Bow",
+    "info": {
+      "attack": 5,
+      "requirement": "20 Distance",
+      "minStat": 2,
+      "maxStat": 4
+    }
+  },
+  {
+    "name": "Elven Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e4/Bow-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Bow",
+    "info": {
+      "attack": 6,
+      "requirement": "30 Distance",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Skeletal Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d0/Bow-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Skeletal_Bow",
+    "info": {
+      "attack": 7,
+      "requirement": "40 Distance",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Orcish Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/65/Bow-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Orcish_Bow",
+    "info": {
+      "attack": 8,
+      "requirement": "50 Distance",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Demon Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/76/Bow-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Demon_Bow",
+    "info": {
+      "attack": 9,
+      "requirement": "60 Distance",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Pearl Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/6c/Bow-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Pearl_Bow",
+    "info": {
+      "attack": 10,
+      "requirement": "70 Distance",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Tempest",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fc/Bow-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Tempest",
+    "info": {
+      "attack": 11,
+      "requirement": "80 Distance",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Ironbark",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/02/Bow-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ironbark",
+    "info": {
+      "attack": 12,
+      "requirement": "90 Distance",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Silence",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0a/Bow-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Silence",
+    "info": {
+      "attack": 13,
+      "requirement": "100 Distance",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  },
+  {
+    "name": "Lupin's Bow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/99/Bow-12.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Lupin%27s_Bow",
+    "info": {
+      "attack": 6,
+      "requirement": "0 Distance",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  }
+]
