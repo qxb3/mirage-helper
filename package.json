@@ -16,6 +16,7 @@
     "@discordjs/builders": "^0.13.0",
     "@sapphire/discord.js-utilities": "^4.10.0",
     "@sapphire/framework": "next",
+    "@sapphire/plugin-subcommands": "^2.2.2",
     "@sapphire/stopwatch": "^1.4.1",
     "@sapphire/time-utilities": "^1.7.4",
     "discord-api-types": "^0.33.0",
