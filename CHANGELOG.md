@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/qxb3/mirage-helper/compare/v2.10.4...v3.0.0) (2022-08-16)
+
+
+### Features
+
+* **assets:** fetches latest infos ([d1b0933](https://github.com/qxb3/mirage-helper/commit/d1b093310fb155670ebed95d94580a7d95566ded))
+* **autogz command:** refactor autogz command ([3771972](https://github.com/qxb3/mirage-helper/commit/3771972883d9e222f88969710b54ffcf48436c0f))
+* **calcs command:** refactored calcs command ([bf719b3](https://github.com/qxb3/mirage-helper/commit/bf719b370e8bd129df3a0abd41d685a4cbf79efe))
+* **Configurations Commands:** refactor config commands ([e07a385](https://github.com/qxb3/mirage-helper/commit/e07a3853b1a9aa4364b26662e6089cc335543f4b))
+* finished creature commands ([f42d5ef](https://github.com/qxb3/mirage-helper/commit/f42d5ef94bf39fc03593f3df50079adc9857f211))
+* finished equipment commands ([704b011](https://github.com/qxb3/mirage-helper/commit/704b011e8f845b01eb49d124a6d13d1fcf7741fd))
+* finished item commands ([58ac450](https://github.com/qxb3/mirage-helper/commit/58ac450f6e104ff8113e9cbec4db012d4155ea4a))
+* finished MirageCommand structure ([a0d8345](https://github.com/qxb3/mirage-helper/commit/a0d83456a5f84c27579cf7a9f62f0081e383207e))
+* finished other commands ([38e14cd](https://github.com/qxb3/mirage-helper/commit/38e14cd56278bd090705df99d1119ed0c479fcf9))
+* finished WikiCommand structure ([fefaf43](https://github.com/qxb3/mirage-helper/commit/fefaf43409dd2a71e22b1966c90429b24155ebd5))
+* **utils/calcs.js:** reduced precision to 4 ([daffa77](https://github.com/qxb3/mirage-helper/commit/daffa77ed6f66a602dc81ab81bd2a5e7bd9b1797))
+* **utils/calcs.js:** update about command ([6e927e7](https://github.com/qxb3/mirage-helper/commit/6e927e7a0f9b9cb2ce7146033c9f8cd8778bfe5a))
+* **Weapons Command:** finished weapons command ([4d4afb5](https://github.com/qxb3/mirage-helper/commit/4d4afb5286bad65e98cc84c021ca108df755b8e3))
+
+
+### Bug Fixes
+
+* **assets:** added boots ([ba22c39](https://github.com/qxb3/mirage-helper/commit/ba22c393e0d57f3804c52d74207a2bdbf7a7f32b))
+* **BaseCommand:** deletes BaseCommand ([7bc037d](https://github.com/qxb3/mirage-helper/commit/7bc037dfc8883328bf9a6bf921baec0a194c0361))
+* **commands:** deleted old wiki commands ([a43cdee](https://github.com/qxb3/mirage-helper/commit/a43cdee8c2e149a9fe1afcdfaa0bbee31f8c6fee))
+* make help command work with external thumbnail ([75a0007](https://github.com/qxb3/mirage-helper/commit/75a000725ea264aa012fb42ff73b6b52787696df))
+* **release:** remove line when no message is added (2) ([fe1ba3a](https://github.com/qxb3/mirage-helper/commit/fe1ba3a6cceb7fd3df84154c2dce50eda0eb9ac2))
+
 ### [2.10.4](https://github.com/qxb3/mirage-helper/compare/v2.10.3...v2.10.4) (2022-08-11)
 
 
