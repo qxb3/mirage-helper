@@ -12,9 +12,14 @@ class HelpCommand extends MirageCommand {
       ...options,
       description: 'Help command',
       aliases: ['commands'],
+
       thumbnail: 'assets/icons/help.png',
       commandUsages: [
-        { arg: '[command]', description: 'To see the full info of the command', example: 'weapons' }
+        {
+          args: '[command]',
+          description: 'To see the full info of the command',
+          example: 'weapons'
+        }
       ]
     })
   }
@@ -25,13 +30,11 @@ class HelpCommand extends MirageCommand {
     const commands = this.container.stores.get('commands').filter(command => !command.options.hidden)
     const result = searchItems(args.join(' '), [...commands.values()])[0]
 
-    if (args.length === 0) {
+    if (args.length === 0)
       return this.noArgs({ ...options, commands })
-    }
 
-    if (result) {
+    if (result)
       return this.isCommand({ ...options, command: result })
-    }
 
     this.isNoMatch(options)
   }
@@ -52,27 +55,28 @@ class HelpCommand extends MirageCommand {
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setTitle('Commands')
           .addFields(formatedCommands)
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })
   }
 
   isCommand({ context, command, prefix }) {
+    const thumbnail = command.thumbnail ?
+      `attachment://${command.thumbnail.name}` :
+      command.thumbnailUrl
+
     const embed = createEmbed()
+      .setThumbnail(thumbnail)
       .addField('❯ Name', command.name)
       .addField('❯ Description', command.description)
       .addField('❯ Category', command.category)
       .addField('❯ Aliases', command.aliases.join(', ') || 'None')
-      .addField('❯ Usage', command.getCommandUsages(command.name, prefix))
-
-    if (command.thumbnail) {
-      embed.setThumbnail(`attachment://${command.thumbnail.name}`)
-    }
+      .addField('❯ Usage', command.getExampleUsages(command.name, prefix))
 
     sendMessage(context, {
       embeds: [embed],
-      files: command.thumbnail ? [command.thumbnail.path] : []
+      files: command?.thumbnail?.name ? [command.thumbnail.path] : []
     })
   }
 
@@ -80,7 +84,7 @@ class HelpCommand extends MirageCommand {
     const embed = createEmbedUser(user, Colors.Error)
       .setThumbnail(`attachment://${this.thumbnail.name}`)
       .setDescription(`**${args.join()}** did not match to any of the commands`)
-      .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+      .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
 
     sendMessage(context, {
       embeds: [embed],
