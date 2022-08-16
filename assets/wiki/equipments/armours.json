@@ -1,0 +1,444 @@
+[
+  {
+    "name": "Cloth Shirt",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c8/Chest-none-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Cloth_Shirt",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 0",
+      "minStat": 0,
+      "maxStat": 0
+    },
+    "category": "None",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c8/Chest-none-0.png"
+  },
+  {
+    "name": "Ragged Cloak",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ragged_Cloak",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Traveller's Gown",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ce/Chest-light-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Traveller%27s_Gown",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Flaming Cape",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ca/Chest-light-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Flaming_Cape",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Sulphur Robe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0d/Chest-light-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sulphur_Robe",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Nernai Vest",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/48/Chest-light-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nernai_Vest",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Caster Robe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0e/Chest-light-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Caster_Robe",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Indigo Cape",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/93/Chest-light-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Indigo_Cape",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Arnisium Vest",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/aa/Chest-light-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Arnisium_Vest",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Crystal Cape",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f9/Chest-light-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Crystal_Cape",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Royal Robe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f8/Chest-light-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Royal_Robe",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Majestic Robe",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7f/Chest-light-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Majestic_Robe",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
+  },
+  {
+    "name": "Leather Vest",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Leather_Vest",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Linothorax Chest",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/51/Chest-medium-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Linothorax_Chest",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Heroic Cloak",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/02/Chest-medium-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heroic_Cloak",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Tin Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8f/Chest-medium-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Tin_Armour",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Soldier Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/48/Chest-medium-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soldier_Armour",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Elven Shirt",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/57/Chest-medium-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Shirt",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Pearl Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/64/Chest-medium-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Pearl_Armour",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Spiked Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/13/Chest-medium-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spiked_Armour",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Sentinel Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/76/Chest-medium-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sentinel_Armour",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Mythril Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/47/Chest-medium-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mythril_Armour",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Mirabell Vest",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/95/Chest-medium-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mirabell_Vest",
+    "info": {
+      "armour": 6,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
+  },
+  {
+    "name": "Belted Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Belted_Armour",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Iron Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d0/Chest-heavy-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Iron_Armour",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Copper Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2b/Chest-heavy-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Copper_Armour",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Plate Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/de/Chest-heavy-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Plate_Armour",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Chain Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7d/Chest-heavy-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chain_Armour",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Silver Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/da/Chest-heavy-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Silver_Armour",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Platinum Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ad/Chest-heavy-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Platinum_Armour",
+    "info": {
+      "armour": 6,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Emerald Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ab/Chest-heavy-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Emerald_Armour",
+    "info": {
+      "armour": 7,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Granite Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/cf/Chest-heavy-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Granite_Armour",
+    "info": {
+      "armour": 8,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Golden Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/43/Chest-heavy-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Golden_Armour",
+    "info": {
+      "armour": 9,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  },
+  {
+    "name": "Chaos Armour",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/17/Chest-heavy-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chaos_Armour",
+    "info": {
+      "armour": 10,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
+  }
+]

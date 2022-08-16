@@ -10,9 +10,16 @@ class PrefixCommand extends MirageCommand {
   constructor(context, options) {
     super(context, {
       ...options,
-      description: 'See or update server\'s prefix',
+      description: 'See or change server\'s prefix',
       preconditions: ['GuildOnly'],
-      requiredUserPermissions: ['MANAGE_CHANNELS']
+      requiredUserPermissions: ['MANAGE_CHANNELS'],
+
+      exampleUsages: [
+        {
+          args: '[prefix]',
+          example: '!'
+        }
+      ]
     })
   }
 

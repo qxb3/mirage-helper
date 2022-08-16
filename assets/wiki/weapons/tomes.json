@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Novice's Notes",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5e/Spellbook-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Novice%27s_Notes",
+    "info": {
+      "requirement": "0 Magic",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Old Spellbook",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/42/Spellbook-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Old_Spellbook",
+    "info": {
+      "requirement": "15 Magic",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Fire Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d9/Spellbook-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Fire_Tome",
+    "info": {
+      "requirement": "20 Magic",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Molten Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2d/Spellbook-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Molten_Tome",
+    "info": {
+      "requirement": "30 Magic",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Forest Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a7/Spellbook-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Forest_Tome",
+    "info": {
+      "requirement": "40 Magic",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Spirit Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c6/Spellbook-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spirit_Tome",
+    "info": {
+      "requirement": "50 Magic",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Mana Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bf/Spellbook-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Tome",
+    "info": {
+      "requirement": "60 Magic",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Poison Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/43/Spellbook-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Poison_Tome",
+    "info": {
+      "requirement": "70 Magic",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  },
+  {
+    "name": "Ice Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bd/Spellbook-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ice_Tome",
+    "info": {
+      "requirement": "80 Magic",
+      "minStat": 11,
+      "maxStat": 22
+    }
+  },
+  {
+    "name": "Thunder Tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ac/Spellbook-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Thunder_Tome",
+    "info": {
+      "requirement": "90 Magic",
+      "minStat": 12,
+      "maxStat": 24
+    }
+  },
+  {
+    "name": "Creation tome",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/32/Spellbook-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Creation_tome",
+    "info": {
+      "requirement": "100 Magic",
+      "minStat": 13,
+      "maxStat": 26
+    }
+  }
+]

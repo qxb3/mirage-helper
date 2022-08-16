@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Light Mana Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/14/Rune-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Mana_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Mage & Shaman",
+      "levelToCreate": 10
+    }
+  },
+  {
+    "name": "Mana Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e2/Rune-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Mage & Shaman",
+      "levelToCreate": 50
+    }
+  },
+  {
+    "name": "Heavy Mana Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5b/Rune-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Mana_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Mage & Shaman",
+      "levelToCreate": 75
+    }
+  },
+  {
+    "name": "Light Ice Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/10/Rune-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Ice_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 15
+    }
+  },
+  {
+    "name": "Ice Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1a/Rune-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ice_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 35
+    }
+  },
+  {
+    "name": "Heavy Ice Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/dc/Rune-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Ice_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 60
+    }
+  },
+  {
+    "name": "Light Fire Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a0/Rune-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Fire_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 20
+    }
+  },
+  {
+    "name": "Fire Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/15/Rune-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Fire_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 40
+    }
+  },
+  {
+    "name": "Heavy Fire Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/ff/Rune-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Fire_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 65
+    }
+  },
+  {
+    "name": "Light Nature Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f5/Rune-12.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Nature_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 20
+    }
+  },
+  {
+    "name": "Nature Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e6/Rune-13.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nature_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 40
+    }
+  },
+  {
+    "name": "Heavy Nature Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/aa/Rune-14.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Nature_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 65
+    }
+  },
+  {
+    "name": "Light Energy Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/33/Rune-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Energy_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 25
+    }
+  },
+  {
+    "name": "Energy Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5f/Rune-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Energy_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 45
+    }
+  },
+  {
+    "name": "Heavy Energy Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ae/Rune-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Energy_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 70
+    }
+  },
+  {
+    "name": "Light Death Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/49/Rune-21.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Death_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 30
+    }
+  },
+  {
+    "name": "Death Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0e/Rune-22.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Death_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 55
+    }
+  },
+  {
+    "name": "Heavy Death Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/32/Heavy_death_missile.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Death_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Mage",
+      "levelToCreate": 100
+    }
+  },
+  {
+    "name": "Light Physical Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a6/Rune-26.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Physical_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 15
+    }
+  },
+  {
+    "name": "Physical Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fb/Rune-27.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Physical_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 35
+    }
+  },
+  {
+    "name": "Heavy Physical Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/cc/Rune-28.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Physical_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 60
+    }
+  },
+  {
+    "name": "Light Heal",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/94/Rune-15.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Heal",
+    "info": {
+      "requirement": "15 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 30
+    }
+  },
+  {
+    "name": "Heal",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8b/Rune-16.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heal",
+    "info": {
+      "requirement": "30 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 55
+    }
+  },
+  {
+    "name": "Heavy Heal",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b3/Rune-17.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Heal",
+    "info": {
+      "requirement": "70 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 100
+    }
+  },
+  {
+    "name": "Light Holy Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8c/Rune-18.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Light_Holy_Missile",
+    "info": {
+      "requirement": "25 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 25
+    }
+  },
+  {
+    "name": "Holy Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9d/Rune-19.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Holy_Missile",
+    "info": {
+      "requirement": "50 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 45
+    }
+  },
+  {
+    "name": "Heavy Holy Missile",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c7/Rune-20.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Holy_Missile",
+    "info": {
+      "requirement": "75 Magic",
+      "createdBy": "Shaman",
+      "levelToCreate": 70
+    }
+  }
+]

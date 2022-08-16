@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Training Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d8/Staff-25.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Training_Staff",
+    "info": {
+      "attack": 1,
+      "requirement": "0 Magic",
+      "minStat": 0,
+      "maxStat": 0,
+      "manaPerShot": 0
+    }
+  },
+  {
+    "name": "Warped Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e3/Staff-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Warped_Staff",
+    "info": {
+      "attack": 3,
+      "requirement": "0 Magic",
+      "minStat": 0,
+      "maxStat": 0,
+      "manaPerShot": 0
+    }
+  },
+  {
+    "name": "Amber Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a0/Staff-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Amber_Staff",
+    "info": {
+      "attack": 4,
+      "requirement": "15 Magic",
+      "minStat": 1,
+      "maxStat": 2,
+      "manaPerShot": 1
+    }
+  },
+  {
+    "name": "Crystal Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a8/Staff-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Crystal_Staff",
+    "info": {
+      "attack": 5,
+      "requirement": "20 Magic",
+      "minStat": 2,
+      "maxStat": 4,
+      "manaPerShot": 2
+    }
+  },
+  {
+    "name": "Spirit Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/00/Staff-16.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spirit_Staff",
+    "info": {
+      "attack": 6,
+      "requirement": "30 Magic",
+      "minStat": 3,
+      "maxStat": 6,
+      "manaPerShot": 3
+    }
+  },
+  {
+    "name": "Fire Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ad/Staff-12.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Fire_Staff",
+    "info": {
+      "attack": 7,
+      "requirement": "40 Magic",
+      "minStat": 4,
+      "maxStat": 8,
+      "manaPerShot": 4
+    }
+  },
+  {
+    "name": "Golden Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2c/Staff-13.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Golden_Staff",
+    "info": {
+      "attack": 8,
+      "requirement": "50 Magic",
+      "minStat": 5,
+      "maxStat": 10,
+      "manaPerShot": 5
+    }
+  },
+  {
+    "name": "Nightmare Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c6/Staff-14.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nightmare_Staff",
+    "info": {
+      "attack": 9,
+      "requirement": "60 Magic",
+      "minStat": 6,
+      "maxStat": 12,
+      "manaPerShot": 6
+    }
+  },
+  {
+    "name": "Mana Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/98/Staff-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Staff",
+    "info": {
+      "attack": 10,
+      "requirement": "70 Magic",
+      "minStat": 7,
+      "maxStat": 14,
+      "manaPerShot": 7
+    }
+  },
+  {
+    "name": "Truth",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c3/Staff-17.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Truth",
+    "info": {
+      "attack": 11,
+      "requirement": "80 Magic",
+      "minStat": 8,
+      "maxStat": 16,
+      "manaPerShot": 8
+    }
+  },
+  {
+    "name": "Purity",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4d/Staff-21.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Purity",
+    "info": {
+      "attack": 12,
+      "requirement": "90 Magic",
+      "minStat": 9,
+      "maxStat": 18,
+      "manaPerShot": 9
+    }
+  },
+  {
+    "name": "Creation",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/de/Staff-19.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Creation",
+    "info": {
+      "attack": 13,
+      "requirement": "100 Magic",
+      "minStat": 10,
+      "maxStat": 20,
+      "manaPerShot": 10
+    }
+  },
+  {
+    "name": "Godman's Staff",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/6a/Staff-33.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Godman%27s_Staff",
+    "info": {
+      "attack": 6,
+      "requirement": "0 Magic",
+      "minStat": 0,
+      "maxStat": 0,
+      "manaPerShot": 0
+    }
+  }
+]

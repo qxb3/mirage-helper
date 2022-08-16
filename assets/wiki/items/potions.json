@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Health Vial",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/24/Potion-12.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Health_Vial",
+    "info": {
+      "healthRestored": 200,
+      "manaRestored": 0,
+      "weight": 1
+    }
+  },
+  {
+    "name": "Health Flask",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c4/Potion-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Health_Flask",
+    "info": {
+      "healthRestored": 350,
+      "manaRestored": 0,
+      "weight": 1.5
+    }
+  },
+  {
+    "name": "Health Bottle",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0d/Potion-13.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Health_Bottle",
+    "info": {
+      "healthRestored": 500,
+      "manaRestored": 0,
+      "weight": 2
+    }
+  },
+  {
+    "name": "Health Flagon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4a/Potion-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Health_Flagon",
+    "info": {
+      "healthRestored": 750,
+      "manaRestored": 0,
+      "weight": 2.5
+    }
+  },
+  {
+    "name": "Health Ewer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/de/Potion-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Health_Ewer",
+    "info": {
+      "healthRestored": 1000,
+      "manaRestored": 0,
+      "weight": 3
+    }
+  },
+  {
+    "name": "Health Amphora",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/72/Potion-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Health_Amphora",
+    "info": {
+      "healthRestored": 1500,
+      "manaRestored": 0,
+      "weight": 3.5
+    }
+  },
+  {
+    "name": "Mana Vial",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/46/Potion-29.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Vial",
+    "info": {
+      "healthRestored": 0,
+      "manaRestored": 200,
+      "weight": 1
+    }
+  },
+  {
+    "name": "Mana Flask",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9c/Potion-18.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Flask",
+    "info": {
+      "healthRestored": 0,
+      "manaRestored": 350,
+      "weight": 1.5
+    }
+  },
+  {
+    "name": "Mana Bottle",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e6/Potion-30.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Bottle",
+    "info": {
+      "healthRestored": 0,
+      "manaRestored": 500,
+      "weight": 2
+    }
+  },
+  {
+    "name": "Mana Flagon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/eb/Potion-21.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Flagon",
+    "info": {
+      "healthRestored": 0,
+      "manaRestored": 750,
+      "weight": 2.5
+    }
+  },
+  {
+    "name": "Mana Ewer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c2/Potion-15.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Ewer",
+    "info": {
+      "healthRestored": 0,
+      "manaRestored": 1000,
+      "weight": 3
+    }
+  },
+  {
+    "name": "Mana Amphora",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/10/Potion-20.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Amphora",
+    "info": {
+      "healthRestored": 0,
+      "manaRestored": 1500,
+      "weight": 3.5
+    }
+  },
+  {
+    "name": "Weak Potion",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/28/Potion-42.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Weak_Potion",
+    "info": {
+      "healthRestored": 50,
+      "manaRestored": 25,
+      "weight": 0.5
+    }
+  },
+  {
+    "name": "Soul Vial",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/aa/Potion-47.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Vial",
+    "info": {
+      "healthRestored": 200,
+      "manaRestored": 200,
+      "weight": 1
+    }
+  },
+  {
+    "name": "Soul Flask",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/14/Potion-37.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Flask",
+    "info": {
+      "healthRestored": 350,
+      "manaRestored": 350,
+      "weight": 1.5
+    }
+  },
+  {
+    "name": "Soul Bottle",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f2/Potion-48.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Bottle",
+    "info": {
+      "healthRestored": 500,
+      "manaRestored": 500,
+      "weight": 2
+    }
+  },
+  {
+    "name": "Soul Flagon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/71/Potion-40.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Flagon",
+    "info": {
+      "healthRestored": 750,
+      "manaRestored": 750,
+      "weight": 2.5
+    }
+  },
+  {
+    "name": "Soul Ewer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Potion-35.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Ewer",
+    "info": {
+      "healthRestored": 1000,
+      "manaRestored": 1000,
+      "weight": 3
+    }
+  },
+  {
+    "name": "Soul Amphora",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/cf/Potion-39.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Amphora",
+    "info": {
+      "healthRestored": 1500,
+      "manaRestored": 1500,
+      "weight": 3.5
+    }
+  }
+]

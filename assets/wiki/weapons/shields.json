@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Wooden Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/36/Shield-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Wooden_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "0 Defence",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  },
+  {
+    "name": "Reinforced Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2a/Shield-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Reinforced_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "15 Defence",
+      "minStat": 1,
+      "maxStat": 2
+    }
+  },
+  {
+    "name": "Copper Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/53/Shield-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Copper_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "20 Defence",
+      "minStat": 2,
+      "maxStat": 4
+    }
+  },
+  {
+    "name": "Plate Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b2/Shield-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Plate_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "30 Defence",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Soldier Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ca/Shield-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soldier_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "40 Defence",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Silver Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/ee/Shield-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Silver_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "50 Defence",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Platinum Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/dc/Shield-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Platinum_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "60 Defence",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Emerald Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e7/Shield-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Emerald_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "70 Defence",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Granite Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2c/Shield-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Granite_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "80 Defence",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Golden Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a7/Shield-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Golden_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "90 Defence",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Chaos Shield",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ad/Shield-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chaos_Shield",
+    "info": {
+      "attacker": "+1",
+      "requirement": "100 Defence",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  }
+]

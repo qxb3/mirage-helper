@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Experience Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c0/Consumable-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Experience_Scroll",
+    "info": {
+      "effect": "125% realm-wide experience for +1 hours"
+    }
+  },
+  {
+    "name": "Skill Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/be/Consumable-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Skill_Scroll",
+    "info": {
+      "effect": "125% realm-wide skill training for +1 hours"
+    }
+  },
+  {
+    "name": "Potion Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/49/Consumable-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Potion_Scroll",
+    "info": {
+      "effect": "150% realm-wide potion effectiveness for +1 hours"
+    }
+  },
+  {
+    "name": "Currency Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/3d/Consumable-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Currency_Scroll",
+    "info": {
+      "effect": "125% realm-wide currency drop increase for +1 hours"
+    }
+  },
+  {
+    "name": "Drop Rate Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b3/Consumable-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Drop_Rate_Scroll",
+    "info": {
+      "effect": "125% realm-wide item drop rate increase for +1 hours"
+    }
+  },
+  {
+    "name": "Supporter Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e1/Consumable-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Supporter_Scroll",
+    "info": {
+      "effect": "Adds +30 days of Supporter status to your account"
+    }
+  },
+  {
+    "name": "Change Hero Gender Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/54/Consumable-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Change_Hero_Gender_Scroll",
+    "info": {
+      "effect": "Changes the gender of the hero it was used on"
+    }
+  },
+  {
+    "name": "Rename Hero Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9a/Consumable-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Rename_Hero_Scroll",
+    "info": {
+      "effect": "Allows you to rename the hero it was used on"
+    }
+  },
+  {
+    "name": "Hero Slot Scroll",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Consumable-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hero_Slot_Scroll",
+    "info": {
+      "effect": "Adds another slot to your hero selection"
+    }
+  }
+]

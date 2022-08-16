@@ -13,13 +13,16 @@ class EnableCommand extends MirageCommand {
   constructor(context, options) {
     super(context, {
       ...options,
-      description: 'Enable a command in this server',
+      description: 'Enable a command/system in this server',
       requiredUserPermissions: 'MANAGE_CHANNELS',
       preconditions: ['GuildOnly'],
 
       thumbnail: 'assets/icons/mirage.png',
-      commandUsages: [
-        { arg: '[command]', description: 'Enable a command in this server', example: 'autogz' }
+      exampleUsages: [
+        {
+          args: '[command]',
+          example: 'autogz'
+        }
       ]
     })
   }
@@ -46,7 +49,7 @@ class EnableCommand extends MirageCommand {
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription(this.description)
           .addField('❯ Toggleable Commands', addCircleOnFront(commands.map(v => v.name)))
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })
@@ -58,7 +61,7 @@ class EnableCommand extends MirageCommand {
         createEmbedUser(user, Colors.Error)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription(`**${args.join(' ')}** is either not a valid command, or its not a toggleable command`)
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })

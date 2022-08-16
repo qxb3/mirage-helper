@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Cracked Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f5/Rod-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Cracked_Rod",
+    "info": {
+      "attack": 3,
+      "requirement": "0 Magic",
+      "minStat": 0,
+      "maxStat": 0,
+      "manaPerShot": 0
+    }
+  },
+  {
+    "name": "Nature Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fa/Rod-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nature_Rod",
+    "info": {
+      "attack": 4,
+      "requirement": "15 Magic",
+      "minStat": 1,
+      "maxStat": 2,
+      "manaPerShot": 1
+    }
+  },
+  {
+    "name": "Earth Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/40/Rod-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Earth_Rod",
+    "info": {
+      "attack": 5,
+      "requirement": "20 Magic",
+      "minStat": 2,
+      "maxStat": 4,
+      "manaPerShot": 2
+    }
+  },
+  {
+    "name": "Jungle Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/79/Rod-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Jungle_Rod",
+    "info": {
+      "attack": 6,
+      "requirement": "30 Magic",
+      "minStat": 3,
+      "maxStat": 6,
+      "manaPerShot": 3
+    }
+  },
+  {
+    "name": "Dead Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2d/Rod-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Dead_Rod",
+    "info": {
+      "attack": 7,
+      "requirement": "40 Magic",
+      "minStat": 4,
+      "maxStat": 8,
+      "manaPerShot": 4
+    }
+  },
+  {
+    "name": "Emerald Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/71/Rod-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Emerald_Rod",
+    "info": {
+      "attack": 8,
+      "requirement": "50 Magic",
+      "minStat": 5,
+      "maxStat": 10,
+      "manaPerShot": 5
+    }
+  },
+  {
+    "name": "Life Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/cc/Rod-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Life_Rod",
+    "info": {
+      "attack": 9,
+      "requirement": "60 Magic",
+      "minStat": 6,
+      "maxStat": 12,
+      "manaPerShot": 6
+    }
+  },
+  {
+    "name": "Holy Rod",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c0/Rod-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Holy_Rod",
+    "info": {
+      "attack": 10,
+      "requirement": "70 Magic",
+      "minStat": 7,
+      "maxStat": 14,
+      "manaPerShot": 7
+    }
+  },
+  {
+    "name": "Shade",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8f/Rod-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Shade",
+    "info": {
+      "attack": 11,
+      "requirement": "80 Magic",
+      "minStat": 8,
+      "maxStat": 16,
+      "manaPerShot": 8
+    }
+  },
+  {
+    "name": "Daylight",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/90/Rod-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Daylight",
+    "info": {
+      "attack": 12,
+      "requirement": "90 Magic",
+      "minStat": 9,
+      "maxStat": 18,
+      "manaPerShot": 9
+    }
+  },
+  {
+    "name": "Peace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/02/Rod-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Peace",
+    "info": {
+      "attack": 13,
+      "requirement": "100 Magic",
+      "minStat": 10,
+      "maxStat": 20,
+      "manaPerShot": 10
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Harvey",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e4/Troll-knight.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Harvey",
+    "info": {
+      "expertise": "Physical",
+      "location": "Kolasi",
+      "gearLevelRange": "30-100"
+    }
+  },
+  {
+    "name": "Squidge",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/25/Troll-mage.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Squidge",
+    "info": {
+      "expertise": "Mana",
+      "location": "Kolasi",
+      "gearLevelRange": "30-100"
+    }
+  },
+  {
+    "name": "Parker",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1e/Widow.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Parker",
+    "info": {
+      "expertise": "Nature",
+      "location": "Cuddle Corner",
+      "gearLevelRange": "30-100"
+    }
+  },
+  {
+    "name": "Hedge",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/89/Hedge.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hedge",
+    "info": {
+      "expertise": "Fire",
+      "location": "Mossy Shelf",
+      "gearLevelRange": "30-100"
+    }
+  },
+  {
+    "name": "Hog",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5d/Hog.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hog",
+    "info": {
+      "expertise": "Ice",
+      "location": "Cyclopian Lands",
+      "gearLevelRange": "30-100"
+    }
+  },
+  {
+    "name": "Shell",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Crab.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Shell",
+    "info": {
+      "expertise": "Energy",
+      "location": "Pit of Suffering",
+      "gearLevelRange": "30-100"
+    }
+  }
+]

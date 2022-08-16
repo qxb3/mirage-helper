@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Training Club",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0d/Mace-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Training_Club",
+    "info": {
+      "attack": 1,
+      "requirement": "0 Melee",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  },
+  {
+    "name": "Spiked Club",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/11/Mace-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spiked_Club",
+    "info": {
+      "attack": 3,
+      "requirement": "0 Melee",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  },
+  {
+    "name": "Iron Sceptre",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/59/Mace-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Iron_Sceptre",
+    "info": {
+      "attack": 4,
+      "requirement": "15 Melee",
+      "minStat": 1,
+      "maxStat": 2
+    }
+  },
+  {
+    "name": "Morning Star",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/54/Mace-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Morning_Star",
+    "info": {
+      "attack": 5,
+      "requirement": "20 Melee",
+      "minStat": 2,
+      "maxStat": 4
+    }
+  },
+  {
+    "name": "Heavy Mace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/30/Mace-15.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heavy_Mace",
+    "info": {
+      "attack": 6,
+      "requirement": "30 Melee",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Giant Smasher",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9c/Mace-12.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Giant_Smasher",
+    "info": {
+      "attack": 7,
+      "requirement": "40 Melee",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Paladin Hammer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2a/Mace-13.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Paladin_Hammer",
+    "info": {
+      "attack": 8,
+      "requirement": "50 Melee",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Hell's Teeth",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/45/Mace-23.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hell%27s_Teeth",
+    "info": {
+      "attack": 9,
+      "requirement": "60 Melee",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Chaos Mace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/95/Mace-28.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chaos_Mace",
+    "info": {
+      "attack": 10,
+      "requirement": "70 Melee",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Punisher",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4a/Mace-16.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Punisher",
+    "info": {
+      "attack": 11,
+      "requirement": "80 Melee",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Justice",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Mace-24.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Justice",
+    "info": {
+      "attack": 12,
+      "requirement": "90 Melee",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Mercy",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/00/Mace-20.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mercy",
+    "info": {
+      "attack": 13,
+      "requirement": "100 Melee",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  },
+  {
+    "name": "Duck Smasher",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/73/Mace-32.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Duck_Smasher",
+    "info": {
+      "attack": 1,
+      "requirement": "0 Melee",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  },
+  {
+    "name": "Ban Hammer",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/de/Mace-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ban_Hammer",
+    "info": {
+      "attack": 1000,
+      "requirement": "666 Melee",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  }
+]

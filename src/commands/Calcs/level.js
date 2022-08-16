@@ -11,11 +11,15 @@ class LevelCommand extends MirageCommand {
   constructor(context, options) {
     super(context, {
       ...options,
-      description: 'Calculate level',
+      description: 'Calculate how much would it take to get to one level to another',
       thumbnail: 'assets/icons/rules.png',
+
       maxArgs: 4,
-      commandUsages: [
-        { arg: '<from> <to> <mob-exp> [level-percent]', description: 'Calculate how much would it take to get to one level to another', example: '50 60 1350 30' }
+      exampleUsages: [
+        {
+          args: '<from> <to> <mob-exp> [level-percent]',
+          example: '50 60 1350 30'
+        }
       ]
     })
   }
@@ -23,13 +27,11 @@ class LevelCommand extends MirageCommand {
   run(options) {
     const { args } = options
 
-    if (args.length < 3) {
+    if (args.length < 3)
       return this.missingField(options)
-    }
 
-    if (!args.every(arg => /^\d+$/.test(arg))) {
+    if (!args.every(arg => /^\d+$/.test(arg)))
       return this.notANumber(options)
-    }
 
     this.calculate(options)
   }
@@ -40,7 +42,7 @@ class LevelCommand extends MirageCommand {
         createEmbedUser(user, Colors.Error)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('You need to fill up the missing fields')
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })
@@ -52,7 +54,7 @@ class LevelCommand extends MirageCommand {
         createEmbedUser(user, Colors.Error)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('I only accept numbers.')
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })

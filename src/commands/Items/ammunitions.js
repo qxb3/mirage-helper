@@ -1,33 +1,34 @@
 const WikiCommand = require('#structures/commands/WikiCommand')
 
-const scrolls = require('#assets/wiki/items/scrolls.json')
+const ammunitions = require('#assets/wiki/items/ammunitions.json')
 const { createEmbedUser } = require('#utils/response')
 
 class AmmunitionsCommand extends WikiCommand {
   constructor(context, options) {
     super(context, {
       ...options,
-      description: 'Find scrolls in the game',
-      aliases: ['scroll'],
+      description: 'Find ammunitions in the game',
+      aliases: ['ammunition'],
 
-      items: scrolls,
-      thumbnailUrl: 'https://www.miragerealms.co.uk/wiki/images/b/b3/Consumable-7.png',
+      items: ammunitions,
+      thumbnailUrl: 'https://www.miragerealms.co.uk/wiki/images/b/be/Ammunition-8.png',
       exampleUsages: [
         {
           args: '[name]',
-          example: 'Experience Scroll'
+          example: 'Pearl Arrow'
         }
       ]
     })
   }
 
   getInfo({ user, item }) {
-    const { effect } = item.info
+    const { requirement, bonusDistance } = item.info
 
     return createEmbedUser(user)
       .setThumbnail(item.image)
       .addField('❯ Name', `[${item.name}](${item.fullInfo})`)
-      .addField('❯ Effect', effect)
+      .addField('❯ Requirement', requirement)
+      .addField('❯ Bonus Distance', `${bonusDistance}`)
       .setFooter({ text: 'Click the the name for full info' })
   }
 

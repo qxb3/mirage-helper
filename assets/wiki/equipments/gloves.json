@@ -1,0 +1,444 @@
+[
+  {
+    "name": "Old Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c4/Gloves-none-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Old_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 0",
+      "minStat": 0,
+      "maxStat": 0
+    },
+    "category": "None",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c4/Gloves-none-0.png"
+  },
+  {
+    "name": "Ragged Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ragged_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Traveller's Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7f/Gloves-light-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Traveller%27s_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Flaming Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/43/Gloves-light-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Flaming_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Sulphur Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b0/Gloves-light-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sulphur_Gloves",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Nernai Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a5/Gloves-light-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Nernai_Gloves",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Caster Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/75/Gloves-light-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Caster_Gloves",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Indigo Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/3d/Gloves-light-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Indigo_Gloves",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Arnisium Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/31/Gloves-light-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Arnisium_Gloves",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Crystal Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2d/Gloves-light-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Crystal_Gloves",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Royal Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/61/Gloves-light-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Royal_Gloves",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Majestic Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/76/Gloves-light-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Majestic_Gloves",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
+  },
+  {
+    "name": "Ranger Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ranger_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Linothorax Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/72/Gloves-medium-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Linothorax_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Heroic Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9b/Gloves-medium-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heroic_Gloves",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Tin Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c1/Gloves-medium-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Tin_Gloves",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Soldier Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bf/Gloves-medium-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soldier_Gloves",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Elven Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/dd/Gloves-medium-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Gloves",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Pearl Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/be/Gloves-medium-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Pearl_Gloves",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Spiked Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/b4/Gloves-medium-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spiked_Gloves",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Sentinel Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/27/Gloves-medium-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sentinel_Gloves",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Mythril Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/eb/Gloves-medium-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mythril_Gloves",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Mirabell Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/28/Gloves-medium-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mirabell_Gloves",
+    "info": {
+      "armour": 6,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
+  },
+  {
+    "name": "Sturdy Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Sturdy_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Iron Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/77/Gloves-heavy-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Iron_Gloves",
+    "info": {
+      "armour": 1,
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Copper Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8d/Gloves-heavy-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Copper_Gloves",
+    "info": {
+      "armour": 2,
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Plate Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/2d/Gloves-heavy-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Plate_Gloves",
+    "info": {
+      "armour": 3,
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Chain Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/24/Gloves-heavy-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chain_Gloves",
+    "info": {
+      "armour": 4,
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Silver Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d3/Gloves-heavy-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Silver_Gloves",
+    "info": {
+      "armour": 5,
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Platinum Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-heavy-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Platinum_Gloves",
+    "info": {
+      "armour": 6,
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Emerald Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/10/Gloves-heavy-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Emerald_Gloves",
+    "info": {
+      "armour": 7,
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Granite Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/84/Gloves-heavy-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Granite_Gloves",
+    "info": {
+      "armour": 8,
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Golden Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/d/d3/Gloves-heavy-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Golden_Gloves",
+    "info": {
+      "armour": 9,
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  },
+  {
+    "name": "Chaos Gloves",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/f9/Gloves-heavy-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chaos_Gloves",
+    "info": {
+      "armour": 10,
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    },
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
+  }
+]

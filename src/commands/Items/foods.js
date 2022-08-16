@@ -1,32 +1,38 @@
 const WikiCommand = require('#structures/commands/WikiCommand')
-const { createEmbedUser } = require('#utils/response')
-const { addCircleOnFront } = require('#utils/string')
 
-class FoodsCommand extends WikiCommand {
+const foods = require('#assets/wiki/items/foods.json')
+const { createEmbedUser } = require('#utils/response')
+
+class AmmunitionsCommand extends WikiCommand {
   constructor(context, options) {
     super(context, {
       ...options,
       description: 'Find foods in the game',
       aliases: ['food'],
 
-      thumbnail: 'assets/items/sprites/foods/meat.png',
-      commandUsages: [
-        { arg: '[food]', description: 'To see the full info of the food', example: 'meat' }
+      items: foods,
+      thumbnailUrl: 'https://www.miragerealms.co.uk/wiki/images/a/a5/Cheese.png',
+      exampleUsages: [
+        {
+          args: '[name]',
+          example: 'Meat'
+        }
       ]
     })
   }
 
-  getItemResponse({ item, user }) {
-    const { name, path } = this.getSprite(this, item)
+  getInfo({ user, item }) {
+    const { nourishment, weight } = item.info
 
-    const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${name}`)
-      .addField('❯ Name', item.name)
-      .addField('❯ Effect', item.effect)
-      .addField('❯ Monsters', addCircleOnFront(item.monsters))
-
-    return { embed, sprite: path }
+    return createEmbedUser(user)
+      .setThumbnail(item.image)
+      .addField('❯ Name', `[${item.name}](${item.fullInfo})`)
+      .addField('❯ Nourishment', `${nourishment}`)
+      .addField('❯ Weight', `${weight}`)
+      .setFooter({ text: 'Click the the name for full info' })
   }
+
+  getFullInfo() {}
 }
 
-module.exports = FoodsCommand
+module.exports = AmmunitionsCommand

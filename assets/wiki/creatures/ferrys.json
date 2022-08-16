@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Blind Cyclops",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a9/Cyclops.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Blind_Cyclops",
+    "info": {
+      "location": "Cyclopian Lands",
+      "destinations": [
+        "Braconis"
+      ]
+    }
+  },
+  {
+    "name": "Deaf Cyclops",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a9/Cyclops.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Deaf_Cyclops",
+    "info": {
+      "location": "Braconis",
+      "destinations": [
+        "Cyclopian Lands"
+      ]
+    }
+  },
+  {
+    "name": "Kel",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/94/Sam.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Kel",
+    "info": {
+      "location": "Emberton",
+      "destinations": [
+        "Gilead",
+        "Farthing Wood",
+        "Jericho"
+      ]
+    }
+  },
+  {
+    "name": "Lisa",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/94/Sam.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Lisa",
+    "info": {
+      "location": "Gilead",
+      "destinations": [
+        "Emberton",
+        "Lorule Fortress",
+        "King's End"
+      ]
+    }
+  },
+  {
+    "name": "Captain Uwu",
+    "image": "https://www.miragerealms.co.uk/wiki/images/f/fc/Thief.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Captain_Uwu",
+    "info": {
+      "location": "Farthing Wood",
+      "destinations": [
+        "Jericho",
+        "Emberton"
+      ]
+    }
+  },
+  {
+    "name": "Captain Owo",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4b/Hunter.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Captain_Owo",
+    "info": {
+      "location": "Jericho",
+      "destinations": [
+        "Farthing Wood",
+        "Emberton"
+      ]
+    }
+  },
+  {
+    "name": "Fisherman Zugg",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8a/Orc-worker.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Fisherman_Zugg",
+    "info": {
+      "location": "Lorule Fortress",
+      "destinations": [
+        "King's End",
+        "Gilead"
+      ]
+    }
+  },
+  {
+    "name": "Fisherman Bork",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/8a/Orc-worker.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Fisherman_Bork",
+    "info": {
+      "location": "King's End",
+      "destinations": [
+        "Gilead",
+        "Lorule Fortress"
+      ]
+    }
+  },
+  {
+    "name": "Karon",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/26/Karon.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Karon",
+    "info": {
+      "location": "The Abyss",
+      "destinations": [
+        "Realm of Loss"
+      ]
+    }
+  }
+]

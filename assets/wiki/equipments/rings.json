@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Broken Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e0/Ring-none-55.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Broken_Ring",
+    "info": {
+      "requirement": "Level 0",
+      "minStat": 1,
+      "maxStat": 2
+    }
+  },
+  {
+    "name": "Plain Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/69/Ring-none-54.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Plain_Ring",
+    "info": {
+      "requirement": "Level 5",
+      "minStat": 2,
+      "maxStat": 4
+    }
+  },
+  {
+    "name": "Dragon Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ce/Ring-none-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Dragon_Ring",
+    "info": {
+      "requirement": "Level 10",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Gold Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/4c/Ring-none-102.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Gold_Ring",
+    "info": {
+      "requirement": "Level 20",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Burning Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/34/Ring-none-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Burning_Ring",
+    "info": {
+      "requirement": "Level 30",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Elven Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/66/Ring-none-14.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Ring",
+    "info": {
+      "requirement": "Level 40",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Crystal Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/4/40/Ring-none-12.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Crystal_Ring",
+    "info": {
+      "requirement": "Level 50",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Mana Stone",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/ca/Ring-none-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mana_Stone",
+    "info": {
+      "requirement": "Level 60",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Amber Ring",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e1/Ring-none-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Amber_Ring",
+    "info": {
+      "requirement": "Level 70",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Royal Jewel",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/07/Ring-none-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Royal_Jewel",
+    "info": {
+      "requirement": "Level 80",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  },
+  {
+    "name": "Soul Stone",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e2/Ring-none-13.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Stone",
+    "info": {
+      "requirement": "Level 90",
+      "minStat": 11,
+      "maxStat": 22
+    }
+  },
+  {
+    "name": "Shadow Band",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/87/Ring-none-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Shadow_Band",
+    "info": {
+      "requirement": "Level 100",
+      "minStat": 12,
+      "maxStat": 24
+    }
+  },
+  {
+    "name": "Liam's Blessing",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/1f/Ring-none-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Liam%27s_Blessing",
+    "info": {
+      "requirement": "Level 0",
+      "minStat": 0,
+      "maxStat": 0
+    }
+  }
+]

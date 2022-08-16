@@ -12,11 +12,15 @@ class SkillCommand extends MirageCommand {
   constructor(context, options) {
     super(context, {
       ...options,
-      description: 'Calculate skill',
+      description: 'Calculate how much would it take to get to one skill level to another',
+
       thumbnail: 'assets/icons/rules.png',
       maxArgs: 4,
-      commandUsages: [
-        { arg: '<vocation> <from> <to> [skill-percent]', description: 'Calculate how much would it take to get to one skill level to another', example: 'knight 50 60 30' }
+      exampleUsages: [
+        {
+          args: '<vocation> <from> <to> [skill-percent]',
+          example: 'knight 50 60 30'
+        }
       ]
     })
 
@@ -26,18 +30,15 @@ class SkillCommand extends MirageCommand {
   run(options) {
     const { args } = options
 
-    if (args.length < 3) {
+    if (args.length < 3)
       return this.noArgs(options)
-    }
 
     const vocation = searchItems(args[0], this.vocations)[0]
-    if (!vocation) {
+    if (!vocation)
       return this.unknownVocation(options)
-    }
 
-    if (!args.slice(1).every(arg => /^\d+$/.test(arg))) {
+    if (!args.slice(1).every(arg => /^\d+$/.test(arg)))
       return this.notANumber(options)
-    }
 
     this.calculate({ ...options, vocation })
   }
@@ -48,7 +49,7 @@ class SkillCommand extends MirageCommand {
         createEmbedUser(user)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .addField('❯ Vocations', addCircleOnFront(this.vocations))
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })
@@ -60,7 +61,7 @@ class SkillCommand extends MirageCommand {
         createEmbedUser(user, Colors.Error)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('Unknown vocation')
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })
@@ -72,7 +73,7 @@ class SkillCommand extends MirageCommand {
         createEmbedUser(user, Colors.Error)
           .setThumbnail(`attachment://${this.thumbnail.name}`)
           .setDescription('I only accept numbers.')
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       files: [this.thumbnail.path]
     })

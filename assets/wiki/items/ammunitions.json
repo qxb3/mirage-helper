@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Wooden Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/3/34/Ammunition-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Wooden_Arrow",
+    "info": {
+      "requirement": "0 Distance",
+      "bonusDistance": 0
+    }
+  },
+  {
+    "name": "Stone Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/0c/Ammunition-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Stone_Arrow",
+    "info": {
+      "requirement": "20 Distance",
+      "bonusDistance": 5
+    }
+  },
+  {
+    "name": "Flint Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/9/9d/Ammunition-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Flint_Arrow",
+    "info": {
+      "requirement": "30 Distance",
+      "bonusDistance": 10
+    }
+  },
+  {
+    "name": "Tin Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/63/Ammunition-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Tin_Arrow",
+    "info": {
+      "requirement": "40 Distance",
+      "bonusDistance": 15
+    }
+  },
+  {
+    "name": "Iron Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/01/Ammunition-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Iron_Arrow",
+    "info": {
+      "requirement": "50 Distance",
+      "bonusDistance": 20
+    }
+  },
+  {
+    "name": "Elven Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/1/13/Ammunition-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Elven_Arrow",
+    "info": {
+      "requirement": "60 Distance",
+      "bonusDistance": 25
+    }
+  },
+  {
+    "name": "Pearl Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/6/6e/Ammunition-6.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Pearl_Arrow",
+    "info": {
+      "requirement": "70 Distance",
+      "bonusDistance": 30
+    }
+  },
+  {
+    "name": "Spiked Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/7/7d/Ammunition-7.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Spiked_Arrow",
+    "info": {
+      "requirement": "80 Distance",
+      "bonusDistance": 35
+    }
+  },
+  {
+    "name": "Mythril Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/be/Ammunition-8.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Mythril_Arrow",
+    "info": {
+      "requirement": "90 Distance",
+      "bonusDistance": 40
+    }
+  },
+  {
+    "name": "Diamond Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/27/Ammunition-9.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Diamond_Arrow",
+    "info": {
+      "requirement": "100 Distance",
+      "bonusDistance": 45
+    }
+  },
+  {
+    "name": "Royal Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a7/Ammunition-10.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Royal_Arrow",
+    "info": {
+      "requirement": "110 Distance",
+      "bonusDistance": 50
+    }
+  },
+  {
+    "name": "Chaos Arrow",
+    "image": "https://www.miragerealms.co.uk/wiki/images/0/05/Ammunition-11.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Chaos_Arrow",
+    "info": {
+      "requirement": "75 Distance",
+      "bonusDistance": 200
+    }
+  }
+]

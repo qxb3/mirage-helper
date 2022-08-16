@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Tarnished Necklace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/ae/Necklace-none-0.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Tarnished_Necklace",
+    "info": {
+      "requirement": "Level 5",
+      "minStat": 1,
+      "maxStat": 2
+    }
+  },
+  {
+    "name": "Ancient Necklace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/5c/Necklace-none-1.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Ancient_Necklace",
+    "info": {
+      "requirement": "Level 10",
+      "minStat": 2,
+      "maxStat": 4
+    }
+  },
+  {
+    "name": "Dragon Necklace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/c/c9/Necklace-none-2.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Dragon_Necklace",
+    "info": {
+      "requirement": "Level 20",
+      "minStat": 3,
+      "maxStat": 6
+    }
+  },
+  {
+    "name": "Jeweled Necklace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/59/Necklace-none-42.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Jeweled_Necklace",
+    "info": {
+      "requirement": "Level 30",
+      "minStat": 4,
+      "maxStat": 8
+    }
+  },
+  {
+    "name": "Heroic Amulet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a8/Necklace-none-4.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Heroic_Amulet",
+    "info": {
+      "requirement": "Level 40",
+      "minStat": 5,
+      "maxStat": 10
+    }
+  },
+  {
+    "name": "Power Amulet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/a/a6/Necklace-none-48.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Power_Amulet",
+    "info": {
+      "requirement": "Level 50",
+      "minStat": 6,
+      "maxStat": 12
+    }
+  },
+  {
+    "name": "Demon Tooth",
+    "image": "https://www.miragerealms.co.uk/wiki/images/b/bd/Necklace-none-3.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Demon_Tooth",
+    "info": {
+      "requirement": "Level 60",
+      "minStat": 7,
+      "maxStat": 14
+    }
+  },
+  {
+    "name": "Hellborn Amulet",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/82/Necklace-none-17.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Hellborn_Amulet",
+    "info": {
+      "requirement": "Level 70",
+      "minStat": 8,
+      "maxStat": 16
+    }
+  },
+  {
+    "name": "Holy Necklace",
+    "image": "https://www.miragerealms.co.uk/wiki/images/5/54/Necklace-none-46.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Holy_Necklace",
+    "info": {
+      "requirement": "Level 80",
+      "minStat": 9,
+      "maxStat": 18
+    }
+  },
+  {
+    "name": "Amulet of Life",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/29/Necklace-none-45.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Amulet_of_Life",
+    "info": {
+      "requirement": "Level 90",
+      "minStat": 10,
+      "maxStat": 20
+    }
+  },
+  {
+    "name": "Infinity Stone",
+    "image": "https://www.miragerealms.co.uk/wiki/images/2/24/Necklace-none-47.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Infinity_Stone",
+    "info": {
+      "requirement": "Level 100",
+      "minStat": 11,
+      "maxStat": 22
+    }
+  }
+]
