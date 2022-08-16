@@ -1,46 +1,51 @@
-const BaseCommand = require('./BaseCommand')
+const { Command } = require('@sapphire/framework')
 
-/**
- * @typedef {import('@sapphire/framework').PieceContext} Context
- * @typedef {import('@sapphire/framework').CommandOptions} CommandOptions
- * @typedef {import('@sapphire/framework').Message} Message
- * @typedef {import('@sapphire/framework').CommandInteraction} CommandInteraction
- * @typedef {import('@sapphire/framework').GuildMember} GuildMember
- * @typedef {import('@sapphire/framework').User} User
- */
+const { Lexer, Parser, ArgumentStream } = require('@sapphire/lexure')
+const { Args } = require('@sapphire/framework')
+const { Permissions, Formatters } = require('discord.js')
 
-class MirageCommand extends BaseCommand {
-  /**
-   * @typedef {Object} RunOptions
-   * @property context {Message|CommandInteraction}
-   * @property args {Array<String>}
-   * @property member {GuildMember}
-   * @property user {User}
-   * @property commandName {String}
-   * @property prefix {String=}
-   */
-
-  /**
-   * A class for creating mirage command
-   * @param context {Context}
-   * @param options {CommandOptions}
-   */
+class MirageCommand extends Command {
   constructor(context, options) {
+    const permissions = new Permissions(options.requiredClientPermissions).add([
+      Permissions.FLAGS.VIEW_CHANNEL,
+      Permissions.FLAGS.SEND_MESSAGES,
+      Permissions.FLAGS.EMBED_LINKS,
+      Permissions.FLAGS.ATTACH_FILES
+    ])
+
+    const preconditions = [
+      options.preconditions ? options.preconditions : [],
+      options.toggleable ? 'IsDisabled': []
+    ]
+
     super(context, {
-      ...options
+      ...options,
+      requiredClientPermissions: permissions,
+      preconditions: preconditions.flat()
     })
 
+    if (options.thumbnail) {
+      this.thumbnail = {
+        name: options.thumbnail.split('/').pop(),
+        path: options.thumbnail
+      }
+    }
+    this.thumbnailUrl = options.thumbnailUrl
+    this.hidden = options.hidden || false
+    this.toggleable = options.toggleable || false
+    this.exampleUsages = options.exampleUsages
     this.maxArgs = options.maxArgs
   }
 
-  messagePreParse(_, params) {
-    return params.match(/[^ ]+/g) || []
-  }
+  async messageRun(message, rawArgs, context) {
+    const args = (await rawArgs.rest('string').catch(() => ''))
+      .split(' ')
+      .filter(v => v.length > 0)
 
-  async messageRun(message, args, context) {
     this.run({
       context: message,
-      args: this.getArgs(args),
+      args: this.limitArgs(args),
+      rawArgs,
       member: message.member,
       user: message.author,
       guild: message.guild,
@@ -53,7 +58,8 @@ class MirageCommand extends BaseCommand {
 
     this.run({
       context: interaction,
-      args: this.getArgs(args),
+      args: this.limitArgs(args),
+      rawArgs: interaction.options,
       member: interaction.member,
       user: interaction.user,
       guild: interaction.guild,
@@ -62,21 +68,28 @@ class MirageCommand extends BaseCommand {
     })
   }
 
-  /**
-   * Returns the max args if maxArgs exists. If not just returns the args
-   * @param args {Array<String>}
-   * @returns {Array<String>}
-   */
-  getArgs(args) {
+  limitArgs(args) {
     return this.maxArgs ?
       new Array(Math.min(args.length, this.maxArgs))
         .fill(null).map((_, i) => args[i]) : args
   }
 
-  /**
-   * @param options {RunOptions}
-   */
-  run(options) {} // eslint-disable-line no-unused-vars
+  getExampleUsages(commandName, prefix) {
+    if (!this.exampleUsages) {
+      return Formatters.inlineCode(
+        `${prefix + commandName} - ${this.description}`
+      )
+    }
+
+    const formatedUsages = this.exampleUsages.map(usage =>
+      Formatters.inlineCode(
+        `${prefix + commandName} ${usage.args} ${usage.description ? '- ' + usage.description : ''}\n` +
+        `Example: ${prefix + commandName} ${usage.example}`
+      )
+    ).join('\n\n')
+
+    return formatedUsages
+  }
 }
 
 module.exports = MirageCommand
