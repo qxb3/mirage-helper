@@ -1,4 +1,4 @@
-const BaseCommand = require('./BaseCommand')
+const MirageCommand = require('./MirageCommand')
 const { Formatters, MessageActionRow, MessageSelectMenu } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders')
 const { Time } = require('@sapphire/time-utilities')
@@ -9,75 +9,16 @@ const { addCircleOnFront, capitalizeAll, ignoreCase } = require('#utils/string')
 const { Colors } = require('#utils/constants')
 const { guildIds } = require('#vars')
 
-/**
- * @typedef {import('@sapphire/framework').PieceContext} Context
- * @typedef {import('@sapphire/framework').CommandOptions} CommandOptions
- * @typedef {import('@sapphire/framework').ApplicationCommandRegistry} ApplicationCommandRegistry
- * @typedef {import('discord.js').MessageEmbed} MessageEmbed
- * @typedef {import('discord.js').CommandInteraction} CommandInteraction
- * @typedef {import('discord.js').GuildMember} GuildMember
- * @typedef {import('discord.js').User} User
- * @typedef {import('discord.js').MessageActionRow} MessageActionRow
- * @typedef {import('discord.js').AutocompleteInteraction} AutocompleteInteraction
- */
-
-class WikiCommand extends BaseCommand {
-  /**
-   * @typedef {Object} RunOptions
-   * @property context {Message|CommandInteraction}
-   * @property args {Array<String>}
-   * @property member {GuildMember}
-   * @property user {User}
-   * @property commandName {String}
-   * @property prefix {String|null}
-   */
-
-  /**
-   * A class for creating wiki command
-   * @param context {Context}
-   * @param options {CommandOptions}
-   */
+class WikiCommand extends MirageCommand {
   constructor(context, options) {
     super(context, {
       ...options
     })
 
-    this.items = require(`#assets/${this.category.toLowerCase()}/${this.name}`)
+    this.items = options.items
     this.itemCategories = options.itemCategories
-    this.commandUsages = options.commandUsages
   }
 
-  messagePreParse(_, params) {
-    return params.match(/[^ ]+/g) || []
-  }
-
-  messageRun(message, args, context) {
-    this.run({
-      context: message,
-      args,
-      member: message.member,
-      user: message.author,
-      ...context
-    })
-  }
-
-  chatInputRun(interaction, context) {
-    const args = interaction.options._hoistedOptions.map(option => option.value)
-
-    this.run({
-      context: interaction,
-      args,
-      member: interaction.member,
-      user: interaction.user,
-      ...context,
-      prefix: '/'
-    })
-  }
-
-  /**
-   * Runs whenever this command runs
-   * @param options {RunOptions}
-   */
   run(options) {
     const { args } = options
 
@@ -97,35 +38,28 @@ class WikiCommand extends BaseCommand {
     this.isNoMatch(options)
   }
 
-  /**
-   * This function runs when there is no arguments inputed
-   * @param options {RunOptions}
-   */
   async noArgs({ context, user, commandName, prefix }) {
     if (!this.itemCategories) {
       const items = this.items.map(item => item.name)
       const embed = createEmbedUser(user)
-        .setThumbnail(`attachment://${this.thumbnail.name}`)
+        .setThumbnail(this.thumbnailUrl)
         .addField(`❯ ${capitalizeAll(this.name)}`, addCircleOnFront(items))
-        .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+        .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
 
       return sendMessage(context, {
-        embeds: [embed],
-        files: [this.thumbnail.path]
+        embeds: [embed]
       })
     }
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${this.thumbnail.name}`)
+      .setThumbnail(this.thumbnailUrl)
       .addField('❯ Categories', addCircleOnFront(this.itemCategories))
-      .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+      .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
 
     const component = this.getComponent()
-
     const msg = await sendMessage(context, {
       embeds: [embed],
       components: [component],
-      files: [this.thumbnail.path],
       fetchReply: true
     })
 
@@ -146,77 +80,58 @@ class WikiCommand extends BaseCommand {
 
     collector.on('collect', (interaction) => {
       const category = interaction.values[0]
-      const items = this.items.filter(item => item.type === category).map(item => item.name)
-      const spriteName = `${category.toLowerCase()}.png`
-      const sprite = `assets/${this.category.toLowerCase()}/sprites/${this.name}/thumbnails/${spriteName}`
+      const items = this.items.filter(item => ignoreCase(item.category, category))
+      const itemNames = items.map(item => item.name)
+      const sprite = items[0].categoryImage
 
       component.components[0].setPlaceholder(category)
 
-      msg.edit({
+      interaction.update({
         embeds: [
           createEmbedUser(user)
-            .setThumbnail(`attachment://${spriteName}`)
-            .addField(`❯ ${category}`, addCircleOnFront(items))
-            .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+            .setThumbnail(sprite)
+            .addField(`❯ ${category}`, addCircleOnFront(itemNames))
+            .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
         ],
-        components: [component],
-        files: [sprite]
+        components: [component]
       })
     })
   }
 
-  /**
-   * This function runs when the arguments inputed are category
-   * @param options {RunOptions}
-   */
   isCategory({ context, category, user, commandName, prefix }) {
-    const items = this.items.filter(item => ignoreCase(item.type, category)).map(item => item.name)
-    const spriteName = `${category.toLowerCase()}.png`
-    const sprite = `assets/${this.category.toLowerCase()}/sprites/${this.name}/thumbnails/${spriteName}`
+    const items = this.items.filter(item => ignoreCase(item.category, category))
+    const itemNames = items.map(item => item.name)
+    const sprite = items[0].categoryImage
 
     const embed = createEmbedUser(user)
-      .setThumbnail(`attachment://${spriteName}`)
-      .addField(`❯ ${category}`, addCircleOnFront(items))
-      .addField('❯ Usages', this.getCommandUsages(commandName, prefix))
+      .setThumbnail(sprite)
+      .addField(`❯ ${category}`, addCircleOnFront(itemNames))
+      .addField('❯ Usages', this.getExampleUsages(commandName, prefix))
 
     sendMessage(context, {
-      embeds: [embed],
-      files: [sprite]
+      embeds: [embed]
     })
   }
 
-  /**
-   * This function runs when the arguments is an item
-   * @param options {RunOptions}
-   */
   isItem(options) {
-    const { embed, sprite } = this.getItemResponse(options)
+    const info = this.getInfo(options)
 
     sendMessage(options.context, {
-      embeds: [embed],
-      files: [sprite]
+      embeds: [info]
     })
   }
 
-  /**
-   * This function runs when the arguments is not an item or category
-   * @param options {RunOptions}
-   */
   isNoMatch({ context, args, user, commandName, prefix }) {
     const embed = createEmbedUser(user, Colors.Error)
-      .setThumbnail(`attachment://${this.thumbnail.name}`)
+      .setThumbnail(this.thumbnailUrl)
       .setDescription(`${Formatters.bold(args.join(' '))} did not match to any of the ${this.name} ${this.itemCategories ? 'or categories' : ''}`)
-      .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+      .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
 
     sendMessage(context, {
-      embeds: [embed],
-      files: [this.thumbnail.path]
+      embeds: [embed]
     })
   }
 
-  /**
-   * @param interaction {AutocompleteInteraction}
-   */
   autocompleteRun(interaction) {
     const query = interaction.options.getFocused()
     const result = searchItemsAutocomplete(query, this.items)
@@ -229,10 +144,6 @@ class WikiCommand extends BaseCommand {
     )
   }
 
-  /**
-   * Registers application commands
-   * @param registry {ApplicationCommandRegistry}
-   */
   registerApplicationCommands(registry) {
     const command = new SlashCommandBuilder()
       .setName(this.name)
@@ -249,26 +160,12 @@ class WikiCommand extends BaseCommand {
     })
   }
 
-  /**
-   * @typedef {Object} ItemResponse
-   * @property embed {MessageEmbed}
-   * @property sprite {String}
-   *
-   * @param options {RunOptions}
-   * @returns {ItemResponse}
-   */
-  getItemResponse(options) {} // eslint-disable-line no-unused-vars
-
-  /**
-   * Get command component
-   * @returns {MessageActionRow}
-   */
   getComponent() {
     const actionRow = new MessageActionRow()
       .setComponents(
         new MessageSelectMenu()
           .setCustomId('categories')
-          .setPlaceholder('Select a category')
+          .setPlaceholder('Select Category')
           .setOptions(
             this.itemCategories.map(category => ({
               label: category,
@@ -278,24 +175,6 @@ class WikiCommand extends BaseCommand {
       )
 
     return actionRow
-  }
-
-  /**
-   * @typedef {Object} GetSprite
-   * @property name {String} the sprite name
-   * @property path {String} the sprite path
-   *
-   * Get item's sprite
-   * @param item {Object<any>}
-   * @param command {Object<any>}
-   * @param withCategory {Boolean}
-   * @returns GetSprite
-   */
-  getSprite(command, item, withCategory = false) {
-    const name = `${item.name.toLowerCase().replaceAll(' ', '-').replaceAll('\'', '')}.png`
-    const path = `assets/${command.category.toLowerCase()}/sprites/${command.name}${withCategory ? `/${item.type.toLowerCase()}/` : '/'}${name}`
-
-    return { name, path }
   }
 }
 
