@@ -31,7 +31,7 @@ const calculateLevel = (from, to, mobExp, percent = 0) => {
 
   return {
     exp,
-    time: new DurationFormatter().format(time * 1000)
+    time: new DurationFormatter().format(time * 1000, 4)
   }
 }
 
@@ -89,7 +89,7 @@ const calculateSkill = (vocation, from, to, percent = 0) => {
   const format = (hits) => {
     const cooldown = 2.3185
     const time = Math.ceil(hits * cooldown)
-    return new DurationFormatter().format(time * 1000)
+    return new DurationFormatter().format(time * 1000, 4)
   }
 
   const timeHits = format(hits)
