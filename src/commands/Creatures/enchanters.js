@@ -2,7 +2,6 @@ const WikiCommand = require('#structures/commands/WikiCommand')
 
 const enchanters = require('#assets/wiki/creatures/enchanters.json')
 const { createEmbedUser } = require('#utils/response')
-const { addCircleOnFront } = require('#utils/string')
 
 class EnchantersCommand extends WikiCommand {
   constructor(context, options) {

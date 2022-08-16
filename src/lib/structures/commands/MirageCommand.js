@@ -1,7 +1,4 @@
 const { Command } = require('@sapphire/framework')
-
-const { Lexer, Parser, ArgumentStream } = require('@sapphire/lexure')
-const { Args } = require('@sapphire/framework')
 const { Permissions, Formatters } = require('discord.js')
 
 class MirageCommand extends Command {
