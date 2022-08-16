@@ -17,12 +17,29 @@ class AutoGzCommand extends MirageCommand {
       requiredUserPermissions: ['MANAGE_CHANNELS'],
 
       toggleable: true,
-      commandUsages: [
-        { arg: '<channel>', description: 'Setup autogz on a channel', example: '#level-ups' },
-        { arg: '<channel> [messages]', description: 'Setup autogz on a channel with one message', example: '#level-ups Congrats!' },
-        { arg: '<channel> [messages]', description: 'Setup autogz on a channel with multiple messages seperated by |', example: '#level-ups Congrats!|Horray!|Nice noob!' },
-        { arg: '<channel> [messages]', description: 'If you want some user mentions add: {USER}', example: '#level-ups Congrats! {USER}' },
-        { arg: '<channel> [messages]', description: 'If you want to get the server name add: {SERVER}', example: '#level-ups We in {SERVER} congratulate you!' }
+      exampleUsages: [
+        {
+          args: '<channel>',
+          description: 'Setup autogz on a channel',
+          example: '#level-ups'
+        },
+        {
+          args: '<channel> [messages]',
+          description: 'Setup autogz on a channel with one message',
+          example: '#level-ups Congrats!' },
+        {
+          args: '<channel> [messages]',
+          description: 'Setup autogz on a channel with multiple messages seperated by |',
+          example: '#level-ups Congrats!|Horray!|Nice noob!' },
+        {
+          args: '<channel> [messages]',
+          description: 'If you want some user mentions add: {USER}',
+          example: '#level-ups Congrats! {USER}' },
+        {
+          args: '<channel> [messages]',
+          description: 'If you want to get the server name add: {SERVER}',
+          example: '#level-ups We in {SERVER} congratulate you!'
+        }
       ]
     })
   }
@@ -57,7 +74,7 @@ class AutoGzCommand extends MirageCommand {
             Channel: <#${config.channelId}>
             Messages: ${config.messages.join(', ') || 'None'}
           `)}`)
-          .addField('❯ Usage', this.getCommandUsages(commandName, prefix))
+          .addField('❯ Usage', this.getExampleUsages(commandName, prefix))
       ],
       reply: true
     })
