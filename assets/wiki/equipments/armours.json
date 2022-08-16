@@ -9,7 +9,8 @@
       "minStat": 0,
       "maxStat": 0
     },
-    "type": "Miscellaneous"
+    "category": "Miscellaneous",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c8/Chest-none-0.png"
   },
   {
     "name": "Ragged Cloak",
@@ -21,7 +22,8 @@
       "minStat": 1,
       "maxStat": 2
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Traveller's Gown",
@@ -33,7 +35,8 @@
       "minStat": 2,
       "maxStat": 4
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Flaming Cape",
@@ -45,7 +48,8 @@
       "minStat": 3,
       "maxStat": 6
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Sulphur Robe",
@@ -57,7 +61,8 @@
       "minStat": 4,
       "maxStat": 8
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Nernai Vest",
@@ -69,7 +74,8 @@
       "minStat": 5,
       "maxStat": 10
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Caster Robe",
@@ -81,7 +87,8 @@
       "minStat": 6,
       "maxStat": 12
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Indigo Cape",
@@ -93,7 +100,8 @@
       "minStat": 7,
       "maxStat": 14
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Arnisium Vest",
@@ -105,7 +113,8 @@
       "minStat": 8,
       "maxStat": 16
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Crystal Cape",
@@ -117,7 +126,8 @@
       "minStat": 9,
       "maxStat": 18
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Royal Robe",
@@ -129,7 +139,8 @@
       "minStat": 10,
       "maxStat": 20
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Majestic Robe",
@@ -141,7 +152,8 @@
       "minStat": 11,
       "maxStat": 22
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/fc/Chest-light-0.png"
   },
   {
     "name": "Leather Vest",
@@ -153,7 +165,8 @@
       "minStat": 1,
       "maxStat": 2
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Linothorax Chest",
@@ -165,7 +178,8 @@
       "minStat": 2,
       "maxStat": 4
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Heroic Cloak",
@@ -177,7 +191,8 @@
       "minStat": 3,
       "maxStat": 6
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Tin Armour",
@@ -189,7 +204,8 @@
       "minStat": 4,
       "maxStat": 8
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Soldier Armour",
@@ -201,7 +217,8 @@
       "minStat": 5,
       "maxStat": 10
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Elven Shirt",
@@ -213,7 +230,8 @@
       "minStat": 6,
       "maxStat": 12
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Pearl Armour",
@@ -225,7 +243,8 @@
       "minStat": 7,
       "maxStat": 14
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Spiked Armour",
@@ -237,7 +256,8 @@
       "minStat": 8,
       "maxStat": 16
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Sentinel Armour",
@@ -249,7 +269,8 @@
       "minStat": 9,
       "maxStat": 18
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Mythril Armour",
@@ -261,7 +282,8 @@
       "minStat": 10,
       "maxStat": 20
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Mirabell Vest",
@@ -273,7 +295,8 @@
       "minStat": 11,
       "maxStat": 22
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/97/Chest-medium-0.png"
   },
   {
     "name": "Belted Armour",
@@ -285,7 +308,8 @@
       "minStat": 1,
       "maxStat": 2
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Iron Armour",
@@ -297,7 +321,8 @@
       "minStat": 2,
       "maxStat": 4
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Copper Armour",
@@ -309,7 +334,8 @@
       "minStat": 3,
       "maxStat": 6
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Plate Armour",
@@ -321,7 +347,8 @@
       "minStat": 4,
       "maxStat": 8
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Chain Armour",
@@ -333,7 +360,8 @@
       "minStat": 5,
       "maxStat": 10
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Silver Armour",
@@ -345,7 +373,8 @@
       "minStat": 6,
       "maxStat": 12
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Platinum Armour",
@@ -357,7 +386,8 @@
       "minStat": 7,
       "maxStat": 14
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Emerald Armour",
@@ -369,7 +399,8 @@
       "minStat": 8,
       "maxStat": 16
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Granite Armour",
@@ -381,7 +412,8 @@
       "minStat": 9,
       "maxStat": 18
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Golden Armour",
@@ -393,7 +425,8 @@
       "minStat": 10,
       "maxStat": 20
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   },
   {
     "name": "Chaos Armour",
@@ -405,6 +438,7 @@
       "minStat": 11,
       "maxStat": 22
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c0/Chest-heavy-0.png"
   }
 ]

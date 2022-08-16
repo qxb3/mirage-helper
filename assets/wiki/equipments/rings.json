@@ -100,6 +100,26 @@
     }
   },
   {
+    "name": "Soul Stone",
+    "image": "https://www.miragerealms.co.uk/wiki/images/e/e2/Ring-none-13.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Soul_Stone",
+    "info": {
+      "requirement": "Level 90",
+      "minStat": 11,
+      "maxStat": 22
+    }
+  },
+  {
+    "name": "Shadow Band",
+    "image": "https://www.miragerealms.co.uk/wiki/images/8/87/Ring-none-5.png",
+    "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Shadow_Band",
+    "info": {
+      "requirement": "Level 100",
+      "minStat": 12,
+      "maxStat": 24
+    }
+  },
+  {
     "name": "Liam's Blessing",
     "image": "https://www.miragerealms.co.uk/wiki/images/1/1f/Ring-none-3.png",
     "fullInfo": "https://www.miragerealms.co.uk/wiki/index.php/Liam%27s_Blessing",

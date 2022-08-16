@@ -9,7 +9,8 @@
       "minStat": 0,
       "maxStat": 0
     },
-    "type": "Miscellaneous"
+    "category": "Miscellaneous",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/c/c4/Gloves-none-0.png"
   },
   {
     "name": "Ragged Gloves",
@@ -21,7 +22,8 @@
       "minStat": 1,
       "maxStat": 2
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Traveller's Gloves",
@@ -33,7 +35,8 @@
       "minStat": 2,
       "maxStat": 4
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Flaming Gloves",
@@ -45,7 +48,8 @@
       "minStat": 3,
       "maxStat": 6
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Sulphur Gloves",
@@ -57,7 +61,8 @@
       "minStat": 4,
       "maxStat": 8
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Nernai Gloves",
@@ -69,7 +74,8 @@
       "minStat": 5,
       "maxStat": 10
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Caster Gloves",
@@ -81,7 +87,8 @@
       "minStat": 6,
       "maxStat": 12
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Indigo Gloves",
@@ -93,7 +100,8 @@
       "minStat": 7,
       "maxStat": 14
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Arnisium Gloves",
@@ -105,7 +113,8 @@
       "minStat": 8,
       "maxStat": 16
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Crystal Gloves",
@@ -117,7 +126,8 @@
       "minStat": 9,
       "maxStat": 18
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Royal Gloves",
@@ -129,7 +139,8 @@
       "minStat": 10,
       "maxStat": 20
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Majestic Gloves",
@@ -141,7 +152,8 @@
       "minStat": 11,
       "maxStat": 22
     },
-    "type": "Light"
+    "category": "Light",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/f/f8/Gloves-light-0.png"
   },
   {
     "name": "Ranger Gloves",
@@ -153,7 +165,8 @@
       "minStat": 1,
       "maxStat": 2
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Linothorax Gloves",
@@ -165,7 +178,8 @@
       "minStat": 2,
       "maxStat": 4
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Heroic Gloves",
@@ -177,7 +191,8 @@
       "minStat": 3,
       "maxStat": 6
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Tin Gloves",
@@ -189,7 +204,8 @@
       "minStat": 4,
       "maxStat": 8
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Soldier Gloves",
@@ -201,7 +217,8 @@
       "minStat": 5,
       "maxStat": 10
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Elven Gloves",
@@ -213,7 +230,8 @@
       "minStat": 6,
       "maxStat": 12
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Pearl Gloves",
@@ -225,7 +243,8 @@
       "minStat": 7,
       "maxStat": 14
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Spiked Gloves",
@@ -237,7 +256,8 @@
       "minStat": 8,
       "maxStat": 16
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Sentinel Gloves",
@@ -249,7 +269,8 @@
       "minStat": 9,
       "maxStat": 18
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Mythril Gloves",
@@ -261,7 +282,8 @@
       "minStat": 10,
       "maxStat": 20
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Mirabell Gloves",
@@ -273,7 +295,8 @@
       "minStat": 11,
       "maxStat": 22
     },
-    "type": "Medium"
+    "category": "Medium",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/99/Gloves-medium-0.png"
   },
   {
     "name": "Sturdy Gloves",
@@ -285,7 +308,8 @@
       "minStat": 1,
       "maxStat": 2
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Iron Gloves",
@@ -297,7 +321,8 @@
       "minStat": 2,
       "maxStat": 4
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Copper Gloves",
@@ -309,7 +334,8 @@
       "minStat": 3,
       "maxStat": 6
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Plate Gloves",
@@ -321,7 +347,8 @@
       "minStat": 4,
       "maxStat": 8
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Chain Gloves",
@@ -333,7 +360,8 @@
       "minStat": 5,
       "maxStat": 10
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Silver Gloves",
@@ -345,7 +373,8 @@
       "minStat": 6,
       "maxStat": 12
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Platinum Gloves",
@@ -357,7 +386,8 @@
       "minStat": 7,
       "maxStat": 14
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Emerald Gloves",
@@ -369,7 +399,8 @@
       "minStat": 8,
       "maxStat": 16
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Granite Gloves",
@@ -381,7 +412,8 @@
       "minStat": 9,
       "maxStat": 18
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Golden Gloves",
@@ -393,7 +425,8 @@
       "minStat": 10,
       "maxStat": 20
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   },
   {
     "name": "Chaos Gloves",
@@ -405,6 +438,7 @@
       "minStat": 11,
       "maxStat": 22
     },
-    "type": "Heavy"
+    "category": "Heavy",
+    "categoryImage": "https://www.miragerealms.co.uk/wiki/images/9/98/Gloves-heavy-0.png"
   }
 ]
