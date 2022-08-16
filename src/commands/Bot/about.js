@@ -34,10 +34,6 @@ class AboutCommand extends MirageCommand {
       .addField('❯ Version', `v${bot.version}`)
       .addField('❯ Discord Server', `[MirageHelper](${mirageServer.invite})`)
       .addField('❯ Source code', `[Github](${bot.repository})`)
-      .addField(
-        '❯ Special thanks',
-        'Anonym - I used his wiki for the items, weapons and other stuff\nHis wiki: [PirateWiki](http://mr.golitsyn.com/)'
-      )
 
     return embed
   }
