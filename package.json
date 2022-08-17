@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "eslint": "^8.13.0",
+    "mefei": "^1.0.0",
     "nodemon": "^2.0.18",
     "standard-version": "^9.5.0"
   },
