@@ -8,6 +8,7 @@
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
     "lint": "eslint ./src/**",
+    "fetch": "mefei",
     "release:major": "standard-version --release-as major -s",
     "release:minor": "standard-version --release-as minor -s",
     "release:patch": "standard-version --release-as patch -s"
