@@ -138,13 +138,6 @@
     lexure "^0.17.0"
     tslib "^2.3.1"
 
-"@sapphire/lexure@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/lexure/-/lexure-1.0.1.tgz#a2cf516f2c8e08d4d6e4e020391cf8de741c4296"
-  integrity sha512-bxI85SqPERicAC8fyZNRjrK2SroXFtpa/vgUNExH8VSM1LIysZE6zDRGCvllAfOdEVGSGBKjNRLfT9kYwNDhXg==
-  dependencies:
-    "@sapphire/result" "^2.1.1"
-
 "@sapphire/pieces@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@sapphire/pieces/-/pieces-3.3.1.tgz#216bcd30e6feb336ccc712eedf19d5c891d552f6"
@@ -172,11 +165,6 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@sapphire/result/-/result-1.1.1.tgz#c268decd12f66e7adf00a3d6d24987640bf548b7"
   integrity sha512-mKWq+HCu9t+gqVcXMhfH72Trj6cO0LZilpdVYndqRb3+30mrRqs+NtdSf1wAERYEtBmOf3ZWvROe4RPSx7aKvw==
-
-"@sapphire/result@^2.1.1":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@sapphire/result/-/result-2.3.3.tgz#4014841295e48680e3bdc0f19b6b39302bb8f644"
-  integrity sha512-q4rBqmgo5B2YGJ4bLl+s/eCHCHACRLFdnKFLg2h56axL7v8RAvuC2p5mlF9RPOTLHodRVpxdK7IUaxCK75zTKA==
 
 "@sapphire/shapeshift@^2.0.0":
   version "2.0.0"
