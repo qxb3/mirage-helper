@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/qxb3/mirage-helper/compare/v3.0.0...v3.0.1) (2022-08-17)
+
+
+### Features
+
+* **package.json:** added new script 'fetch' ([e30f234](https://github.com/qxb3/mirage-helper/commit/e30f234cc8881712e58adcbda93f8a5d97967f17))
+
 ## [3.0.0](https://github.com/qxb3/mirage-helper/compare/v2.10.4...v3.0.0) (2022-08-16)
 
 
